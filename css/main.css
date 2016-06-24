@@ -1,0 +1,92 @@
+@charset "euc-kr";
+@import url("reset.css");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+body,a{font-family:'Nanum Gothic';text-decoration:none}
+
+/* 메인 슬라이드 */
+body{overflow-x:hidden}
+#main_visual{overflow:hidden}
+.main_visual ul{position:relative}
+.main_visual li{overflow:hidden;width:100%;height:620px}
+.main_visual li a{display:block}
+.main_visual li img{display:block;position:absolute;left:50%;width:auto;height:620px;margin-left:-960px}
+.main_visual .bx-wrapper .bx-controls-direction a{width:45px;height:89px;margin-top:-21px}
+.main_visual .bx-wrapper .bx-prev{left:50%;margin-left:-559px;background:url(../images/main_visual_prev.png) 0 0 no-repeat}
+.main_visual .bx-wrapper .bx-next{right:50%;margin-right:-559px;background:url(../images/main_visual_next.png) 0 0 no-repeat}
+.main_visual .bx-wrapper .bx-pager.bx-default-pager a{width:18px;height:18px;margin:0 3px;background:url(../images/main_visual_pager_off.png) 0 0 no-repeat}
+.main_visual .bx-wrapper .bx-pager.bx-default-pager a:hover,.main_visual .bx-wrapper .bx-pager.bx-default-pager a.active{width:18px;height:18px;background:url(../images/main_visual_pager_on.png) 0 0 no-repeat}
+.main_visual .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager{width:100%;text-align:center}
+.main_visual .bx-wrapper .bx-pager,.bx-wrapper .bx-controls-auto{bottom:53px}
+
+/* 메인 인트로 */
+.main_intro{overflow:hidden;width:1000px;margin:0 auto;margin-top:35px;font-size:0;text-align:center}
+.story,.search{float:left;width:270px;margin-top:15px}
+.main_intro h2{font-size:30px;font-weight:bold;line-height:34px;color:#3f3f3f}
+.main_intro p{margin-top:10px;font-size:14px;line-height:18px;color:#4c4a4b}
+.main_intro a{display:inline-block;margin-top:15px}
+.main_intro a img{display:block}
+.purple{float:left}
+
+/* NEW & BEST */
+.main_menu_wrap{width:100%;height:728px;margin-top:50px;background:#f6f1e8}
+.main_menu{width:1000px;margin:0 auto}
+.main_menu h2{padding-top:50px;background:url(../images/main_menu_title_line.png) center 67.5px no-repeat;font-size:40px;font-weight:bold;line-height:40px;color:#4c4a4b;text-align:center}
+.best{float:left;margin-top:49px}
+.best a{display:inline-block}
+.best_menu_wrap{float:left;margin:49px 0 0 50px}
+.best_menu_wrap ul{width:420px}
+.best_menu_wrap li{float:left;position:relative;width:195px;height:232px;margin:0 10px 10px 0;border:5px solid #fff;background:#fff;text-align:center}
+.best_menu_wrap li:hover{border:5px solid #ffb414}
+.best_menu_wrap li a{font-size:14px;line-height:19px;color:#777}
+.best_menu_wrap li p{margin-top:11px}
+.best_menu_wrap li strong{font-size:15px;font-weight:bold;color:#4c4a4b}
+.best_menu_wrap .best_menu2{margin-right:0}
+.best_menu_wrap .best_menu4{margin-right:0}
+.best_menu_wrap .ico{position:absolute;top:15px;right:15px;width:34px;height:33px;margin:0}
+
+/* 프리미엄 */
+.premium_wrap{width:100%;height:216px;background:#423333}
+.premium{position:relative;width:1000px;margin:0 auto}
+.premium h2{margin-left:17px;padding-top:46px;font-size:32px;line-height:40px;color:#fff}
+.premium strong{font-weight:bold}
+.premium p{margin-top:10px;margin-left:17px;font-size:14px;line-height:22px;color:#949494}
+.premium button{width:97px;height:23px;margin-left:17px;margin-top:26px;border:0;background:#1d1a1a;font-size:12px;font-family:'Nanum Gothic';color:#c7c7c9;cursor:pointer}
+.premium img{position:absolute;top:-59px;right:0}
+
+/* 베너 */
+.banner_wrap{width:1000px;margin:0 auto;margin-top:80px}
+.banner_wrap a{display:block;height:204px}
+.banner1{overflow:hidden;float:left}
+.banner1 a{height:410px}
+.banner2{overflow:hidden;float:left}
+.contribution{position:relative;width:271px;height:204px;background:#6c5648}
+.contribution h2{padding:36px 0 0 30px;font-size:26px;font-weight:bold;line-height:30px;color:#fff}
+.contribution p{padding:20px 0 0 30px;font-size:14px;line-height:20px;color:#c6c6c6}
+.contribution img{position:absolute;top:30px;right:27px}
+.recruit{position:relative;width:271px;height:206px;background:#f7f7f7}
+.recruit h2{padding:36px 0 0 30px;font-size:26px;font-weight:bold;line-height:30px;color:#4c4a4b}
+.recruit p{padding:20px 0 0 30px;font-size:14px;line-height:20px;color:#4c4a4b}
+.recruit img{position:absolute;top:30px;right:27px}
+.banner3{overflow:hidden;position:relative}
+.banner3 img{display:block}
+.franchise{position:absolute;right:0;bottom:0;width:251px;height:205px;background:#424242}
+.franchise h2{padding:26px 0 0 30px;font-size:26px;font-weight:bold;line-height:30px;color:#fff}
+.franchise p{padding:20px 0 0 30px;font-size:14px;line-height:20px;color:#fff}
+.franchise img{position:absolute;top:30px;right:27px}
+
+/* SNS */
+.sns_wrap{overflow:hidden;width:100%;height:527px;margin-top:80px;background:#f1f1f1;font-size:0}
+.sns_tab{overflow:hidden;width:1000px;margin:0 auto;margin-top:60px;background:url(../images/main_sns_tab.gif) 0 0 no-repeat;text-align:center}
+.sns_tab li{float:left;width:240px;height:52px;background:url(../images/) 0 0 no-repeat;cursor:pointer}
+.sns_tab li.on{background:url(../images/main_sns_tab_on.gif) 0 0 no-repeat}
+.sns_tab a{font-size:17px;font-weight:bold;line-height:50px;color:#706e6f}
+.sns{margin-top:30px}
+.sns ul{clear:both;width:1002px;margin:0 auto}
+.sns li{float:left;width:237px;height:335px;margin-left:18px;background:url(../images/main_sns_con_bg.gif) 0 0 no-repeat}
+.sns li:first-child{margin-left:0}
+.sns article{margin-left:2px}
+.title{height:55px;padding-top:24px;padding-left:16px}
+.title h3{padding:0 0 17px 50px;background:url(../images/main_sns_ico.jpg) 0 0 no-repeat;font-size:16px;font-weight:bold;line-height:20px;color:#404040}
+.title p{float:left;margin-top:-17px;margin-left:50px;font-size:12px;font-weight:bold;line-height:16px;color:#848484;letter-spacing:-1px;vertical-align:top}
+.title .like{margin-left:117px;padding-left:14px;background:url(../images/ico_like.gif) 0 2px no-repeat}
+.text{padding:18px 20px;font-size:13px;line-height:20px;color:#706e6f}
