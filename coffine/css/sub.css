@@ -100,13 +100,20 @@ body{overflow-x:hidden}
 
 /* 찾아오시는 길 */
 .location{position:relative;width:850px;height:auto;margin-left:150px}
-#map{width:850px;height:457px;margin-top:50px;background:#000}
+#map{width:850px;height:457px;margin-top:50px;}
 .group_location1 h4{margin-top: 31px;font-size: 22px;font-weight: bold;line-height: 26px;color: #343230;}
 .group_location1 p{margin-top: 15px;padding-left: 50px;font-size: 14px;line-height: 20px;color: #555;background: url("../images/ico_01.gif") 0 0 no-repeat;}
 .group_location1 span{margin-right: 49px;}
 .group_location1 strong{margin-right: 8px;font-weight: bold;}
 .group_location2 h4{margin-top: 52px;font-size: 22px;font-weight: bold;line-height: 26px;color: #343230;}
+.location2_area1{position: relative;}
 .location2_area1 .col1{width: 18%;}
-.location2_area1 h5{height: 38px;margin-top: 14px;padding-left: 50px;background: url(../images/ico_02.gif) 0 0 no-repeat;font-size: 14px;font-weight: bold;line-height: 38px;}
-.location2_area1 caption{}
-.location2_area1 col{background: #000;}
+.location2_area1 h5{height: 38px;margin-top: 14px;padding-left: 50px;background: url(../images/ico_02.gif) 0 0 no-repeat;font-size: 16px;font-weight: bold;line-height: 38px;}
+.location2_area1 table{margin-top: 15px;}
+.location2_area1 th{height: 52px;background: #666e72;font-size: 14px;font-weight: bold;line-height: 52px;color: #fff;}
+.location2_area1 thead th:last-child{background: #797878;}
+.location2_area1 tbody th{background: #788186;}
+.location2_area1 .bdb1{border-bottom: 1px solid #e4e4e4;}
+.location2_area1 td{padding-left: 25px;background: #f7f7f7;font-size: 14px;line-height: 52px;color: #706e6f;}
+.location2_area2 h5{height: 38px;margin-top: 20px;padding-left: 50px;background: url(../images/ico_03.gif) 0 0 no-repeat;font-size: 16px;font-weight: bold;line-height: 38px;}
+.location2_area2 p{margin-top: 19px;padding-left: 19px;background: url(../images/ico_04.gif) 0 0 no-repeat;font-size: 14px;line-height: 1;color: #555;}
