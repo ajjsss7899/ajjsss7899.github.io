@@ -5,12 +5,8 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../../css/sub.css">
 <link rel="stylesheet" type="text/css" href="../../css/common.css">
-<script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=95fa0c870ae487bf9440db38efb3660f"></script>
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=APIKEY&libraries=LIBRARY"></script>
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=APIKEY&libraries=services"></script>
-<!-- services와 clusterer 라이브러리 불러오기 -->
-<script type="text/javascript" src="//apis.daum.net/maps/maps3.js?apikey=APIKEY&libraries=services,clusterer"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="http://apis.daum.net/maps/maps3.js?apikey=95fa0c870ae487bf9440db38efb3660f"></script>
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="../../js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -111,17 +107,14 @@
 	<!-- 로컬 네비게이션 -->
 	<div class="lnb">
 		<ul>
-		<li><a href="javascript:return false">커핀그루나루<br>소개</a></li>
-		<li><a href="javascript:return false">Coffee<br>+ Wine</a></li>
-		<li><a href="javascript:return false">메뉴스토리</a></li>
-		<li><a href="javascript:return false">광고자료</a></li>
-		<li><a href="javascript:return false">글로벌<br>브랜드</a></li>
-		<li><a href="javascript:return false">사회공헌<a></li>
-				</a>
-			</a>
-		</li>
-		<li><a href="javascript:return false">채용정보</a></li>
-		<li class="on"><a href="javascript:return false">찾아오시는<br>길</a></li>
+			<li><a href="javascript:return false">커핀그루나루<br>소개</a></li>
+			<li><a href="javascript:return false">Coffee<br>+ Wine</a></li>
+			<li><a href="javascript:return false">메뉴스토리</a></li>
+			<li><a href="javascript:return false">광고자료</a></li>
+			<li><a href="javascript:return false">글로벌<br>브랜드</a></li>
+			<li><a href="javascript:return false">사회공헌</a></li>
+			<li><a href="javascript:return false">채용정보</a></li>
+			<li class="on"><a href="javascript:return false">찾아오시는<br>길</a></li>
 		</ul>
 	</div>
 	<!-- 찾아오시는 길 -->
@@ -142,7 +135,7 @@
 			<h4>찾아오시는 길</h4>
 			<div class="location2_area1">
 				<h5>버스노선 안내</h5>
-				<table cellspacing="0" border="0" summary="하차지점, 노선번호로 구성된 버스노선 안내 표입니다." width="100%" cellpadding="0">
+				<table>
 				<caption class="blind">버스노선 안내</caption>
 				<colgroup>
 				<col class="col1">
@@ -178,15 +171,15 @@
 	<div class="footer_wrap">
 		<p><img src="../../images/ft_logo.gif" alt="커핀그루나루 로고"></p>
 		<ul class="footer1">
-			<li><a href="#">마케팅 제휴문의</a></li>
-			<li><a href="#">원 · 부자재 문의</a></li>
-			<li><a href="#">개인정보취급방침</a></li>
-			<li><a href="#">이용약관</a></li>
+		<li><a href="#">마케팅 제휴문의</a></li>
+		<li><a href="#">원 · 부자재 문의</a></li>
+		<li><a href="#">개인정보취급방침</a></li>
+		<li><a href="#">이용약관</a></li>
 		</ul>
 		<ul class="footer2">
-			<li class="ft_bg1"><a href="#">찾아오시는 길</a></li>
-			<li class="ft_bg2"><a href="#">신규입점제안</a></li>
-			<li class="ft_bg3"><a href="#">전체메뉴</a></li>
+		<li class="ft_bg1"><a href="#">찾아오시는 길</a></li>
+		<li class="ft_bg2"><a href="#">신규입점제안</a></li>
+		<li class="ft_bg3"><a href="#">전체메뉴</a></li>
 		</ul>
 		<address>사업자등록번호 215-87-06529 서울시 송파구 양재대로 71길 1-20 대표자 김은희<span>고객센터 02-2202-0791 FAX 02-2202-0807</span></address>
 		<p class="copyright">COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED.</p>
@@ -217,21 +210,27 @@ $(function(){
 	});
 </script>
 <!-- 다음 지도 -->
-<script>
+<script type="text/javascript">
 	var container = document.getElementById('map');
 	var options = {
-		center: new daum.maps.LatLng(37.5111780,127.1247900), //지도 좌표 위도, 경도
+		center: new daum.maps.LatLng(37.5093116,127.1257862), //지도 좌표 위도, 경도
 		level: 4 //지도의 확대 정도
 	};
 	var map = new daum.maps.Map(container, options);//지도 생성 및 객체 리턴
 	var imageSrc = '../../images/markerImgView.png', // 마커이미지의 주소입니다
-    imageSize = new daum.maps.Size(65, 74), // 마커이미지의 크기입니다
-    imageOption = {offset: new daum.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-    var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
-    markerPosition = new daum.maps.LatLng(37.5111780,127.1247900); // 마커가 표시될 위치입니다
+		imageSize = new daum.maps.Size(65, 74), // 마커이미지의 크기입니다
+		imageOption = {offset: new daum.maps.Point(27, 69)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+	// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+	var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+		markerPosition = new daum.maps.LatLng(37.5093116,127.1257862); // 마커가 표시될 위치입니다
+
+	// 마커를 생성합니다
 	var marker = new daum.maps.Marker({
-	    position: markerPosition,
-	    image: markerImage // 마커이미지 설정
+		position: markerPosition,
+		image: markerImage // 마커이미지 설정
+	});
+
+	// 마커가 지도 위에 표시되도록 설정합니다
 	marker.setMap(map);
 </script>
 </body>

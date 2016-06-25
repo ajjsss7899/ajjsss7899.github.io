@@ -19,8 +19,8 @@ header{position:absolute;top:0;left:0;z-index:99999;width:100%;background:url(..
 .util_menu .membership{margin-right:21px}
 .util_menu .academy{margin-right:10px;margin-top:-5px}
 .util_menu .app{margin-right:0;margin-top:-5px}
-.util_menu .academy a{padding:5px 9px;background:url(../images/util_aca_bg.png) center center no-repeat;color:#2b2b2b}
-.util_menu .app a{padding:5px 10px;background:url(../images/util_app_bg.png) center center no-repeat;color:#fff}
+.util_menu .academy a{padding:7px 9px;background:url(../images/util_aca_bg.png) center center no-repeat;color:#2b2b2b}
+.util_menu .app a{padding:7px 10px;background:url(../images/util_app_bg.png) center center no-repeat;color:#fff}
 .util_menu a{font-size:12px;font-weight:bold;color:#a2a1a2}
 .util_menu h1{clear:both;position:absolute;top:24px;left:50%;margin-left:-50px}
 

@@ -79,6 +79,6 @@
 .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto{visibility:hidden;right:0;width:35px}
 
 /* IMAGE CAPTIONS */
-.bx-wrapper .bx-caption{position:absolute;left:0;bottom:0;width:100%;background:#666\9;background:rgba(80, 80, 80, 0.75)}
+.bx-wrapper .bx-caption{position:absolute;left:0;bottom:0;width:100%;background:#666;background:rgba(80, 80, 80, 0.75)}
 
 .bx-wrapper .bx-caption span{display:block;padding:10px;font-family:Arial;font-size:.85em;color:#fff}
