@@ -1,6 +1,6 @@
 @charset "euc-kr";
 @import url("reset.css");
-@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 body,a{font-family:'Nanum Gothic';text-decoration:none}
 
 /* 메뉴를 건너 뛰고 페이지 본문으로 이동하기 */
