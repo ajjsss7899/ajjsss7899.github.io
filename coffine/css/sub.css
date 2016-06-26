@@ -1,6 +1,6 @@
 @charset "euc-kr";
 @import url("reset.css");
-@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 body,a,form,input,select,label{font-family:'Nanum Gothic';text-decoration:none}
 body{overflow-x:hidden}
 
