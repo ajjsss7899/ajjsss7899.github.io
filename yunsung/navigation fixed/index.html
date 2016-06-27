@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+<header>
+<div class="header_banner"></div>
+<nav>
+	<ul>
+		<li><a href="/archive">Archive</a></li>
+		<li><a href="/events">Events</a></li>
+		<li><a href="/contact">Contact</a></li>
+	<ul>
+</nav>
+</header>
+<section class="content">
+</section>
+<script type="text/javascript">
+	$(window).scroll(function(){
+		if($(window).scrollTop() >=300){
+			$("nav").addClass("fixed_header");
+		}
+		else{
+			$("nav").removeClass("fixed_header");
+		}
+	});
+</script>
+</body>
+</html>
