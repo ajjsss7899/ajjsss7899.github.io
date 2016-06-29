@@ -129,15 +129,17 @@
 <script>
 $(function(){
 	$(".sitemap").on("click", function(){
-		$(".gnb, .util_menu ul").css("display","block")
+		$(".gnb, .util_menu > ul").addClass("on");
 		$(".gnb, .util_menu").animate({left:270}, 300);
 		$(".dark").animate({opacity:0.3}, 300);
 	});
 	$(".dark, .close").on("click", function(){
+		setTimeout(function(){
+		$(".gnb, .util_menu > ul").removeClass("on");
+		}, 1000);
 		$(".gnb, .util_menu").animate({left:0}, 300);
 		$(".dark").animate({opacity:0}, 300)
 	});
-
 });
 </script>
 <!-- gnb fixed -->

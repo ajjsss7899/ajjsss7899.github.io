@@ -52,6 +52,7 @@ header{margin:0 10px}
 header{margin: 0;width: 100%;background: #454345;position: fixed;left:0;}
 .util_menu{position: relative;top:0;height: 51px;width: 270px;overflow: hidden;margin-left: -270px;z-index: 30;background: #454345;}
 .util_menu ul{display: none;}
+.util_menu ul.on{display: block;}
 .util_menu li{float: left;text-align: center;}
 .util_menu li:last-child{display: none;}
 .util_menu a{font-size: 13px;height: 51px;line-height: 50px;width: 135px;color: #fff;border-bottom: 1px solid #000;border-left: 1px solid #000;}
@@ -66,6 +67,7 @@ header{margin: 0;width: 100%;background: #454345;position: fixed;}
 .nav h1{width: 50px;height: 50px;position: absolute;top:0;clear: both;margin-top: -51px;left:50%;margin-left: -25px;}
 .nav img{width: 50px;height: 50px;display: block;}
 .gnb{height: 100%;position: fixed;top: 51px;left: 0;background: #302f30;overflow-x: hidden;width: 270px; margin-left: -270px; z-index: 30;display: none;}
+.gnb.on{display: block;}
 .gnb a{position: relative;font-size: 15px;font-weight: bold;display: block;color: #919191;border-bottom: 1px solid #03070c;width: 100%;padding: 14px 0 14px 32px;}
 .gnb > li > ul{display: none;}
 .gnb > li > ul > li > a{font-size: 13px;background: #1b2126;color: #fff;}
