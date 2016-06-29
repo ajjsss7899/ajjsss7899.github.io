@@ -62,9 +62,9 @@ header{margin: 0;width: 100%;background: #454345;position: fixed;left:0;}
 header{margin: 0;width: 100%;background: #454345;position: fixed;}
 .header_section{position: relative;}
 .nav{position: fixed;width: 100%;}
-.nav h1{width: 50px;height: 50px;position: absolute;top:0;clear: both;margin-top: -51px;left:50%;margin-left: -25px;}
+.nav h1{width: 50px;height: 50px;position: fixed;top:0;clear: both;left:50%;margin-left: -25px;}
 .nav img{width: 50px;height: 50px;display: block;}
-.gnb{height: 100%;position: fixed;top: 51px;left: 0;background: #302f30;overflow-x: hidden;width: 270px; margin-left: -270px; z-index: 30;}
+.gnb{height: 100%;overflow:auto;position: fixed;top: 51px;left: 0;background: #302f30;width: 270px; margin-left: -270px; z-index: 30;}
 .gnb a{position: relative;font-size: 15px;font-weight: bold;display: block;color: #919191;border-bottom: 1px solid #03070c;width: 100%;padding: 14px 0 14px 32px;}
 .gnb > li > ul{display: none;}
 .gnb > li > ul > li > a{font-size: 13px;background: #1b2126;color: #fff;}
