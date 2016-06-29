@@ -51,8 +51,6 @@ header{margin:0 10px}
 @media screen and (max-width: 1023px){
 header{margin: 0;width: 100%;background: #454345;position: fixed;left:0;}
 .util_menu{position: relative;top:0;height: 51px;width: 270px;overflow: hidden;margin-left: -270px;z-index: 30;background: #454345;}
-.util_menu ul{display: none;}
-.util_menu ul.on{display: block;}
 .util_menu li{float: left;text-align: center;}
 .util_menu li:last-child{display: none;}
 .util_menu a{font-size: 13px;height: 51px;line-height: 50px;width: 135px;color: #fff;border-bottom: 1px solid #000;border-left: 1px solid #000;}
