@@ -22,7 +22,7 @@
 		<!-- gnb -->
 		<nav class="nav">
 			<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
-			<div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div>
+			<!-- <div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div> -->
 			<ul class="gnb">
 				<li><a href="#">회사 소개<span class="nav_ico"></span></a>
 					<ul>
@@ -133,10 +133,10 @@ $(function(){
 		$(".gnb, .util_menu").animate({left:270}, 300);
 		$(".dark").animate({opacity:0.3}, 300);
 	});
-	$(".dark, .close").on("click", function(){
+	$(".close").on("click", function(){
 		setTimeout(function(){
 		$(".gnb, .util_menu > ul").removeClass("on");
-		}, 1000);
+		}, 300);
 		$(".gnb, .util_menu").animate({left:0}, 300);
 		$(".dark").animate({opacity:0}, 300)
 	});
