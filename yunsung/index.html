@@ -11,6 +11,7 @@
 <header>
 	<div class="header_section">
 		<!-- util_menu -->
+		<button class="sitemap"><p class="blind">모바일 네비게이션 메뉴 열기 버튼</p></button>
 		<div class="util_menu">
 			<ul>
 				<li><a href="#">로그인</a></li>
@@ -19,10 +20,11 @@
 			</ul>
 		</div>
 		<!-- gnb -->
-		<nav>
+		<nav class="nav">
 			<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
+			<div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div>
 			<ul class="gnb">
-				<li><a href="#">회사 소개</a>
+				<li><a href="#">회사 소개<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">인사말</a></li>
 						<li><a href="#">브랜드소개</a></li>
@@ -33,7 +35,7 @@
 						<li><a href="#">전시장소개</a></li>
 					</ul>
 				</li>
-				<li><a href="#">특별한 윤성</a> 
+				<li><a href="#">특별한 윤성<span class="nav_ico"></span></a> 
 					<ul>
 						<li><a href="#">특별한 이유</a></li>
 						<li><a href="#">원스토리시스템</a></li>
@@ -43,7 +45,7 @@
 						<li><a href="#">사후관리 서비스</a></li>
 					</ul>
 				</li>
-				<li><a href="#">하우징 스타일</a>
+				<li><a href="#">하우징 스타일<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">하우징 스타일</a></li>
 						<li><a href="#">내추럴</a></li>
@@ -52,20 +54,20 @@
 						<li><a href="#">플래티늄</a></li>
 					</ul>
 				</li>
-				<li><a href="#">더 홈</a>
+				<li><a href="#">더 홈<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">더 홈(The Home)</a></li>
 						<li><a href="#">폴라리스</a></li>
 					</ul>
 				</li>
-				<li><a href="#">윤성 갤러리</a>
+				<li><a href="#">윤성 갤러리<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">완공사레</a></li>
 						<li><a href="#">설계사례</a></li>
 						<li><a href="#">전국 시공현장 Live</a></li>
 					</ul>
 				</li>
-				<li class="nav6"><a href="#">건축가이드</a>
+				<li><a href="#">건축가이드<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">공정별 시공절차</a></li>
 						<li><a href="#">건축정보</a></li>
@@ -74,7 +76,7 @@
 						<li><a href="#">자주묻는 질문</a></li>
 					</ul>
 				</li>
-				<li class="nav7"><a href="#">커뮤니티</a>
+				<li><a href="#">커뮤니티<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">윤성소식</a></li>
 						<li><a href="#">홍보센터</a></li>
@@ -83,35 +85,71 @@
 						<li ><a href="#">사후관리현장</a></li>
 					</ul>
 				</li>
-				<li class="nav7"><a href="#">온라인 상담 신청</a>
+				<li><a href="#">온라인 상담 신청<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">건축상담</a></li>
 						<li><a href="#">현장답사요청</a></li>
 						<li><a href="#">전시장 방문신청</a></li>
 						<li><a href="#">가이드북 신청</a></li>
-						<li class="last"><a href="#">A/S 신청</a></li>
+						<li><a href="#">A/S 신청</a></li>
 					</ul>
 				</li>
+				<li class="close"><a href="#">닫기</a></li>
 			</ul>
-			<div class="srch"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
+			<div class="srch on"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
 		</nav>
 	</div>
 </header>
+<section>
+</section>
 <!-- gnb script -->
 <script type="text/javascript">
+	$(function(){
+		var $gnbWrap = $('.gnb'),
+			$gnbChild = $('.gnb > li > ul');
+		$gnbWrap.on('mouseenter focusin', function(){
+			$gnbChild.addClass('on')
+		});
+		$gnbWrap.on('mouseleave', function(){
+			$gnbChild.removeClass('on')
+		});
+		$('.srch.on a').on('focus', function(){
+			$gnbChild.css('display','none')
+		});
+	});
+</script>
+<!-- 모바일 gnb script  -->
+<script type="text/javascript">
+	$(".gnb > li").on('click', function(){
+		var tab = $(this);
+		if(tab.hasClass("on"));
+		tab.addClass("on").siblings(".on").removeClass("on");
+	});
+</script>
+<script>
 $(function(){
-    var $gnbWrap = $('.gnb'),
-		$gnbChild = $('.gnb > li > ul');
-    $gnbWrap.on('mouseenter focusin', function(){
-		$gnbChild.css('display','block')
-    });
-    $gnbWrap.on('mouseleave', function(){
-       $gnbChild.css('display','none')
-    });
-    $('.last').on('focusout', function(){
-		$gnbChild.css('display','none')
-    });
+	$(".sitemap").on("click", function(){
+		$(".gnb, .util_menu ul").css("display","block")
+		$(".gnb, .util_menu").animate({left:270}, 300);
+		$(".dark").animate({opacity:0.3}, 300);
+	});
+	$(".dark, .close").on("click", function(){
+		$(".gnb, .util_menu").animate({left:0}, 300);
+		$(".dark").animate({opacity:0}, 300)
+	});
+
 });
+</script>
+<!-- gnb fixed -->
+<script type="text/javascript">
+	$(window).scroll(function(){
+		if($(window).scrollTop() >=40){
+			$(".nav").addClass("on");
+		}
+		else{
+			$(".nav").removeClass("on");
+		}
+	});
 </script>
 </body>
 </html>
