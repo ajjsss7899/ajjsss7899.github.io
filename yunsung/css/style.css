@@ -49,8 +49,8 @@ header{margin:0 10px}
 
 /* 모바일 util_menu */
 @media screen and (max-width: 1023px){
-header{position:fixed;width:100%;margin:0;}
-.util_menu{position:absolute;top:0;left:0;z-index:30;width:270px;height:51px;margin-left:-270px;background:#454345}
+header{width:100%;margin:0;}
+.util_menu{position:fixed;top:0;left:0;z-index:30;width:270px;height:51px;margin-left:-270px;background:#454345}
 .util_menu li{float:left;text-align:center}
 .util_menu li:last-child{display:none}
 .util_menu a{width:135px;height:51px;border-bottom:1px solid #000;border-left:1px solid #000;font-size:13px;line-height:50px;color:#fff}
