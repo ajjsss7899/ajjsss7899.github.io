@@ -62,7 +62,7 @@ header{margin: 0;width: 100%;background: #454345;}
 header{margin: 0;width: 100%;background: #454345;position: fixed;}
 
 .nav{position: fixed;width: 100%;}
-.nav h1{width: 50px;height: 50px;position: fixed;top:0;left:50%;margin-left: -25px;}
+.nav h1{width: 50px;height: 50px;}
 .nav img{width: 50px;height: 50px;display: block;}
 .gnb{position: fixed;height: 100%;overflow: auto;background: #302f30;width: 270px;margin: 0; z-index: 30;padding-bottom: 100px;}
 .gnb a{position: relative;font-size: 15px;font-weight: bold;display: block;color: #919191;border-bottom: 1px solid #03070c;width: 100%;padding: 14px 0 14px 32px;}
