@@ -23,7 +23,7 @@
 		<nav class="nav">
 			<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
 			<!-- <div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div> -->
-			<!-- <ul class="gnb">
+			<ul class="gnb">
 				<li><a href="#">회사 소개<span class="nav_ico"></span></a>
 					<ul>
 						<li><a href="#">인사말</a></li>
@@ -95,7 +95,7 @@
 					</ul>
 				</li>
 				<li class="close"><a href="#">닫기</a></li>
-			</ul> -->
+			</ul>
 			<div class="srch on"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
 		</nav>
 	</div>
@@ -132,7 +132,7 @@ $(function(){
 		$(".gnb, .util_menu").animate({left:270}, 300);
 		$(".dark").animate({opacity:0.3}, 300);
 	});
-	$(".close").on("click", function(){
+	$("body").on("click", function(){
 		$(".gnb, .util_menu").animate({left:0}, 300);
 		$(".dark").animate({opacity:0}, 300)
 	});
