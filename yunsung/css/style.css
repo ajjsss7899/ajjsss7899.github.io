@@ -49,7 +49,7 @@ header{margin:0 10px}
 
 /* 모바일 util_menu */
 @media screen and (max-width: 1023px){
-header{margin: 0;width: 100%;background: #454345;position: fixed;left:0;}
+header{margin: 0;width: 100%;background: #454345;}
 .util_menu{position: relative;top:0;height: 51px;width: 270px;overflow: hidden;margin-left: -270px;z-index: 30;background: #454345;}
 .util_menu li{float: left;text-align: center;}
 .util_menu li:last-child{display: none;}
@@ -60,11 +60,11 @@ header{margin: 0;width: 100%;background: #454345;position: fixed;left:0;}
 /* 모바일 네비게이션 */
 @media screen and (max-width: 1023px){
 header{margin: 0;width: 100%;background: #454345;position: fixed;}
-.header_section{position: relative;}
+
 .nav{position: fixed;width: 100%;}
-.nav h1{width: 50px;height: 50px;position: fixed;top:0;clear: both;left:50%;margin-left: -25px;}
+.nav h1{width: 50px;height: 50px;position: fixed;top:0;left:50%;margin-left: -25px;}
 .nav img{width: 50px;height: 50px;display: block;}
-.gnb{height: 100%;overflow:auto;position: fixed;top: 51px;left: 0;background: #302f30;width: 270px; margin-left: -270px; z-index: 30;}
+.gnb{position: fixed;height: 100%;overflow: auto;background: #302f30;width: 270px;margin: 0; z-index: 30;padding-bottom: 100px;}
 .gnb a{position: relative;font-size: 15px;font-weight: bold;display: block;color: #919191;border-bottom: 1px solid #03070c;width: 100%;padding: 14px 0 14px 32px;}
 .gnb > li > ul{display: none;}
 .gnb > li > ul > li > a{font-size: 13px;background: #1b2126;color: #fff;}
@@ -80,4 +80,4 @@ header{margin: 0;width: 100%;background: #454345;position: fixed;}
 
 
 
-section{height: 3000px;background: pink;}
+section{height: 6000px;background: pink;}
