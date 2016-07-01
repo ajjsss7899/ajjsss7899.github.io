@@ -4,14 +4,23 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
 	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 <header>
 	<div class="header_section">
 		<!-- util_menu -->
-		<button class="sitemap"><p class="blind">모바일 네비게이션 메뉴 열기 버튼</p></button>
+		<div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div>
+		<button class="sitemap blind">모바일 네비게이션 메뉴 열기 버튼</button>
 		<div class="util_menu">
 			<ul>
 				<li><a href="#">로그인</a></li>
@@ -20,87 +29,111 @@
 			</ul>
 		</div>
 		<!-- gnb -->
-		<nav class="nav">
-			<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
-			<!-- <div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div> -->
-			<ul class="gnb">
-				<li><a href="#">회사 소개<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">인사말</a></li>
-						<li><a href="#">브랜드소개</a></li>
-						<li><a href="#">윤성이 걸어온 길</a></li>
-						<li><a href="#">윤성의 사회공헌</a></li>
-						<li><a href="#">조직도</a></li>
-						<li><a href="#">인재채용</a></li>
-						<li><a href="#">전시장소개</a></li>
-					</ul>
-				</li>
-				<li><a href="#">특별한 윤성<span class="nav_ico"></span></a> 
-					<ul>
-						<li><a href="#">특별한 이유</a></li>
-						<li><a href="#">원스토리시스템</a></li>
-						<li><a href="#">맞춤 컨설팅 서비스</a></li>
-						<li><a href="#">홈플랜 서비스</a></li>
-						<li><a href="#">현장관리 서비스</a></li>
-						<li><a href="#">사후관리 서비스</a></li>
-					</ul>
-				</li>
-				<li><a href="#">하우징 스타일<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">하우징 스타일</a></li>
-						<li><a href="#">내추럴</a></li>
-						<li><a href="#">모던</a></li>
-						<li><a href="#">지중해</a></li>
-						<li><a href="#">플래티늄</a></li>
-					</ul>
-				</li>
-				<li><a href="#">더 홈<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">더 홈(The Home)</a></li>
-						<li><a href="#">폴라리스</a></li>
-					</ul>
-				</li>
-				<li><a href="#">윤성 갤러리<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">완공사레</a></li>
-						<li><a href="#">설계사례</a></li>
-						<li><a href="#">전국 시공현장 Live</a></li>
-					</ul>
-				</li>
-				<li><a href="#">건축가이드<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">공정별 시공절차</a></li>
-						<li><a href="#">건축정보</a></li>
-						<li><a href="#">톡톡 인테리어 Tip</a></li>
-						<li><a href="#">윤성웹툰</a></li>
-						<li><a href="#">자주묻는 질문</a></li>
-					</ul>
-				</li>
-				<li><a href="#">커뮤니티<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">윤성소식</a></li>
-						<li><a href="#">홍보센터</a></li>
-						<li><a href="#">건축주 스토리</a></li>
-						<li><a href="#">매니저 스토리</a></li>
-						<li ><a href="#">사후관리현장</a></li>
-					</ul>
-				</li>
-				<li><a href="#">온라인 상담 신청<span class="nav_ico"></span></a>
-					<ul>
-						<li><a href="#">건축상담</a></li>
-						<li><a href="#">현장답사요청</a></li>
-						<li><a href="#">전시장 방문신청</a></li>
-						<li><a href="#">가이드북 신청</a></li>
-						<li><a href="#">A/S 신청</a></li>
-					</ul>
-				</li>
-				<li class="close"><a href="#">닫기</a></li>
-			</ul>
-			<div class="srch on"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
+		<nav>
+			<div class="m_nav">
+				<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
+				<ul class="gnb">
+					<li><a href="#">회사 소개<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">인사말</a></li>
+							<li><a href="#">브랜드소개</a></li>
+							<li><a href="#">윤성이 걸어온 길</a></li>
+							<li><a href="#">윤성의 사회공헌</a></li>
+							<li><a href="#">조직도</a></li>
+							<li><a href="#">인재채용</a></li>
+							<li><a href="#">전시장소개</a></li>
+						</ul>
+					</li>
+					<li><a href="#">특별한 윤성<span class="nav_ico"></span></a> 
+						<ul>
+							<li><a href="#">특별한 이유</a></li>
+							<li><a href="#">원스토리시스템</a></li>
+							<li><a href="#">맞춤 컨설팅 서비스</a></li>
+							<li><a href="#">홈플랜 서비스</a></li>
+							<li><a href="#">현장관리 서비스</a></li>
+							<li><a href="#">사후관리 서비스</a></li>
+						</ul>
+					</li>
+					<li><a href="#">하우징 스타일<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">하우징 스타일</a></li>
+							<li><a href="#">내추럴</a></li>
+							<li><a href="#">모던</a></li>
+							<li><a href="#">지중해</a></li>
+							<li><a href="#">플래티늄</a></li>
+						</ul>
+					</li>
+					<li><a href="#">더 홈<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">더 홈(The Home)</a></li>
+							<li><a href="#">폴라리스</a></li>
+						</ul>
+					</li>
+					<li><a href="#">윤성 갤러리<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">완공사레</a></li>
+							<li><a href="#">설계사례</a></li>
+							<li><a href="#">전국 시공현장 Live</a></li>
+						</ul>
+					</li>
+					<li><a href="#">건축가이드<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">공정별 시공절차</a></li>
+							<li><a href="#">건축정보</a></li>
+							<li><a href="#">톡톡 인테리어 Tip</a></li>
+							<li><a href="#">윤성웹툰</a></li>
+							<li><a href="#">자주묻는 질문</a></li>
+						</ul>
+					</li>
+					<li><a href="#">커뮤니티<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">윤성소식</a></li>
+							<li><a href="#">홍보센터</a></li>
+							<li><a href="#">건축주 스토리</a></li>
+							<li><a href="#">매니저 스토리</a></li>
+							<li ><a href="#">사후관리현장</a></li>
+						</ul>
+					</li>
+					<li class="bdr1"><a href="#">온라인 상담 신청<span class="nav_ico"></span></a>
+						<ul>
+							<li><a href="#">건축상담</a></li>
+							<li><a href="#">현장답사요청</a></li>
+							<li><a href="#">전시장 방문신청</a></li>
+							<li><a href="#">가이드북 신청</a></li>
+							<li><a href="#">A/S 신청</a></li>
+						</ul>
+					</li>
+					<li class="close"><a href="#">닫기</a></li>
+				</ul>
+				<div class="srch"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
+			</div>
 		</nav>
+		<div class="request">
+			<ul>
+				<li class="request1"><a href="#">건축상담</a></li>
+				<li class="request2"><a href="#">가이드북신청</a></li>
+				<li class="request3"><a href="#">카톡상담</a></li>
+				<li class="request4"><a href="#">전화문의</a></li>
+			</ul>
+		</div>
 	</div>
 </header>
-<section>
+<div class="main_vis">
+	<ul class="bxslider">
+		<li><a href="#"><img src="images/f288e7b78.jpg" alt="NH농협과 전략적 제휴를 통한 예비 건축주 지원 [All 바른 금융] 서비스 자세히보기"></a></li>
+		<li><a href="#"><img src="images/f5586d8dc.jpg" alt="소통 : [윤성하우징과 건축주와의 소통] 목조주택가이드북 vol.8 발간 무료 신청 바로가기"></a></li>
+		<li><a href="#"><img src="images/f66231110.png" alt="윤성하우지의 두 번째 오픈하우스 양평 문호리 집 초대합니다. 자세히보기"></a></li>
+		<li><a href="#"><img src="images/faa6bf544.png" alt="전원주택 · 목조주택 1위 기업 윤성하우징이 만들어가는 전원주택 대표도시 양평이야기 영상 보러가기"></a></li>
+		<li><a href="#"><img src="images/ff4a20dd4.png" alt="All 바른 생각, All 바른 공간 윤성하우징이 지은 집, 공가느 사람에 대한 이야기"></a></li>
+	</ul>
+</div>
+<section class="case">
+<ul class="case_lst">
+	<li class="case_lst1"><a href="#">완공사례</a></li>
+	<li class="case_lst2"><a href="#">성공사례</a></li>
+	<li class="case_lst3"><a href="#">시공현장 LIVE</a></li>
+	<li class="case_lst4"><a href="#">사후관리현장</a></li>
+</ul>
 </section>
 <!-- gnb script -->
 <script type="text/javascript">
@@ -113,8 +146,8 @@
 		$gnbWrap.on('mouseleave', function(){
 			$gnbChild.removeClass('on')
 		});
-		$('.srch.on a').on('focus', function(){
-			$gnbChild.css('display','none')
+		$('.srch').on('focusin', function(){
+			$gnbChild.removeClass('on')
 		});
 	});
 </script>
@@ -126,28 +159,45 @@
 		tab.addClass("on").siblings(".on").removeClass("on");
 	});
 </script>
-<script>
-$(function(){
-	$(".sitemap").on("click", function(){
-		$("nav, .util_menu").animate({left:270}, 300);
-		$(".dark").animate({opacity:0.3}, 300);
+<script type="text/javascript">
+	$(function(){
+		$(".sitemap").on("click", function(){
+			$(".m_nav, .util_menu").animate({left:270}, 300);
+			$(".dark").animate({opacity:0.3}, 300);
+			$(".util_menu, .gnb").addClass("on");
+		});
+		$(".close").on("click", function(){
+			$(".m_nav, .util_menu").animate({left:0}, 300);
+			$(".dark").animate({opacity:0}, 300)
+			setTimeout(function(){
+			$(".util_menu, .gnb").removeClass("on");
+			},300);
+		});
 	});
-	$(".close").on("click", function(){
-		$("nav, .util_menu").animate({left:0}, 300);
-		$(".dark").animate({opacity:0}, 300)
-	});
-});
 </script>
 <!-- gnb fixed -->
 <script type="text/javascript">
 	$(window).scroll(function(){
 		if($(window).scrollTop() >=40){
-			$(".nav").addClass("on");
+			$("nav").addClass("on");
 		}
 		else{
-			$(".nav").removeClass("on");
+			$("nav").removeClass("on");
 		}
 	});
 </script>
+<!-- main_vis script -->
+<script type="text/javascript">
+	var $mainSlicder = $('.bxslider').bxSlider({
+	  mode: 'fade',
+	  auto: true,
+	  slideWidth: 900,
+	  autoControls: true
+	});
+	$('.bx-pager-item a').on('click focusin',function() {
+		$mainSlicder.stopAuto();
+	});
+</script>
+
 </body>
 </html>
