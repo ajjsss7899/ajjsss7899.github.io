@@ -11,6 +11,9 @@
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 	<![endif]-->
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+ 	<![endif]-->
 </head>
 <body>
 <header>
@@ -137,12 +140,18 @@
 		$(window).resize(function(){
 		var $gnbWrap = $('.gnb'),
 			$gnbChild = $('.gnb > li > ul');
-			$windowsize = $(window).width();
 		if ($(window).width() > 1023) {
 		$gnbWrap.on('mouseenter focusin', function(){
 			$gnbChild.addClass('on')
 		});
 		$gnbWrap.on('mouseleave', function(){
+			$gnbChild.removeClass('on')
+		});
+		$('.srch').on('focusin', function(){
+			$gnbChild.removeClass('on')
+		});
+		}else{
+		$gnbWrap.on('mouseenter focusin', function(){
 			$gnbChild.removeClass('on')
 		});
 		$('.srch').on('focusin', function(){
@@ -164,14 +173,12 @@
 	$(function(){
 		$(".sitemap").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:270}, 300);
-			$(".dark").animate({opacity:0.3}, 300);
-			$(".util_menu, .gnb").addClass("on");
+			$(".m_nav, .util_menu, .gnb").addClass("on");
 		});
 		$(".close").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:0}, 300);
-			$(".dark").animate({opacity:0}, 300)
 			setTimeout(function(){
-			$(".util_menu, .gnb").removeClass("on");
+			$(".m_nav, .util_menu, .gnb").removeClass("on");
 			},300);
 		});
 	});
