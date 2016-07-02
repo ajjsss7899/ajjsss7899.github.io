@@ -11,15 +11,11 @@
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 	<![endif]-->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 <header>
 	<div class="header_section">
 		<!-- util_menu -->
-		<div class="dark"><p class="blind">모바일 네비게이션 열었을때 화면 어두워짐</p></div>
 		<button class="sitemap blind">모바일 네비게이션 메뉴 열기 버튼</button>
 		<div class="util_menu">
 			<ul>
@@ -138,8 +134,11 @@
 <!-- gnb script -->
 <script type="text/javascript">
 	$(function(){
+		$(window).resize(function(){
 		var $gnbWrap = $('.gnb'),
 			$gnbChild = $('.gnb > li > ul');
+			$windowsize = $(window).width();
+		if ($(window).width() > 1023) {
 		$gnbWrap.on('mouseenter focusin', function(){
 			$gnbChild.addClass('on')
 		});
@@ -148,6 +147,8 @@
 		});
 		$('.srch').on('focusin', function(){
 			$gnbChild.removeClass('on')
+		});
+		}
 		});
 	});
 </script>
