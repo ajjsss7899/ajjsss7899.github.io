@@ -136,7 +136,7 @@ nav h1 img{width:50px;height:50px;margin:0 auto}
 .case_lst4 {background:url(../images/main_ex_tab04.png) no-repeat;}
 
 
-.case_slider .bx-wrapper .bx-prev{width: 23px;height: 41px;background: url(../images/btn_slide_prev01.png) 0 0 no-repeat;left:-10px;background-size: 23px;}
+.case_slider .bx-wrapper .bx-prev{width: 23px;height: 41px;background: url(../images/btn_slide_prev01.png) 0 0 no-repeat;left:-10px;background-size: cover;}
 .case_slider img{width: 100%;}
 
 /* 639px 사례 */
