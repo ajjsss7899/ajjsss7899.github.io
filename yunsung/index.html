@@ -5,12 +5,12 @@
 <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
 <title></title>
 <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/slick.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/background_size_emu.js"></script>
-<![endif]-->
+<script type="text/javascript" src="js/slick.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5shiv.min.js"></script>
 <![endif]-->
@@ -128,47 +128,301 @@
 </div>
 <section class="case">
 	<ul class="case_lst">
-	<li class="on"><a href="javascript:return false;"><span class="case_lst1"></span>완공사례</a></li>
-	<li><a href="javascript:return false;"><span class="case_lst2"></span>설계사례</a></li>
-	<li><a href="javascript:return false;"><span class="case_lst3"></span>시공현장 LIVE</a></li>
-	<li><a href="javascript:return false;"><span class="case_lst4"></span>사후관리현장</a></li>
+	<li class="on" data-mostrar="case1"><a href="#none"><span class="case_lst1"></span>완공사례</a></li>
+	<li data-mostrar="case2"><a href="#none"><span class="case_lst2"></span>설계사례</a></li>
+	<li data-mostrar="case3"><a href="#none"><span class="case_lst3"></span>시공현장 LIVE</a></li>
+	<li data-mostrar="case4"><a href="#none"><span class="case_lst4"></span>사후관리현장</a></li>
 	</ul>
-	<div class="case_slider">
-		<ul class="bxslider">
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-			<li>
-				<p><a href="#"><img src="images/case01.png" alt=""></a></p>
-			</li>
-		</ul>
+	<div class="case_slider" id="case1">
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case01.png" alt="경인 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경인 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 124.96㎡ (37.8py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case02.png" alt="전남 여수 웅천동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">전남 여수 웅천동 주택</p>
+				<p class="txt2">[모던] 206.27㎡ (62.39py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case03.png" alt="경기 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 130.82㎡(39.59py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case04.png" alt="경북 상주 송지리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 상주 송지리 주택</p>
+				<p class="txt2">[지중해] 173.18 ㎡( 52.38평)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case05.png" alt="서울 은평구 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">서울 은평구 주택</p>
+				<p class="txt2">[플래티늄] 179.34㎡ (54.25py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case06.png" alt="대전 문창동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">대전 문창동 주택</p>
+				<p class="txt2">[모던] 124.88㎡ (37.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case07.jpg" alt="경북 경주 괘릉리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 경주 괘릉리 주택</p>
+				<p class="txt2">[지중해] 111.66㎡ (33.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case08.jpg" alt="경기 용인 방아리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 방아리 주택</p>
+				<p class="txt2">[모던] 120.02㎡ (36.31py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case09.jpg" alt="경기 용인 상현동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 상현동 주택</p>
+				<p class="txt2">[모던] 213.10㎡ (64.46py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case10.jpg" alt="충남 서산 부산리 주택 사진"></a></p>
+			<div class="case_txt">
+			<p class="txt1">충남 서산 부산리 주택</p>
+			<p class="txt2">[내추럴] 178.06㎡ (53.84py)</p>
+			</div>
+		</div>
 	</div>
-
+	<div class="case_slider" id="case2">
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case01.png" alt="경인 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경인 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 124.96㎡ (37.8py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case02.png" alt="전남 여수 웅천동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">전남 여수 웅천동 주택</p>
+				<p class="txt2">[모던] 206.27㎡ (62.39py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case03.png" alt="경기 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 130.82㎡(39.59py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case04.png" alt="경북 상주 송지리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 상주 송지리 주택</p>
+				<p class="txt2">[지중해] 173.18 ㎡( 52.38평)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case05.png" alt="서울 은평구 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">서울 은평구 주택</p>
+				<p class="txt2">[플래티늄] 179.34㎡ (54.25py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case06.png" alt="대전 문창동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">대전 문창동 주택</p>
+				<p class="txt2">[모던] 124.88㎡ (37.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case07.jpg" alt="경북 경주 괘릉리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 경주 괘릉리 주택</p>
+				<p class="txt2">[지중해] 111.66㎡ (33.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case08.jpg" alt="경기 용인 방아리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 방아리 주택</p>
+				<p class="txt2">[모던] 120.02㎡ (36.31py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case09.jpg" alt="경기 용인 상현동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 상현동 주택</p>
+				<p class="txt2">[모던] 213.10㎡ (64.46py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case10.jpg" alt="충남 서산 부산리 주택 사진"></a></p>
+			<div class="case_txt">
+			<p class="txt1">충남 서산 부산리 주택</p>
+			<p class="txt2">[내추럴] 178.06㎡ (53.84py)</p>
+			</div>
+		</div>
+	</div>
+	<div class="case_slider" id="case3">
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case01.png" alt="경인 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경인 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 124.96㎡ (37.8py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case02.png" alt="전남 여수 웅천동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">전남 여수 웅천동 주택</p>
+				<p class="txt2">[모던] 206.27㎡ (62.39py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case03.png" alt="경기 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 130.82㎡(39.59py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case04.png" alt="경북 상주 송지리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 상주 송지리 주택</p>
+				<p class="txt2">[지중해] 173.18 ㎡( 52.38평)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case05.png" alt="서울 은평구 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">서울 은평구 주택</p>
+				<p class="txt2">[플래티늄] 179.34㎡ (54.25py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case06.png" alt="대전 문창동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">대전 문창동 주택</p>
+				<p class="txt2">[모던] 124.88㎡ (37.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case07.jpg" alt="경북 경주 괘릉리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 경주 괘릉리 주택</p>
+				<p class="txt2">[지중해] 111.66㎡ (33.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case08.jpg" alt="경기 용인 방아리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 방아리 주택</p>
+				<p class="txt2">[모던] 120.02㎡ (36.31py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case09.jpg" alt="경기 용인 상현동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 상현동 주택</p>
+				<p class="txt2">[모던] 213.10㎡ (64.46py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case10.jpg" alt="충남 서산 부산리 주택 사진"></a></p>
+			<div class="case_txt">
+			<p class="txt1">충남 서산 부산리 주택</p>
+			<p class="txt2">[내추럴] 178.06㎡ (53.84py)</p>
+			</div>
+		</div>
+	</div>
+	<div class="case_slider" id="case4">
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case01.png" alt="경인 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경인 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 124.96㎡ (37.8py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case02.png" alt="전남 여수 웅천동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">전남 여수 웅천동 주택</p>
+				<p class="txt2">[모던] 206.27㎡ (62.39py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case03.png" alt="경기 용인 고기동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 고기동 주택</p>
+				<p class="txt2">[플래티늄] 130.82㎡(39.59py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case04.png" alt="경북 상주 송지리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 상주 송지리 주택</p>
+				<p class="txt2">[지중해] 173.18 ㎡( 52.38평)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case05.png" alt="서울 은평구 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">서울 은평구 주택</p>
+				<p class="txt2">[플래티늄] 179.34㎡ (54.25py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case06.png" alt="대전 문창동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">대전 문창동 주택</p>
+				<p class="txt2">[모던] 124.88㎡ (37.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case07.jpg" alt="경북 경주 괘릉리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경북 경주 괘릉리 주택</p>
+				<p class="txt2">[지중해] 111.66㎡ (33.78py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case08.jpg" alt="경기 용인 방아리 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 방아리 주택</p>
+				<p class="txt2">[모던] 120.02㎡ (36.31py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case09.jpg" alt="경기 용인 상현동 주택 사진"></a></p>
+			<div class="case_txt">
+				<p class="txt1">경기 용인 상현동 주택</p>
+				<p class="txt2">[모던] 213.10㎡ (64.46py)</p>
+			</div>
+		</div>
+		<div class="case_slider_area">
+			<p><a href="#"><img src="images/case10.jpg" alt="충남 서산 부산리 주택 사진"></a></p>
+			<div class="case_txt">
+			<p class="txt1">충남 서산 부산리 주택</p>
+			<p class="txt2">[내추럴] 178.06㎡ (53.84py)</p>
+			</div>
+		</div>
+	</div>
 </section>
+<div class="pink"></div>
 <!-- gnb script -->
 <script type="text/javascript">
 	$(function(){
@@ -249,14 +503,52 @@
 		tab.addClass("on").siblings(".on").removeClass("on");
 	});
 </script>
-<!-- case 시공사례 탭메뉴 -->
 <script type="text/javascript">
-$('.case_slider .bxslider').bxSlider({
-  minSlides: 5,
-  maxSlides: 5,
-  slideWidth: 232,
-  slideMargin: 10
-});
+	$(document).ready(function(e){
+		$('.case_slider').hide().filter(':first').show();
+		$('.case_lst li[data-mostrar]').on('click', function(){
+				$('.case_lst li[data-mostrar]').removeClass('active');
+				$('.case_slider').hide();
+				var mostrar = $(this).data('mostrar');
+				$(this).addClass('active');
+				$('#' + mostrar).show();
+
+		});
+	});
 </script>
+<!-- case 시공사례 슬라이드 -->
+ <script type="text/javascript">
+    $(document).ready(function(){
+      $('.case_slider').slick({
+  infinite: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  responsive:[
+  {
+	breakpoint: 1040,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+  },
+   {
+      breakpoint: 657,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 437,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+    });
+       });
+  </script>
 </body>
 </html>
