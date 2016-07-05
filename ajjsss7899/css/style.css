@@ -28,7 +28,6 @@ body,a{font-family:'Nanum Gothic';letter-spacing:-1px}
 .case_txt .txt1{margin-top:16px;font-size:14px;color:#5e5c57}
 .case_txt .txt2{margin-top:5px;font-size:13px;color:#5e5c57}
 .case_slider{margin-top:30px}
-
 /* 639px case 사례 */
 @media all and (max-width: 639px){
 .case{margin-top:40px}
