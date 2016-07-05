@@ -1,0 +1,38 @@
+@charset "euc-kr";
+@import url("reset.css");
+@import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+*{box-sizing:border-box}
+body{overflow-x:hidden}
+body,a{font-family:'Nanum Gothic';letter-spacing: -1px;}
+.blind{overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
+
+
+/*  case 사례 */
+.case{margin-top:80px;overflow: hidden;}
+.case_slider_wrap{padding: 0 45px;}
+.case_lst{width: 397px;margin: 0 auto;overflow: hidden;}
+.case_lst li{float:left;width:25%;text-align:center}
+.case_lst li.on a{color: #333;}
+.case_lst li.on span{background-position: center bottom;}
+.case_lst a{font-size:13px;line-height:13px;color:#888;}
+.case_lst span{display: block;margin: 0 auto;margin-bottom: 10px;width: 50px;height: 50px;background-position: center top;background-size:50px auto;}
+.case_lst1 {background:url(../images/main_ex_tab01.png) no-repeat;}
+.case_lst2 {background:url(../images/main_ex_tab02.png) no-repeat;}
+.case_lst3 {background:url(../images/main_ex_tab03.png) no-repeat;}
+.case_lst4 {background:url(../images/main_ex_tab04.png) no-repeat;}
+.case_slider {width: 1210px;max-width: 100%;margin: 0 auto;}
+.case_slider .slick-prev, .case_slider .slick-next{background: #000;}
+.case_slider_area{margin: 0 5px}
+.case_slider_area img{width: 100%;}
+.case_slider_area a{display: block;}
+.case_txt{border: 1px solid #e1dcd6;height: 68px;border-top: none;text-align: center;overflow: hidden;}
+.case_txt .txt1{font-size: 14px;color: #5e5c57;margin-top: 16px;}
+.case_txt .txt2{font-size: 13px;color: #5e5c57;margin-top: 5px;}
+.case_slider{margin-top: 30px;}
+/* 639px case 사례 */
+@media all and (max-width: 639px){
+.case{margin-top: 40px;}
+.case_lst{width: auto;}
+.case_lst li{width:25%;}
+.case_lst span{margin-bottom: 10px;width: 25px;height: 25px;background-size:25px auto;}
+}
