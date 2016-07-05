@@ -312,20 +312,13 @@
 </section>
 <!-- case 시공사례 탭메뉴 -->
 <script type="text/javascript">
-	$(".case_lst > li").on('click', function(){
-		var tab = $(this);
-		if(tab.hasClass("on"));
-		tab.addClass("on").siblings(".on").removeClass("on");
-	});
-</script>
-<script type="text/javascript">
 	$(document).ready(function(e){
 		$('.case_slider').hide().filter(':first').show();
 		$('.case_lst li[data-mostrar]').on('click', function(){
-				$('.case_lst li[data-mostrar]').removeClass('active');
+				$('.case_lst li[data-mostrar]').removeClass('on');
 				$('.case_slider').hide();
 				var mostrar = $(this).data('mostrar');
-				$(this).addClass('active');
+				$(this).addClass('on');
 				$('#' + mostrar).show();
 		});
 	})
