@@ -2,7 +2,7 @@
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 *{box-sizing:border-box}
-body{overflow-x:hidden}
+html, body{overflow-x:hidden}
 body,a{font-family:'Nanum Gothic';letter-spacing:-1px}
 .blind{overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
 
@@ -102,7 +102,7 @@ nav h1 img{width: 50px;margin: 0 auto;}
 }
 
 /* main_vis */
-.main_vis{left:50%;height:770px;margin-left:-951.5px;margin-top:-41px;overflow-x:hidden}
+.main_vis{left:50%;height:770px;margin-left:-951.5px;margin-top:-41px}
 .main_vis .slick-dots{display:inline;position:relative;left:892px;bottom:638px;z-index:1000}
 .main_vis .slick-dots li{width:14px;height:14px}
 .main_vis .slick-dots li button{width:14px;height:14px;background:url(../images/main_vis_dots1.png) no-repeat;background-position:center top}
