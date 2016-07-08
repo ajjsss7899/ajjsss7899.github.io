@@ -65,9 +65,8 @@ header{width:100%;margin:0}
 .m_nav.on{position:fixed;}
 nav{overflow:visible;clear:both;/* position:static; */width:auto}
 nav.on{position:static}
-nav h1{position:fixed;width:100%;height:51px;z-index:1003;}
-nav h1 a{display:block;position:fixed;z-index:1000;z-index:1001;width:100%;height:51px;background:#454345}
-nav h1 img{width:50px;height:50px;margin:0 auto}
+nav h1{position:fixed;width: 100%;z-index:1002;}
+nav h1 a{height:51px;background:#454345;width: 100%;display: block;}
 .gnb{display:block;display:none;overflow:visible;overflow:auto;width:270px;height:100%;margin:0;padding-bottom:100px;background:#302f30}
 .gnb.on{display:block}
 .gnb a{display:block;width:100%;padding:14px 0 14px 32px;border-bottom:1px solid #03070c;line-height:1;font-size:15px;font-weight:bold;color:#919191;text-align:left}
