@@ -117,9 +117,7 @@ nav h1 img{width: 50px;margin: 0 auto;}
 
 /* 639px main_vis */
 @media all and (max-width: 639px){
-	   body {
-        overflow-x: hidden;
-    }
+	body{overflow: hidden!important;}
 .main_vis{height:385px;margin-left:-476px}
 .main_vis img{height:385px!important;}
 }
