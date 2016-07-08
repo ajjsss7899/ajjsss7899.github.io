@@ -102,6 +102,7 @@ nav h1 img{width: 50px;margin: 0 auto;}
 }
 
 /* main_vis */
+.main_vis_wrap{overflow: hidden;}
 .main_vis{left:50%;height:770px;margin-left:-951.5px;margin-top:-41px;width: 1903;}
 .main_vis .slick-dots{display:inline;position:relative;left:892px;bottom:638px;z-index:1000}
 .main_vis .slick-dots li{width:14px;height:14px}
@@ -117,7 +118,6 @@ nav h1 img{width: 50px;margin: 0 auto;}
 
 /* 639px main_vis */
 @media all and (max-width: 639px){
-	body{overflow: hidden!important;}
 .main_vis{height:385px;margin-left:-476px}
 .main_vis img{height:385px!important;}
 }
