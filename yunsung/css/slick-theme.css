@@ -38,7 +38,7 @@
 
     color: transparent;
     border: none;
-    outline: none;
+   /* outline: none;*/
     background: transparent;
 }
 /*.slick-prev:hover,
@@ -162,13 +162,13 @@
 
     color: transparent;
     border: 0;
-    outline: none;
+    /*outline: none;*/
     background: transparent;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
-    outline: none;
+    /*outline: none;*/
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
@@ -188,7 +188,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    /*content: '•';*/
     text-align: center;
 
     opacity: .25;
