@@ -78,6 +78,7 @@ nav h1 img{width:50px;margin:0 auto}
 .gnb > li > ul{height:auto;border:0}
 .gnb > li:first-child > ul{border:0}
 .gnb > li > ul > li > a{margin:0;border:0;background:#1b2126;line-height:1;font-size:13px;color:#fff}
+.gnb > li > ul > li > a:hover{color:#fff}
 .srch{position:static}
 .gnb > .bdr1{border:0}
 .gnb > li > ul{display:none}
