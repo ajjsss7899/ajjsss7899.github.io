@@ -607,8 +607,7 @@
 </script>
 <!-- gnb fixed -->
 <script type="text/javascript">
-	$(window).resize(function(){
-		if ($(window).width() > 1023) {
+
 		$(window).scroll(function(){
 			if($(window).scrollTop() >=40){
 				$("nav").addClass("on");
@@ -617,17 +616,7 @@
 				$("nav").removeClass("on");
 			}
 		});
-	}else{
-	$(window).scroll(function(){
-			if($(window).scrollTop() >=40){
-				$("nav").removeClass("on");
-			}
-			else{
-				$("nav").removeClass("on");
-			}
-		});
-	}
-	});
+
 </script>
 <!-- main_vis script -->
 <script type="text/javascript">
