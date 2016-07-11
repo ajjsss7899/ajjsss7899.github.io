@@ -594,12 +594,12 @@
 <script type="text/javascript">
 	$(function(){
 		$(".sitemap").on("click", function(){
-			$("body").css({overflow:'hidden'});
+			$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
 			$(".m_nav, .util_menu").animate({left:270}, 300);
 			$(".m_nav, .util_menu, .gnb").addClass("on");
 		});
 		$(".close").on("click", function(){
-			$("body").css({overflow:'visible'});
+			$("body").unbind('touchmove');
 			$(".m_nav, .util_menu").animate({left:0}, 300);
 			setTimeout(function(){
 			$(".m_nav, .util_menu, .gnb").removeClass("on");
