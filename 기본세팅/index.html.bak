@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<style>
+.box_wrap{width: 100%;height: 600px;position: relative;background: #000;overflow: hidden;}
+.red_box{background: url(http://110.11.96.76/ft/img/main.jpg) 0 0 no-repeat;width: 1920px;height:600px;position: absolute;left:50%;margin-left: -960px;}
+.pink_box{width: 100%;height: 300px;background: pink;}
+</style>
+</head>
+<body>
+<div class="box_wrap">
+<div class="red_box"></div>
+</div>
+<div class="pink_box"></div>
+</body>
+</html>
