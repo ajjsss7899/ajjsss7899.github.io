@@ -654,14 +654,13 @@
 		$(".sitemap").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:270}, 300);
 			$(".m_nav, .util_menu, .gnb").addClass("on");
-			$("html,body").addClass("scroll");
+			$(document).delegate('.ui-content', 'touchmove', false);
 		});
 		$(".close").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:0}, 300);
 			setTimeout(function(){
 			$(".m_nav, .util_menu, .gnb").removeClass("on");
 			},300);
-			$("html,body").removeClass("scroll");
 		});
 	});
 </script>

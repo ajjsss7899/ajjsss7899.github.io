@@ -5,7 +5,6 @@
 body{overflow-x:hidden}
 body,a,input,label{font-family:'Nanum Gothic';letter-spacing:-1px}
 .blind{overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
-.scroll{overflow-y:hidden;height:100%}
 
 /* util_menu */
 @media all and (max-width: 1220px){
