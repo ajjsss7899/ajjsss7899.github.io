@@ -618,7 +618,7 @@
 		$(window).resize(function(){
 		var $gnbWrap = $('.gnb'),
 			$gnbChild = $('.gnb > li > ul');
-		if ($(window).width() > 1023) {
+		if ($(window).width() > 1005) {
 		$gnbWrap.on('mouseenter focusin', function(){
 			$gnbChild.addClass('on'),
 			$gnbWrap.css("border-bottom"," 1px solid #c6c6c6")
@@ -662,31 +662,19 @@
 			$(".m_nav, .util_menu, .gnb").removeClass("on");
 			},300);
 			$("html,body").removeClass("scroll");
+
 		});
 	});
 </script>
 <!-- gnb fixed -->
 <script type="text/javascript">
-	$(window).resize(function(){
-		if ($(window).width() > 1023) {
-		$(window).scroll(function(){
-			if($(window).scrollTop() >=40){
-				$("nav").addClass("on");
-			}
-			else{
-				$("nav").removeClass("on");
-			}
-		});
-	}else{
 	$(window).scroll(function(){
-			if($(window).scrollTop() >=40){
-				$("nav").removeClass("on");
-			}
-			else{
-				$("nav").removeClass("on");
-			}
-		});
-	}
+		if($(window).scrollTop() >=40){
+			$("nav").addClass("on");
+		}
+		else{
+			$("nav").removeClass("on");
+		}
 	});
 </script>
 <!-- main_vis script -->
