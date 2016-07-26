@@ -612,6 +612,7 @@
 		</div>
 	</div>
 </footer>
+<div class="dark"></div>
 <!-- gnb script -->
 <script type="text/javascript">
 	$(function(){
@@ -653,13 +654,13 @@
 	$(function(){
 		$(".sitemap").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:270}, 300);
-			$(".m_nav, .util_menu, .gnb").addClass("on");
+			$(".m_nav, .util_menu, .gnb, .dark").addClass("on");
 			$("html,body").addClass("scroll");
 		});
-		$(".close").on("click", function(){
+		$(".close, .dark").on("click", function(){
 			$(".m_nav, .util_menu").animate({left:0}, 300);
 			setTimeout(function(){
-			$(".m_nav, .util_menu, .gnb").removeClass("on");
+			$(".m_nav, .util_menu, .gnb, .dark").removeClass("on");
 			},300);
 			$("html,body").removeClass("scroll");
 
