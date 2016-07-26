@@ -7,13 +7,18 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5shiv.min.js"></script>
 <![endif]-->
 </head>
 <body>
+<!-- 본문 바로가기 -->
+<a href="#main_vis_wrap" class="skip">본문 바로가기</a>
+<!-- header -->
 <header>
 	<div class="header_section">
 		<!-- util_menu -->
@@ -106,6 +111,7 @@
 				<div class="srch"><a href="#"><img src="images/btn_header_search.png" alt="시공사례 검색"></a></div>
 			</div>
 		</nav>
+		<!-- 건축 상담신청 -->
 		<div class="request">
 			<ul>
 			<li class="request1"><a href="#">건축상담</a></li>
@@ -116,7 +122,8 @@
 		</div>
 	</div>
 </header>
-<div class="main_vis_wrap">
+<!-- 메인 슬라이드 -->
+<div class="main_vis_wrap" id="main_vis_wrap">
 	<div class="main_vis">
 		<div class="main_vis_area"><a href="#"><img src="images/f288e7b78.jpg" alt="NH농협과 전략적 제휴를 통한 예비 건축주 지원 [All 바른 금융] 서비스 자세히보기"></a></div>
 		<div class="main_vis_area"><a href="#"><img src="images/f5586d8dc.jpg" alt="소통 : [윤성하우징과 건축주와의 소통] 목조주택가이드북 vol.8 발간 무료 신청 바로가기"></a></div>
@@ -125,6 +132,7 @@
 		<div class="main_vis_area"><a href="#"><img src="images/ff4a20dd4.png" alt="All 바른 생각, All 바른 공간 윤성하우징이 지은 집, 공가느 사람에 대한 이야기"></a></div>
 	</div>
 </div>
+<!-- 건축 사례 -->
 <section class="case">
 	<ul class="case_lst">
 	<li data-mostrar="case_tab1" class="on"><a href="#none"><span class="case_lst1"></span>완공사례</a></li>
@@ -393,6 +401,7 @@
 		</div>
 	</div>
 </section>
+<!-- contents1 -->
 <section class="contents1_wrap">
 	<div class="contents1">
 		<article class="contents1_area1">
@@ -523,6 +532,7 @@
 		</article>
 	</div>
 </section>
+<!-- contents2 -->
 <section class="contents2_wrap">
 	<div class="contents2">
 		<a href="#"><img src="images/home_vis.jpg" alt="theHome - 내 소중한 가족을 위한 가장 가치있는 선택 - 더 홈 시리즈 1탄 폴라리스"></a>
@@ -545,7 +555,7 @@
 		<li class="contents3_lst3">
 			<a href="#">
 				<h3>지중해 (Mediterranee)</h3>
-				<p>유럽의 프로방스를 옮겨놓은 듯한<br>고풍스러운 느낌의 주택</p></a>
+				<p>유럽의 프로방스를 옮겨놓은 듯한<br>고풍스러운 느낌의 주택</p>
 			</a>
 		</li>
 		<li class="contents3_lst4">
@@ -557,6 +567,7 @@
 		</ul>
 	</div>
 </section>
+<!-- footer -->
 <footer>
 	<div class="footer_wrap">
 		<p class="footer_logo"><img src="images/footer_logo.gif" alt="하단 윤성하우징 로고"></p>
@@ -581,7 +592,7 @@
 			</ul>
 		</div>
 		<div class="input_request">
-			<form action="" method="post">
+			<form action="#" method="post">
 				<fieldset>
 					<legend class="blind">상담신청</legend>
 					<div class="input_request_area">
@@ -613,71 +624,6 @@
 	</div>
 </footer>
 <div class="dark"></div>
-<!-- gnb script -->
-<script type="text/javascript">
-	$(function(){
-		$(window).resize(function(){
-		var $gnbWrap = $('.gnb'),
-			$gnbChild = $('.gnb > li > ul');
-		if ($(window).width() > 1005) {
-		$gnbWrap.on('mouseenter focusin', function(){
-			$gnbChild.addClass('on'),
-			$gnbWrap.css("border-bottom"," 1px solid #c6c6c6")
-		});
-		$gnbWrap.on('mouseleave', function(){
-			$gnbChild.removeClass('on'),
-			$gnbWrap.css("border-bottom"," 1px solid #e1e1e1")
-		});
-		$('.srch').on('focusin', function(){
-			$gnbChild.removeClass('on')
-		});
-		}else{
-		$gnbWrap.on('mouseenter focusin', function(){
-			$gnbChild.removeClass('on')
-		});
-		$('.srch').on('focusin', function(){
-			$gnbChild.removeClass('on')
-		});
-		}
-		}).resize();
-	});
-</script>
-<!-- 모바일 gnb script -->
-<script type="text/javascript">
-	$(".gnb > li").on('click', function(){
-		var tab = $(this);
-		if(tab.hasClass("on"));
-		tab.addClass("on").siblings(".on").removeClass("on");
-	});
-</script>
-<script type="text/javascript">
-	$(function(){
-		$(".sitemap").on("click", function(){
-			$(".m_nav, .util_menu").animate({left:270}, 300);
-			$(".m_nav, .util_menu, .gnb, .dark").addClass("on");
-			$("html,body").addClass("scroll");
-		});
-		$(".close, .dark").on("click", function(){
-			$(".m_nav, .util_menu").animate({left:0}, 300);
-			setTimeout(function(){
-			$(".m_nav, .util_menu, .gnb, .dark").removeClass("on");
-			},300);
-			$("html,body").removeClass("scroll");
-
-		});
-	});
-</script>
-<!-- gnb fixed -->
-<script type="text/javascript">
-	$(window).scroll(function(){
-		if($(window).scrollTop() >=40){
-			$("nav").addClass("on");
-		}
-		else{
-			$("nav").removeClass("on");
-		}
-	});
-</script>
 <!-- main_vis script -->
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -697,11 +643,11 @@
 	$(document).ready(function(e){
 		$('.case_slider').hide().filter(':first').show();
 		$('.case_lst li[data-mostrar]').on('click', function(){
-				$('.case_lst li[data-mostrar]').removeClass('on');
-				$('.case_slider').hide();
-				var mostrar = $(this).data('mostrar');
-				$(this).addClass('on');
-				$('#' + mostrar).show();
+			$('.case_lst li[data-mostrar]').removeClass('on');
+			$('.case_slider').hide();
+			var mostrar = $(this).data('mostrar');
+			$(this).addClass('on');
+			$('#' + mostrar).show();
 		});
 	})
 	$(function(){
@@ -713,67 +659,67 @@
 <!-- case 시공사례 슬라이드 -->
 <script type="text/javascript">
 	$(document).ready(function(){
-	  $('.case_slider').slick({
-  infinite: false,
-  speed: 300,
-  slidesToShow: 5,
-  slidesToScroll: 5,
-  responsive:[
-  {
-	breakpoint: 1040,
-	  settings: {
+		$('.case_slider').slick({
+		infinite: false,
+		speed: 300,
+		slidesToShow: 5,
+		slidesToScroll: 5,
+		responsive:[
+		{
+		breakpoint: 1040,
+		settings: {
 		slidesToShow: 3,
 		slidesToScroll: 3
-	  }
-  },
-   {
-	  breakpoint: 657,
-	  settings: {
+		}
+		},
+		{
+		breakpoint: 657,
+		settings: {
 		slidesToShow: 2,
 		slidesToScroll: 2
-	  }
-	},
-	{
-	  breakpoint: 437,
-	  settings: {
+		}
+		},
+		{
+		breakpoint: 437,
+		settings: {
 		slidesToShow: 1,
 		slidesToScroll: 1
-	  }
-	}
-  ]
+		}
+		}
+		]
+		});
 	});
-	   });
 </script>
 <!-- contents1 탭메뉴 -->
 <script type="text/javascript">
 	$(function(e){
 		$('.contents1_area1 .contents1_txt').hide().filter(':first').show();
 		$('.contents1_area1 .contents1_lst li[data-mostrar]').on('click', function(){
-				$('.contents1_area1 .contents1_lst li[data-mostrar]').removeClass('on');
-				$('.contents1_area1 .contents1_txt').hide();
-				var mostrar = $(this).data('mostrar');
-				$(this).addClass('on');
-				$('#' + mostrar).show();
+			$('.contents1_area1 .contents1_lst li[data-mostrar]').removeClass('on');
+			$('.contents1_area1 .contents1_txt').hide();
+			var mostrar = $(this).data('mostrar');
+			$(this).addClass('on');
+			$('#' + mostrar).show();
 		});
 	})
 	$(function(e){
 		$('.contents1_area2 .contents1_txt').hide().filter(':first').show();
 		$('.contents1_area2 .contents1_lst li[data-mostrar]').on('click', function(){
-				$('.contents1_area2 .contents1_lst li[data-mostrar]').removeClass('on');
-				$('.contents1_area2 .contents1_txt').hide();
-				var mostrar = $(this).data('mostrar');
-				$(this).addClass('on');
-				$('#' + mostrar).show();
+			$('.contents1_area2 .contents1_lst li[data-mostrar]').removeClass('on');
+			$('.contents1_area2 .contents1_txt').hide();
+			var mostrar = $(this).data('mostrar');
+			$(this).addClass('on');
+			$('#' + mostrar).show();
 		});
 	})
 	$(function(e){
 		$('.contents1_area3 .contents1_txt').hide().filter(':first').show();
 		$('.contents1_area3 .consulting_lst li[data-mostrar]').on('click', function(){
-				$('.contents1_area3 .consulting_lst li[data-mostrar]').removeClass('on');
-				$('.contents1_area3 .contents1_txt').hide();
-				var mostrar = $(this).data('mostrar');
-				$(this).addClass('on');
-				$('#' + mostrar).show();
+			$('.contents1_area3 .consulting_lst li[data-mostrar]').removeClass('on');
+			$('.contents1_area3 .contents1_txt').hide();
+			var mostrar = $(this).data('mostrar');
+			$(this).addClass('on');
+			$('#' + mostrar).show();
 		});
 	})
 </script>
