@@ -200,15 +200,32 @@
 .about p strong{margin-right:0}
 }
 
+
 /* 브랜드소개 */
-@media all and (max-width: 640px){
+
 .brand h2{width: 236px;margin: 55px auto 0 auto;}
 .brand h2 img{width: 100%;}
 .brand h3 {margin-top: 11px;text-align: center;font-size: 18px;color: #a6854a;letter-spacing: normal;font-family: 'Roboto', sans-serif;}
 .brand p{line-height: 25px;font-size: 14px;color: #444;text-align: center;}
-.brand_list{font-size: 0;}
-.brand_list li{font-size: 14px;float: left;border: 1px solid #000;border-top: 0;width: 50%;}
+.brand_list{max-width: 1001px;margin: 0 auto;padding: 0 10px;overflow: hidden;margin-top: 19px;}
+.brand_list li{font-size: 14px;float: left;border: 1px solid #e1dcd6;border-top: 0;border-right: 0;width: 25%;}
+.brand_list li:last-child{border-right: 1px solid #e1dcd6;}
+.brand .tit {height: 65px;background: #fbfaf9;}
+.brand .tit p{padding-top: 15px;color: #fff;font-size: 12px;font-family: 'Roboto', sans-serif;line-height: 1;letter-spacing: normal;}
+.brand .tit p strong{padding-top: 5px;font-size: 18px;font-weight: 700;display: block;}
+.brand .tit1{background: #9cc729;}
+.brand .tit2{background: #e85363;}
+.brand .tit3{background: #58c2e0;}
+.brand .tit4{background: #f1961b;}
+.brand_list .txt{min-height: 217px;}
+.brand_list .txt p{margin-top: -4px;text-align: left;line-height: 20px;font-size: 13px;padding: 15px;color: #888;}
+.brand_list .txt p strong{font-size: 14px;color: #444;font-weight: bold;margin-bottom: 2px;display: inline-block;}
 
-.brand_list li:first-child{}
-
+@media all and (max-width: 640px){
+.brand h2{width: 236px;margin: 55px auto 0 auto;}
+.brand h3 {margin-top: 11px;}
+.brand_list{margin-top: 19px;}
+.brand_list li{width: 50%;border-right: 1px solid #e1dcd6;}
+.brand_list li:nth-child(odd){border-right: 0;}
+.brand_list .txt{min-height: auto}
 }
