@@ -1,5 +1,5 @@
 @charset "euc-kr";
-@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 /* ******* */
 /* 메인페이지 */
 /* ****** */
@@ -177,19 +177,20 @@
 .about h2{width:320px;margin:0 auto;padding-top:180px}
 .about h2 img{width:100%}
 .about .title{display:block;float:right;width:61px;height:22px;margin-top:108px}
-.about p{clear:both;padding:20px 0 0;font-size:14px;line-height:22px;font-weight:bold;color:#8e8e8e;text-align:right}
+.about p{clear:both;padding:20px 0 0 0;font-size:14px;line-height:22px;font-weight:bold;color:#8e8e8e;text-align:right}
 .about p span{display:block;margin-top:15px;margin-right:140px}
-.about p strong{display:inline-block;margin:-20px -140px 0 54px;padding:20px 82px 28px 0;background:url(../images/info_txt01.png) 63px 0 no-repeat;font-size:20px}
+.about p strong{display:inline-block;margin: -20px -140px 0 54px;padding:20px 82px 28px 0;background:url(../images/info_txt01.png) 63px 0 no-repeat;font-size:20px}
 
 @media all and (max-width: 1023px){
-.about_wrap{margin-top:0}
+.about_wrap{margin-top:0px;}
 }
 
 @media all and (max-width: 900px){
+
 .about_area{margin-right:0}
 .about{padding-bottom:51px}
 .about h2{padding-top:180px}
-.about .title{float:none;clear:both;margin:56px auto 0}
+.about .title{clear: both;margin:56px auto 0 auto;float:none;}
 .about p{margin-top:20px;padding:0 10px;text-align:center}
 }
 
@@ -203,43 +204,35 @@
 .about p strong{margin-right:0}
 }
 
+
 /* 브랜드소개 */
-.brand h2{width:472px;margin:110px auto 0}
-.brand h2 img{width:100%}
-.brand h3{margin-top:27px;font-size:24px;font-family:'Roboto',sans-serif;color:#a6854a;letter-spacing:normal;text-align:center}
-.brand .mt19{margin-top:19px}
-.brand p{line-height:25px;font-size:16px;color:#444;text-align:center}
-.brand_list{overflow:hidden;max-width:1001px;margin:0 auto;margin-top:46px;padding:0 10px}
-.brand_list li{float:left;width:25%;border:1px solid #e1dcd6;border-top:0;border-right:0;background:#fbfaf9;font-size:14px}
-.brand_list li:last-child{border-right:1px solid #e1dcd6}
-.brand .tit{height:65px;background:#fbfaf9}
-.brand .tit p{padding-top:15px;font-size:12px;font-family:'Roboto',sans-serif;line-height:1;color:#fff;letter-spacing:normal}
-.brand .tit p strong{display:block;padding-top:5px;font-size:18px;font-weight:700}
-.brand .tit1{background:#9cc729}
-.brand .tit2{background:#e85363}
-.brand .tit3{background:#58c2e0}
-.brand .tit4{background:#f1961b}
-.brand_list .txt{min-height:217px}
-.brand_list .txt p{margin-top:-4px;padding:15px;line-height:20px;font-size:13px;color:#888;text-align:left}
-.brand_list .txt p strong{display:inline-block;margin-bottom:2px;font-size:14px;font-weight:bold;color:#444}
+
+.brand h2{width: 472px;margin: 110px auto 0 auto;}
+.brand h2 img{width: 100%;}
+.brand h3 {margin-top: 27px;text-align: center;font-size: 24px;color: #a6854a;letter-spacing: normal;font-family: 'Roboto', sans-serif;}
+.brand .mt19{margin-top: 19px;}
+.brand p{line-height: 25px;font-size: 16px;color: #444;text-align: center;}
+.brand_list{max-width: 1001px;margin: 0 auto;padding: 0 10px;overflow: hidden;margin-top: 46px;}
+.brand_list li{font-size: 14px;float: left;border: 1px solid #e1dcd6;border-top: 0;border-right: 0;width: 25%;background: #fbfaf9;}
+.brand_list li:last-child{border-right: 1px solid #e1dcd6;}
+.brand .tit {height: 65px;background: #fbfaf9;}
+.brand .tit p{padding-top: 15px;color: #fff;font-size: 12px;font-family: 'Roboto', sans-serif;line-height: 1;letter-spacing: normal;}
+.brand .tit p strong{padding-top: 5px;font-size: 18px;font-weight: 700;display: block;}
+.brand .tit1{background: #9cc729;}
+.brand .tit2{background: #e85363;}
+.brand .tit3{background: #58c2e0;}
+.brand .tit4{background: #f1961b;}
+.brand_list .txt{min-height: 217px;}
+.brand_list .txt p{margin-top: -4px;text-align: left;line-height: 20px;font-size: 13px;padding: 15px;color: #888;}
+.brand_list .txt p strong{font-size: 14px;color: #444;font-weight: bold;margin-bottom: 2px;display: inline-block;}
 
 @media all and (max-width: 640px){
-.brand h2{width:236px;margin:55px auto 0}
-.brand h3{margin-top:11px;font-size:18px}
-.brand .mt19{margin-top:11px}
-.brand p{font-size:14px}
-.brand_list{margin-top:19px}
-.brand_list li{width:50%;border-right:1px solid #e1dcd6}
-.brand_list li:nth-child(odd){border-right:0}
-.brand_list .txt{min-height:auto}
-}
-
-/* 윤성이 걸어온 길 */
-@media all and (max-width: 640px){
-.history{background: #f2eeea;margin-top: 40px;}
-.history h3{text-align: center;font-size: 18px;color: #817059;padding-top: 53px;}
-.tit_wrap{margin: 0 10px;}
-.tit_wrap .tit{font-size: 16px;color: #444;line-height: 22px;margin-top: 27px;}
-.tit_wrap .tit strong{color: #e85363;}
-.tit_wrap .txt{margin: 0 10px;font-size: 14px;color: #666;line-height: 20px;}
+.brand h2{width: 236px;margin: 55px auto 0 auto;}
+.brand h3 {margin-top: 11px;font-size: 18px;}
+.brand .mt19{margin-top: 11px;}
+.brand p{font-size: 14px;}
+.brand_list{margin-top: 19px;}
+.brand_list li{width: 50%;border-right: 1px solid #e1dcd6;}
+.brand_list li:nth-child(odd){border-right: 0;}
+.brand_list .txt{min-height: auto}
 }
