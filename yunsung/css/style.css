@@ -487,5 +487,5 @@
 .map02_cont .close{margin: 20px auto 0 auto;width: 36px;}
 .map02_cont img{width: 100%;}
 @media all and (max-width: 1060px){
-.map02_cont{top:50%;margin:0 48px;left:0;transform: translate(0 , -50%);} 
+.map02_cont{top:50%;margin:0 48px;left:0;transform: translate(0 , -50%);-ms-transform: translate(0 , -50%);-webkit-transform: translate(0 , -50%);} 
 }
