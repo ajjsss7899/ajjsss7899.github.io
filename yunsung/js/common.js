@@ -22,7 +22,7 @@ $(function(){
 		$("html,body").addClass("scroll");
 	});
 	$(".close, .dark").on("click", function(){
-		$(".m_gnb_wrap h1, .util_menu").animate({left:0}, 300);
+		$(".m_gnb, .m_gnb_wrap h1, .util_menu").animate({left:0}, 300);
 		setTimeout(function(){
 		$(".m_gnb_wrap, .util_menu, .dark").removeClass("on");
 		},300);
