@@ -464,9 +464,28 @@
 .recruit01_list li:last-child{display:inline-block}
 }
 
-.box_wrap{margin: -281px 0 0 -500px;position: fixed;top:50%;left:50%;}
-.box{max-width: 1000px;margin: 0 auto;}
-.box img{width: 100%;}
+/* 전시장 소개 */
+.map_wrap{overflow: hidden;padding: 0 10px}
+.map01 h3{width: 105px;height: 24px;margin: 110px auto 0 auto;text-indent: -99999px;background: url(../images/map01_h3.png) 0 0 no-repeat;}
+.map01 .txt{margin-top: 20px;text-align: center;font-size: 14px;line-height: 22px;color: #888;}
+.map01 img{max-width: 1000px;margin: 20px auto 0 auto;width: 100%;}
+.map02_wrap .txt{margin-top: 60px;text-align: center;font-size: 14px;line-height: 20px;color: #888;}
+.map02_wrap .txt span{color: #e85363;}
+.map02 {width: 620px;height: 421px;margin: 20px auto 0;background: url(../images/map02_bg.gif) 0 0 no-repeat;position: relative;}
+.map02_list li{position: absolute;width: 46px;height: 46px;background: url(../images/map02_list_icon1.png) 0 0 no-repeat;text-align: center;line-height: 46px;}
+.map02_list li:hover{background: url(../images/map02_list_icon2.png) 0 0 no-repeat;}
+.map02_list li a{font-size: 24px;font-weight: 700;color: #fff;display: block;}
+.map02_list li:first-child{right: -16px;bottom: 17px;}
+.map02_list li:nth-child(2){right: 185px;bottom: 73px;}
+.map02_list li:nth-child(3){left: 87px;bottom: 73px}
+.map02_list li:nth-child(4){left: 87px;bottom: 164px}
+.map02_list li:nth-child(5){left: 230px;top: 96px;}
+.map02_list li:last-child{right: 93px;top: 50px;}
+.map02_cont{overflow: hidden;position: fixed;top:50%;left:50%;margin: -365px 0 0 -500px;z-index: 1003;}
+.map02_cont .tit01{width: 74px;height: 74px;margin: 0 auto 10px auto;line-height: 74px;font-size: 38px;color: #fff;background: url(../images/map02_list_icon3.png) 0 0 no-repeat;text-align: center;}
+.map02_cont .tit02{font-size: 18px;color: #fff;text-align: center;margin-bottom: 10px;}
+.map02_cont .close{margin: 20px auto 0 auto;width: 36px;}
+.map02_cont img{width: 100%;}
 @media all and (max-width: 1060px){
-.box_wrap{margin: -25% 30px 0 30px;position: fixed;top:50%;left:0;}
+.map02_cont{top:50%;margin:0 48px;left:0;transform: translate(0 , -50%);} 
 }

@@ -510,21 +510,63 @@
 		<img src="../images/map_img.jpg" alt="윤성하우징 전시장 내부 사진">
 	</div>
 	<div class="map02_wrap">
-		<p class="txt">회사 내 2층에 위치한 전시장 내부 배치 안내입니다.<br>각 영역을 클릭하시면 세부 사진을 보실 수 있습니다.</p>
+		<p class="txt">회사 내 2층에 위치한 전시장 내부 배치 안내입니다.<br>각 영역을 <span>클릭</span>하시면 세부 사진을 보실 수 있습니다.</p>
 		<div class="map02">
 			<ul class="map02_list">
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
-				<li><a href="#"></a></li>
+				<li data-mostrar="map02_cont01"><a href="javascript:return false;">A</a></li>
+				<li data-mostrar="map02_cont02"><a href="javascript:return false;">B</a></li>
+				<li data-mostrar="map02_cont03"><a href="javascript:return false;">C</a></li>
+				<li data-mostrar="map02_cont04"><a href="javascript:return false;">D</a></li>
+				<li data-mostrar="map02_cont05"><a href="javascript:return false;">E</a></li>
+				<li data-mostrar="map02_cont06"><a href="javascript:return false;">F</a></li>
+			</ul>
+			<ul class="map02_cont">
+				<li id="map02_cont01">
+					<p class="tit01">A</p>
+					<p class="tit02">바닥제</p>
+					<img src="../images/map02_a.jpg" alt="A구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
+				<li id="map02_cont02">
+					<p class="tit01">B</p>
+					<p class="tit02">외부도어</p>
+					<img src="../images/map02_b.jpg" alt="B구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
+				<li id="map02_cont03">
+					<p class="tit01">C</p>
+					<p class="tit02">외부마감재</p>
+					<img src="../images/map02_c.jpg" alt="C구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
+				<li id="map02_cont04">
+					<p class="tit01">D</p>
+					<p class="tit02">내부마감재</p>
+					<img src="../images/map02_d.jpg" alt="D구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
+				<li id="map02_cont05">
+					<p class="tit01">E</p>
+					<p class="tit02">욕실 및 위생기구</p>
+					<img src="../images/map02_e.jpg" alt="E구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
+				<li id="map02_cont06">
+					<p class="tit01">F</p>
+					<p class="tit02">싱크대</p>
+					<img src="../images/map02_f.jpg" alt="F구역 내부사진">
+					<div class="close"><a href="javascript:return false;"><img src="../images/show_pop_close.png" alt="닫기"></a></div>
+				</li>
 			</ul>
 		</div>
-	</div>
-	<div class="box_wrap">
-	<div class="box">
-	<img src="../images/map02_a.jpg" alt="dd">
+		<ul class="map02_info">
+			<li>바닥제</li>
+			<li>외부도어</li>
+			<li>외부마감재</li>
+			<li>내부마감재</li>
+			<li>욕실 및 위생기구</li>
+			<li>싱크대</li>
+		</ul>
 	</div>
 </div>
 </section>
@@ -611,6 +653,20 @@ $(document).ready(function(e){
 		});
 	});
 </script>
+<script type="text/javascript">
+$(document).ready(function(e){
+	$('.map02_cont li').hide();
+	$('.map02_list li[data-mostrar]').on('click', function(){
+	$('.map02_cont li').hide();
+	$('.dark').addClass('on02')
+	var mostrar = $(this).data('mostrar');
+	$('#' + mostrar).show();
+	});
+	$('.map02_cont li .close').on('click',function(){
+	$('.map02_cont li').hide();
+	$('.dark').removeClass('on02')
+	});
+})
+</script>
 </body>
-
 </html>

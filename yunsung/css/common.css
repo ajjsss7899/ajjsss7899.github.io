@@ -146,3 +146,4 @@ address{text-align:center}
 .submit input{width:100%;height:53px;border:0;background:#e85363;line-height:53px;font-size:15px;font-weight:bold;color:#fff;text-align:center;cursor:pointer}
 }
 .dark.on{position:fixed;top:0;z-index:1002;width:100%;height:100%;background:rgba(0, 0, 0, 0.4);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#40000000,endColorstr=#40000000)}
+.dark.on02{position:fixed;top:0;z-index:1002;width:100%;height:100%;background:rgba(0, 0, 0, 0.75);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#75000000,endColorstr=#75000000)}
