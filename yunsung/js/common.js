@@ -27,7 +27,6 @@ $(function(){
 		$(".m_gnb_wrap, .util_menu, .dark").removeClass("on");
 		},300);
 		$("html,body").removeClass("scroll");
-
 	});
 	$(".m_gnb > li").on('click', function(){
 		var tab = $(this);
