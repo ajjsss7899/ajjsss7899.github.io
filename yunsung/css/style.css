@@ -207,6 +207,7 @@
 }
 
 /* 브랜드소개 */
+.brand{overflow: hidden;}
 .brand h2{width:472px;margin:110px auto 0}
 .brand h2 img{width:100%}
 .brand h3{margin-top:27px;font-size:24px;font-family:'Roboto',sans-serif;color:#a6854a;letter-spacing:normal;text-align:center}
@@ -298,6 +299,7 @@
 }
 
 /* 윤성의 사회공헌 */
+.contrib_wrap{overflow: hidden;}
 .contrib h3{width:147px;height:24px;margin:110px auto 0;background:url(../images/contrib_h3.png) 0 0 no-repeat;text-indent:-99999px}
 .contrib .tit{width:511px;height:59px;margin:50px auto 0;background:url(../images/contrib_tit01.gif) 0 0 no-repeat;text-indent:-99999px}
 .contrib .txt{max-width:580px;margin:20px auto 0;font-size:14px;line-height:20px;color:#888;text-align:center}
@@ -462,7 +464,7 @@
 }
 
 /* 전시장 소개 */
-.map_wrap{overflow: hidden;padding: 0 10px}
+.map_wrap{overflow: hidden;padding: 0 10px 80px 10px;}
 .map01 h3{width: 105px;height: 24px;margin: 110px auto 0 auto;text-indent: -99999px;background: url(../images/map01_h3.png) 0 0 no-repeat;}
 .map01 .txt{margin-top: 20px;text-align: center;font-size: 14px;line-height: 22px;color: #888;}
 .map01 img{max-width: 1000px;margin: 20px auto 0 auto;width: 100%;}
@@ -489,12 +491,20 @@
 .map02_info li p{display: inline-block;}
 .map02_info li .num{width: 19px;height: 19px;line-height: 19px;font-size: 13px;color: #fff;background: url(../images/map02_list_icon4.png) 0 0 no-repeat;}
 .map02_info li .txt{margin: 0 0 0 3px;font-size: 13px;line-height: 19px;color:#666;}
+.map03_wrap{margin-top: 50px;padding-top:64px;text-align: center;font-size: 16px;color: #444;background: url(../images/map03_tit.gif) center 0 no-repeat;}
+#map03{width: 1000px;height: 327px;margin: 20px auto 0 auto;border: 1px solid #dfdfdf;}
+.map03_wrap address{text-align: center;margin: 0}
+.map03_wrap .tel{margin-top: 23px;font-size: 24px;font-weight: 700;letter-spacing: normal;color: #888;}
+.map03_wrap .address{margin-top: 9px;font-size: 14px;line-height: 20px;color: #888;}
+
 @media all and (max-width: 1060px){
 .map02_list > li .map02_cont{top:50%;margin:0 48px;left:0;transform: translate(0 , -50%);-ms-transform: translate(0 , -50%);-webkit-transform: translate(0 , -50%);} 
 .map02_list > li .map02_cont img{width: 100%;}
+#map{width: 100%;}
 }
 
 @media all and (max-width: 640px){
+.map_wrap{overflow: hidden;padding: 0 10px 41px 10px;}
 .map01 h3{width: auto;height: auto;margin: 49px auto 0 auto;text-indent: 0;background: none;text-align: center;font-size: 18px;color: #817059;}
 .map01 .txt{text-align: left;}
 .map02_wrap .txt{margin-top: 30px;}
@@ -509,4 +519,17 @@
 .map02_list li:nth-child(5){left: 115px;top: 48px;}
 .map02_list li:last-child{right: 57px;top: 25px;}
 .map02_info{margin-top:10px;}
+}
+
+/* 사이드 메뉴 */
+.side_nav_wrap{width: 1200px;margin: 0 auto;position: relative;}
+.side_nav{position: fixed;top: 264px;z-index: 1000;}
+.side_nav li{width: 60px;height: 60px;margin-bottom: 1px;background: #b5b3b1;text-align: center;}
+.side_nav li.on{background: #cdab78;}
+.side_nav li:hover{background: #cdab78;}
+.side_nav li a{line-height: 60px;font-size: 24px;color: #e0e0e0;display: block;}
+.side_nav li.on a{color: #fff;}
+.side_nav li:hover a{color: #fff;}
+@media all and (max-width: 1023px){
+.side_nav_wrap{display: none;}
 }

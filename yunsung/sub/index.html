@@ -10,6 +10,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
 <script type="text/javascript" src="../js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="https://apis.daum.net/maps/maps3.js?apikey=95fa0c870ae487bf9440db38efb3660f"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="../js/html5shiv.min.js"></script>
 <![endif]-->
@@ -19,7 +20,7 @@
 </head>
 <body>
 <!-- 본문 바로가기 -->
-<a href="#main_vis_wrap" class="skip">본문 바로가기</a>
+<a href="#about_wrap" class="skip">본문 바로가기</a>
 <!-- header -->
 <header>
 	<div class="header_section">
@@ -200,7 +201,7 @@
 	</div>
 </header>
 <!-- 회사소개 -->
-<section class="about_wrap">
+<section class="about_wrap" id="about_wrap">
 	<div class="about">
 		<h2><img src="../images/info_tit01.png" alt="회사소개"></h2>
 		<div class="about_area">
@@ -224,7 +225,7 @@
 	</div>
 </section>
 <!-- 미션, 비전 -->
-<section class="brand">
+<section class="brand" id="brand">
 	<h2><img src="../images/brand_tit.gif" alt="All 바른 생각, All 바른 공간"></h2>
 	<h3>Mission</h3>
 	<p>건축주의 삶을 담는 공간인 소중한 집, 올 바른 생각과 철학을 가지고 올 바르게 만든다.</p>
@@ -270,7 +271,7 @@
 	</ul>
 </section>
 <!-- 윤성이 걸어온 길 -->
-<section class="history">
+<section class="history" id="history">
 	<h3>윤성이 걸어온 길</h3>
 	<div class="tit_wrap">
 		<p class="tit">국내 목조주택 시장에서 <strong>24년의 전통과 노하우</strong>를 가지고 있는 윤성하우징은 주택 건축에 대한 설계 · 시공 · 인테리어 전반에 걸쳐 종합 솔루션을 제공하는 선두 기업입니다.</p>
@@ -458,7 +459,7 @@
 	</div>
 </section>
 <!-- 윤성의 사회공헌 -->
-<section class="contrib_wrap">
+<section class="contrib_wrap" id="contrib_wrap">
 	<div class="contrib">
 		<h3>윤성의 사회공헌</h3>
 		<p class="tit">'사람'을 돌보는 것이 진정한 '건축'을 위한 기본이며 힘없는 이웃을 돌보는 것은 기업의 사회적 책임입니다.</p>
@@ -511,7 +512,7 @@
 	</div>
 </section>
 <!-- 조직도 -->
-<section class="organize_wrap">
+<section class="organize_wrap" id="organize_wrap">
 	<h3>조직도</h3>
 	<p class="tit">'사람'을 돌보는 것이 진정한 '건축'을 위한 기본이며 힘없는 이웃을 돌보는 것은 기업의 사회적 책임입니다.</p>
 	<p class="txt">윤성하우징은 건축은 사람이 한다고 생각합니다. 집을 짓기 위해 계획단계부터 설계, 시공, 사후관리까지 모든 과정에서 '사람'이 중심입니다.<br>
@@ -521,7 +522,7 @@
 	<div class="organize"><img src="../images/organize.gif" alt="윤성하우징 조직도 - 대표이사, 마케팅기획실, 경영지원실, 총괄이사, 고객지원실, 고객지원실 1팀, 고객지원실 2팀, 설계실, 윤성기술 연구소, 인테리어실, 시공관리실, 공무팀, 현장관리팀, 사후관리팀"></div>
 </section>
 <!-- 인재채용 -->
-<section class="recruit_wrap">
+<section class="recruit_wrap" id="recruit_wrap">
 	<div class="recruit01">
 		<h3>인재채용</h3>
 		<p class="tit">All 바른 생각, All 바른 공간</p>
@@ -586,7 +587,7 @@
 	</div>
 </section>
 <!-- 전시장 소개 -->
-<section class="map_wrap">
+<section class="map_wrap" id="map_wrap">
 	<div class="map01">
 		<h3>전시장 소개</h3>
 		<p class="txt">윤성하우징은 본사 내 자재 전시장을 운영하고 있어 건축주들께서 직접 방문해<br> 최신 트렌드의 건축 자재를 실제로 살펴보고 결정할 수 있습니다.</p>
@@ -675,10 +676,17 @@
 			</ul>
 		</div>
 	</div>
-</div>
+	<div class="map03_wrap">
+		<p class="tit">전시장 찾아오시는 길</p>
+		<div id="map03"></div>
+		<address>
+			<p class="tel">1566-0495</p>
+			<p class="address">경기도 안산시 상록구 건건 4길 52-10<br>팩스 : 031-437-3375</p>
+		</address>
+	</div>
 </section>
 <!-- footer -->
-<!-- <footer>
+<footer>
 	<div class="footer_wrap">
 		<p class="footer_logo"><img src="../images/footer_logo.gif" alt="하단 윤성하우징 로고"></p>
 		<ul class="footer_menu">
@@ -732,8 +740,21 @@
 			</form>
 		</div>
 	</div>
-</footer> -->
+</footer>
+<!-- 사이드 메뉴 -->
+<div class="side_nav_wrap">
+	<ul class="side_nav">
+		<li class="on"><a href="#about_wrap">01</a></li>
+		<li><a href="#brand"">02</a></li>
+		<li><a href="#history">03</a></li>
+		<li><a href="#contrib_wrap">04</a></li>
+		<li><a href="#organize_wrap">05</a></li>
+		<li><a href="#recruit_wrap">06</a></li>
+		<li><a href="#map_wrap">07</a></li>
+	</ul>
+</div>
 <div class="dark"></div>
+
 <script>
 	$(function() {
 		$('.brand_list li').matchHeight({
@@ -760,20 +781,6 @@ $(document).ready(function(e){
 		});
 	});
 </script>
-<!-- <script type="text/javascript">
-$(document).ready(function(e){
-	$('.map02_list li[data-mostrar]').on('click', function(){
-	$('.map02_cont li').hide();
-	$('.dark').addClass('on02')
-	var mostrar = $(this).data('mostrar');
-	$('#' + mostrar).show();
-	});
-	$('.map02_cont li .close, .dark').on('click',function(){
-	$('.map02_cont li').hide();
-	$('.dark').removeClass('on02')
-	});
-})
-</script> -->
 <script>
 	$(document).ready(function () {
     $('.map02_list > li > a').on('click', function() {
@@ -784,6 +791,45 @@ $(document).ready(function(e){
     	$('.map02_list > li').removeClass('on');
     	$('.dark').removeClass('on02');
 	});
+});
+</script>
+<!-- 지도 -->
+<script type="text/javascript">
+	var container = document.getElementById('map03');
+	var options = {
+		center: new daum.maps.LatLng(37.303528, 126.896657), //지도 좌표 위도, 경도
+		level: 6 //지도의 확대 정도
+	};
+	var map = new daum.maps.Map(container, options);//지도 생성 및 객체 리턴
+	var imageSrc = '../images/pin_spot2.png', // 마커이미지의 주소입니다
+		imageSize = new daum.maps.Size(28, 37), // 마커이미지의 크기입니다
+		imageOption = {offset: new daum.maps.Point(27, 37)}; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+	// 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+	var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize, imageOption),
+		markerPosition = new daum.maps.LatLng(37.303528, 126.896657); // 마커가 표시될 위치입니다
+
+	// 마커를 생성합니다
+	var marker = new daum.maps.Marker({
+		position: markerPosition,
+		image: markerImage // 마커이미지 설정
+	});
+
+	// 마커가 지도 위에 표시되도록 설정합니다
+	marker.setMap(map);
+</script>
+<!-- 사이드 메뉴 부드럽게 이동 -->
+<script>
+jQuery(document).ready(function($) {
+        $(".side_nav > li a").click(function(event){            
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+        });
+});
+</script>
+<script>
+$(".side_nav > li").on('click', function(){
+	if($(this).hasClass("on"));
+	$(this).addClass("on").siblings(".on").removeClass("on");
 });
 </script>
 </body>
