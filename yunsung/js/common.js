@@ -28,11 +28,11 @@ $(function(){
 		$(".m_gnb").removeClass("on");
 		},300);
 	});
-	$(".m_gnb > li").on('click', function(){
-		var tab = $(this);
-		if(tab.hasClass("on"));
-		tab.addClass("on").siblings(".on").removeClass("on");
-	});
+	// $(".m_gnb > li").on('click', function(){
+	// 	var tab = $(this);
+	// 	if(tab.hasClass("on"));
+	// 	tab.addClass("on").siblings(".on").removeClass("on");
+	// });
 });
 
 // gnb fixed
