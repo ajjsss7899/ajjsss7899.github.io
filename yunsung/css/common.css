@@ -7,7 +7,7 @@ box-sizing: border-box;}
 body{overflow-x:hidden}
 body,a,input,label{font-family:'Roboto',sans-serif;letter-spacing:-1px}
 .blind{position: absolute;overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
-.scroll{overflow-y:hidden;height:100%}
+.scroll{overflow-y:hidden;/*height:100%*/}
 /* 본문 바로가기 */
 .skip{position: absolute;display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;font-size:0;line-height:0;text-align: center;background: #ffa800;z-index: 999999;}
 .skip:hover,
@@ -25,7 +25,7 @@ header{margin:0 10px}
 .util_menu li:last-child a{padding:0 0 0 6px}
 /* 글로벌 네비게이션 */
 nav{float:left;position:absolute;z-index:101;z-index:1003;width:1200px;max-width:100%}
-nav.on{position:fixed;top:0;}
+nav.on{position:fixed;top:0;-webkit-transform:translateZ(0)}
 .gnb_wrap h1{position:absolute;left:0}
 .gnb{overflow:hidden;position:relative;height:100%;margin:0 60px;border-bottom:1px solid #e1e1e1;background:#fff;text-align:center}
 .gnb a{display:block;height:59px;font-size:15px;line-height:59px;color:#666}
