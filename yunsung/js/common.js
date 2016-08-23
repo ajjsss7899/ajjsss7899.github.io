@@ -35,12 +35,12 @@ $(function(){
 	});
 });
 
-// // gnb fixed
-// $(window).scroll(function(){
-// 	if($(window).scrollTop() >=40){
-// 		$("nav").addClass("on");
-// 	}
-// 	else{
-// 		$("nav").removeClass("on");
-// 	}
-// });
+// gnb fixed
+$(window).scroll(function(){
+	if($(window).scrollTop() >=40){
+		$(".gnb_wrap").addClass("on");
+	}
+	else{
+		$(".gnb_wrap").removeClass("on");
+	}
+});
