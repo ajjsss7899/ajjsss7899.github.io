@@ -741,7 +741,7 @@
 		</div>
 	</div>
 </footer>
-<!-- 사이드 메뉴 -->
+<!-- side_nav -->
 <div class="side_nav_wrap">
 	<ul class="side_nav">
 		<li class="on"><a href="#about_wrap">01</a></li>
@@ -755,6 +755,7 @@
 </div>
 <div class="dark"></div>
 
+<!-- 미션 list 동일한 높이 -->
 <script>
 	$(function() {
 		$('.brand_list li').matchHeight({
@@ -762,18 +763,20 @@
 		});
 	});
 </script>
+<!-- 윤성이 걸어온 길  tab -->
 <script type="text/javascript">
-$(document).ready(function(e){
-	$('.tab').hide().filter(':first').show();
-	$('.history_list_wrap li[data-mostrar]').on('click', function(){
-	$('.history_list_wrap li[data-mostrar]').removeClass('on');
-	$('.tab').hide();
-	var mostrar = $(this).data('mostrar');
-	$(this).addClass('on');
-	$('#' + mostrar).show();
-	});
-})
+	$(document).ready(function(e){
+		$('.tab').hide().filter(':first').show();
+		$('.history_list_wrap li[data-mostrar]').on('click', function(){
+		$('.history_list_wrap li[data-mostrar]').removeClass('on');
+		$('.tab').hide();
+		var mostrar = $(this).data('mostrar');
+		$(this).addClass('on');
+		$('#' + mostrar).show();
+		});
+	})
 </script>
+<!-- 사회공헌 캠페인 히스토리 list 동일한 높이 -->
 <script>
 	$(function() {
 		$('.contrib02_area li div').matchHeight({
@@ -781,6 +784,7 @@ $(document).ready(function(e){
 		});
 	});
 </script>
+<!-- 전시장 소개 레이어 팝업 -->
 <script>
 	$(document).ready(function () {
     $('.map02_list > li > a').on('click', function() {
@@ -793,7 +797,7 @@ $(document).ready(function(e){
 	});
 });
 </script>
-<!-- 지도 -->
+<!-- 전시장 찾아오시는 길 지도 -->
 <script type="text/javascript">
 	var container = document.getElementById('map03');
 	var options = {
@@ -819,13 +823,14 @@ $(document).ready(function(e){
 </script>
 <!-- 사이드 메뉴 부드럽게 이동 -->
 <script>
-jQuery(document).ready(function($) {
-        $(".side_nav > li a").click(function(event){            
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
-        });
-});
+	jQuery(document).ready(function($) {
+	        $(".side_nav > li a").click(function(event){            
+	                event.preventDefault();
+	                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+	        });
+	});
 </script>
+<!-- side_nav  -->
 <script>
 $(".side_nav > li").on('click', function(){
 	if($(this).hasClass("on"));

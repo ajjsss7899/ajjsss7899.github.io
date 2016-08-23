@@ -621,34 +621,6 @@
 		<a href="#"><img src="images/home_vis.jpg" alt="theHome - 내 소중한 가족을 위한 가장 가치있는 선택 - 더 홈 시리즈 1탄 폴라리스"></a>
 		<a href="#"><img src="images/open_vis.jpg" alt="인기주택 프라이스 오픈 - 양주 황방리 주택 152,874,800원 (VAT 포함) 종 건축면적 : 106.14제곱미터(32.07평)"></a>
 	</div>
-	<div class="contents3">
-		<ul>
-		<li class="contents3_lst1">
-			<a href="#">
-				<h3>내추럴 (Natural)</h3>
-				<p>어떤 환경에 놓이더라도 주변 경관과<br>자연스럽게 어울리는 주택</p>
-			</a>
-		</li>
-		<li class="contents3_lst2">
-			<a href="#">
-				<h3>모던 (Modern)</h3>
-				<p>직선의 매력을 살려 디자인된<br>현대적인 느낌의 주택</p>
-			</a>
-		</li>
-		<li class="contents3_lst3">
-			<a href="#">
-				<h3>지중해 (Mediterranee)</h3>
-				<p>유럽의 프로방스를 옮겨놓은 듯한<br>고풍스러운 느낌의 주택</p>
-			</a>
-		</li>
-		<li class="contents3_lst4">
-			<a href="#">
-				<h3>플래티늄 (Platinum)</h3>
-				<p>윤성만의 개성이 녹아든 설계스타일 안에서<br>자유로운 커스터마이징이 가능한<br>고급형 주택</p>
-			</a>
-		</li>
-		</ul>
-	</div>
 </section>
 <!-- footer -->
 <footer>

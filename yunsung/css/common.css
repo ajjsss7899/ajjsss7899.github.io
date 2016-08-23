@@ -6,7 +6,7 @@
 box-sizing: border-box;}
 body{overflow-x:hidden}
 body,a,input,label{font-family:'Roboto',sans-serif;letter-spacing:-1px}
-.blind{overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
+.blind{position: absolute;overflow:hidden;font-size:1px;line-height:1px;text-indent:-1000000px}
 .scroll{overflow-y:hidden;height:100%}
 /* 본문 바로가기 */
 .skip{position: absolute;display:block;overflow:hidden;height:1px;width:1px;margin:0 -1px -1px 0;padding:0;font-size:0;line-height:0;text-align: center;background: #ffa800;z-index: 999999;}
