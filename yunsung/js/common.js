@@ -19,13 +19,11 @@ $(function(){
 	$(".sitemap").on("click", function(){
 		$(".m_gnb, .m_gnb_wrap h1, .util_menu").animate({"left":"+=270px"}, 300);
 		$(".util_menu, .dark").addClass("on");
-		$("html,body").addClass("scroll");
 	});
 	$(".close, .dark").on("click", function(){
 		$(".m_gnb, .m_gnb_wrap h1, .util_menu").animate({"left":"-=270px"}, 300);
 		setTimeout(function(){
 		$(".util_menu, .dark").removeClass("on");
-		$("html,body").removeClass("scroll");
 		},300);
 	});
 	$(".m_gnb > li").on('click', function(){
