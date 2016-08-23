@@ -18,12 +18,12 @@ $(function(){
 $(function(){
 	$(".sitemap").on("click", function(){
 		$(".m_gnb, .m_gnb_wrap h1, .util_menu").animate({left:270}, 300);
-		$(".m_gnb_wrap, .util_menu").addClass("on");
+		$(".m_gnb_wrap, .util_menu, .dark").addClass("on");
 	});
 	$(".close, .dark").on("click", function(){
 		$(".m_gnb, .m_gnb_wrap h1, .util_menu").animate({left:0}, 300);
 		setTimeout(function(){
-		$(".m_gnb_wrap, .util_menu").removeClass("on");
+		$(".m_gnb_wrap, .util_menu, .dark").removeClass("on");
 		},300);
 		// $("html,body").removeClass("scroll");
 	});
