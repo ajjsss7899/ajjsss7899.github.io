@@ -30,6 +30,7 @@ $(function(){
 		var tab = $(this);
 		if(tab.hasClass("on"));
 		tab.addClass("on").siblings(".on").removeClass("on");
+		$(".m_gnb").addClass("on");
 	});
 });
 
