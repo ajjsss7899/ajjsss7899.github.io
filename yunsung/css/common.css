@@ -70,7 +70,7 @@ header{width:100%;margin:0}
 .m_gnb_wrap{display: block;position: relative;}
 .m_gnb_wrap h1{background: #454345;width: 100%;position: fixed;height: 50px;-webkit-transform:translateZ(0);z-index: 1003;}
 .m_gnb_wrap h1 img{margin: 0 auto;width: 50px;height: 50px}
-.m_gnb{background: #302f30;width: 270px;top:50px;bottom: 0;position: fixed;z-index: 1003;margin-left:-270px;overflow: auto;}
+.m_gnb{background: #302f30;width: 270px;top:0;bottom: 0;position: fixed;z-index: 1003;margin-top: 50px;margin-left:-270px;overflow-y: auto;overflow-x: hidden;}
 .m_gnb a{display:block;width:100%;padding:14px 0 14px 32px;border-bottom:1px solid #03070c;line-height:1;font-size:15px;font-weight:bold;color:#919191;text-align:left}
 .m_gnb > li{display:block;width:100%;position: relative;z-index: 1004;}
 .m_gnb > li > ul{display:none}
