@@ -69,9 +69,9 @@ header{width:100%;margin:0}
 @media all and (max-width: 1023px){
 .gnb_wrap{display: none!important;}
 .m_gnb_wrap{display: block;position: relative;overflow: auto;}
-.m_gnb_wrap h1{background: #454345;width: 100%;position: fixed;height: 50px;-webkit-transform:translateZ(0);z-index: 1003;}
+.m_gnb_wrap h1{background: #454345;width: 100%;position: fixed;height: 50px;-webkit-transform:translateZ(0);z-index: 1003;left:-270px;margin-left: 270px;}
 .m_gnb_wrap h1 img{margin: 0 auto;width: 50px;height: 50px}
-.m_gnb{background: #302f30;width: 270px;top:50px;bottom: 0;overflow-x: auto;overflow-x: hidden;position: fixed;z-index: 1003;/*margin-left:-270px;*/}
+.m_gnb{background: #302f30;width: 270px;top:50px;bottom: 0;overflow-x: auto;overflow-x: hidden;position: fixed;z-index: 1003;left:-270px;}
 .m_gnb a{display:block;width:100%;padding:14px 0 14px 32px;border-bottom:1px solid #03070c;line-height:1;font-size:15px;font-weight:bold;color:#919191;text-align:left}
 .m_gnb > li{display:block;width:100%;position: relative;}
 .m_gnb > li > ul{display:none}
