@@ -2,9 +2,20 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 /* ******* */
 /* 메인페이지 */
-
 /* ****** */
 
+/*팝업*/
+#popup{display: none;width: 100%;}
+.popup_text{padding: 20px;background: #f1f1f1;font-size: 14px;color: #333;line-height: 18px;font-weight: bold;}
+.popup_text a{color: #333;text-decoration: none;line-height: 20px;}
+.popup_text a:hover{color: #e49223;}
+#pop_close{background: #000;}
+#pop_day{vertical-align: middle;height: 30px}
+#pop_close{padding-right: 15px;color: #fff;font-size: 14px;text-align: right;}
+#pop_close a{font-size: 14px;text-decoration: none;color: #fff;margin-left: 10px;}
+@media all and (max-width: 1023px){
+#popup{display: none!important;}
+}
 /* 1023px 상담신청 */
 @media all and (max-width: 1023px){
 .request{position:fixed;width:100%;margin-top:50px;-webkit-transform:translateZ(0)}
@@ -136,18 +147,19 @@
 
 /* contents2,3 */
 .contents2_wrap{overflow:hidden;width:1200px;max-width:100%;margin:0 auto;margin-top:49px}
-.contents2{float:right;width:50%}
-.contents2 a{display:block;margin-bottom:1px}
+.contents2{float:left;width:50%}
+.contents2 a{display:block;margin-bottom:1px;border-right: 1px solid #fff;}
 .contents2 img{width:100%}
-.contents3{width:50%}
+.contents3{width:50%;float: left;}
 .contents3 li{float:left;width:50%}
-.contents3 a{display:block;position:relative;padding-top:100%;border-right:1px solid #fff;background-size:cover}
+.contents3 a{display:block;position:relative;padding-top:100%;background-size:cover;}
 .contents3 h3{position:absolute;top:31px;left:19px;font-size:16px;color:#333}
 .contents3 p{position:absolute;top:53px;left:19px;font-size:12px;line-height:18px;color:#666}
 .contents3_lst1 a{background-image:url(../images/contents3_img1.jpg)}
-.contents3_lst2 a{background-image:url(../images/contents3_img2.jpg)}
+.contents3_lst2 a{background-image:url(../images/contents3_img2.jpg);border-left: 1px solid #fff;}
 .contents3_lst3 a{margin-top:1px;background-image:url(../images/contents3_img3.jpg)}
-.contents3_lst4 a{margin-top:1px;background-image:url(../images/contents3_img4.jpg)}
+.contents3_lst4 a{margin-top:1px;background-image:url(../images/contents3_img4.jpg);border-left: 1px solid #fff;}
+
 @media all and (max-width: 1220px){
 .contents2_wrap{width:auto;margin:49px 10px 0}
 }
@@ -159,8 +171,6 @@
 .contents3{width:100%}
 .contents3 h3{top:15px;left:18px}
 .contents3 p{top:39px;left:18px}
-.contents3_lst2 a{border:0}
-.contents3_lst4 a{border:0}
 }
 @media all and (max-width: 480px){
 .contents3 h3{top:18px;left:11px}
@@ -258,8 +268,8 @@
 .history_list_wrap li:first-child{border-right:0}
 .history .tab{overflow:hidden;position:relative}
 .history .tab p{width:435px;height:58px;margin:25px auto 0;font-size:16px;line-height:22px;color:#444;text-align:center;text-indent:-99999px}
-.history .history_list1 p{background:url(../images/history_txt01.png) center bottom no-repeat}
-.history .history_list2 p{background:url(../images/history_txt02.png) center bottom no-repeat}
+.history .history_list1 .tit{background:url(../images/history_txt01.png) center bottom no-repeat}
+.history .history_list2 .tit{background:url(../images/history_txt02.png) center bottom no-repeat}
 .history .history_contents{overflow:hidden;margin:41px 10px 0;padding-bottom:46px;background:url(../images/history_line.png) center 0 repeat-y}
 .history .history_contents > li{float:left;width:50%;text-align:right}
 .history .history_contents > li:nth-child(even) dl{margin-left:-8px;text-align:left}
@@ -279,7 +289,7 @@
 .history h3{padding-top:98px;background:none;text-indent:0}
 .history .tit_wrap .tit{width:auto;height:auto;background:none;text-indent:0}
 .history .tit_wrap .txt{margin:18px auto 0}
-.history .tab p{width:auto;height:auto;margin:25px 10px 0;background:none;text-indent:0}
+.history .tab .tit{width:auto;height:auto;margin:25px 10px 0;background:none;text-indent:0}
 }
 
 @media all and (max-width: 640px){
@@ -288,7 +298,7 @@
 .history .tit_wrap .tit{margin-top:27px;text-align:left}
 .history .tit_wrap .txt{text-align:left}
 .history .tab{position:relative}
-.history .tab p{margin:10px 10px 0;text-align:left}
+.history .tab .tit{margin:10px 10px 0;text-align:left}
 .history .history_contents{margin:20px 10px 0;padding-bottom:16px;background-position:15px 0}
 .history .history_contents > li{clear:both;width:100%;text-align:left}
 .history .history_contents > li:first-child dl{margin-top:31px}
@@ -324,7 +334,7 @@
 .contrib02_area .tit{margin:0;padding-top:14px;font-size:14px;line-height:24px;font-weight:bold;color:#444;text-align:left}
 .contrib02_area .tit span{font-weight:normal;color:#b38b50}
 .contrib02_area .txt{margin:5px 10px 0 0;font-size:13px;line-height:20px;color:#666;text-align:left}
-.contrib02_area button{width:102px;height:34px;margin:5px 0 19px;border:1px solid #d2d1d1;background:#fff;line-height:34px;font-size:13px;color:#888;cursor:pointer}
+.contrib02_area .btn{display: inline-block;width:102px;height:34px;margin:5px 0 19px;border:1px solid #d2d1d1;text-align: center;background:#fff;line-height:34px;font-size:13px;color:#888;cursor:pointer}
 
 @media all and (max-width: 1040px){
 .contrib01{margin:30px 10px 0}
@@ -484,7 +494,7 @@
 .map02_list > li.on .map02_cont{display: block!important;}
 .map02_cont .tit01{width: 74px;height: 74px;margin: 0 auto 10px auto;line-height: 74px;font-size: 38px;color: #fff;background: url(../images/map02_list_icon3.png) 0 0 no-repeat;text-align: center;}
 .map02_cont .tit02{font-size: 18px;color: #fff;text-align: center;margin-bottom: 10px;}
-.map02_cont .close{margin: 20px auto 0 auto;width: 36px;}
+.map02_cont .close01{margin: 20px auto 0 auto;width: 36px;}
 .map02_info{text-align: center;font-size: 0;margin-top: 20px;}
 .map02_info li{display: inline-block;margin-right: 7px;}
 .map02_info li:last-child{margin: 0;}
@@ -500,7 +510,7 @@
 @media all and (max-width: 1060px){
 .map02_list > li .map02_cont{top:50%;margin:0 48px;left:0;transform: translate(0 , -50%);-ms-transform: translate(0 , -50%);-webkit-transform: translate(0 , -50%);} 
 .map02_list > li .map02_cont img{width: 100%;}
-#map{width: 100%;}
+#map03{width:100%;}
 }
 
 @media all and (max-width: 640px){

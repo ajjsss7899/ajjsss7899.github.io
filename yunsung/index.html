@@ -11,6 +11,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5shiv.min.js"></script>
 <![endif]-->
@@ -18,6 +19,19 @@
 <body>
 <!-- 본문 바로가기 -->
 <a href="#main_vis_wrap" class="skip">본문 바로가기</a>
+<div id="popup">
+	<div class="popup_text">
+		<p>본 홈페이지는 개인 포트폴리오 작업물로 상업적 용도로 사용되지 않으며, 사용된 이미지와 콘텐츠의 저작권이 따로 있음을 알려드립니다.</p>
+		<p>제작 기간 : 13일</p>
+		<br>
+		<p><a href="https://ajjsss7899.github.io/yunsung/sub/index.html">1. 서브페이지 [ 회사 소개 ] 바로가기</a></p>
+	</div>
+	<div id="pop_close">
+		<input type="checkbox" id="pop_day" />
+		<label for="pop_day">하루동안 보지 않기</label>
+		<a href="#" id="pop_close_btn">[닫기]</a>
+	</div>
+</div>
 <!-- header -->
 <header>
 	<div class="header_section">
@@ -33,7 +47,7 @@
 		<!-- gnb -->
 		<nav>
 			<div class="gnb_wrap">
-				<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
+				<h1><a href="https://ajjsss7899.github.io/yunsung/index.html"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
 				<ul class="gnb">
 					<li><a href="#">회사 소개<span class="nav_ico"></span></a>
 						<ul>
@@ -112,7 +126,7 @@
 			</div>
 			<!-- 모바일 gnb -->
 			<div class="m_gnb_wrap">
-				<h1><a href="#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
+				<h1><a href="https://ajjsss7899.github.io/yunsung/index.html#"><img src="images/introduction_2008.gif" alt="윤성 하우징 로고"></a></h1>
 				<ul class="m_gnb">
 					<li><a href="#">회사 소개<span class="nav_ico"></span></a>
 						<ul>
@@ -184,6 +198,7 @@
 							<li><a href="#">A/S 신청</a></li>
 						</ul>
 					</li>
+					<li class="close"><a href="#">닫기</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -622,8 +637,10 @@
 				</ul>
 			</div>
 			<div id="promotion_tab1" class="contents1_txt">
+				<p class="blind">미디어 탭 내용</p>
 				<img src="images/promotion1.png" alt="윤성하우징, NH농협과 전략적 제휴 체결 사진">
 				<div class="contents1_txt_area">
+
 					<p><a href="#">[한국경제] 윤성하우징, NH농협과 전략적 제휴 체결…[All 바른 금융] 서비스 론칭(0)</a></p>
 					<ul>
 						<li><a href="#">[전원속의 내집 6월호] 경주 괘릉리 주택(0)</a></li>
@@ -633,6 +650,7 @@
 				</div>
 			</div>
 			<div id="promotion_tab2" class="contents1_txt">
+				<p class="blind">박람회 탭 내용</p>
 				<img src="images/promotion2.png" alt="건축박람회 사진">
 				<div class="contents1_txt_area">
 					<p><a href="#">제41회 건축박람회 그 현장속으로(0)</a></p>
@@ -644,6 +662,7 @@
 				</div>
 			</div>
 			<div id="promotion_tab3" class="contents1_txt">
+				<p class="blind">홍보영상 탭 내용</p>
 				<img src="images/promotion3.png" alt="윤성하우징 홍보영상 링크">
 				<div class="contents1_txt_area">
 					<p><a href="#">[윤성하우징이 만들어 가는 양평 이야기](0)</a></p>
@@ -665,6 +684,7 @@
 			</div>
 			<div id="consulting_tab1" class="contents1_txt">
 				<div class="contents1_txt_area">
+					<p class="blind">컨설팅 스토리 탭 내용</p>
 					<ul>
 						<li><a href="#">[박정배] 전남 해남 K건축주님 109㎡ 시공...(1)</a></li>
 						<li><a href="#">[김인규팀장] 경기 김포시 대곶면 대능리 L건...(0)</a></li>
@@ -674,6 +694,7 @@
 			</div>
 			<div id="consulting_tab2" class="contents1_txt">
 				<div class="contents1_txt_area">
+					<p class="blind">매니저 스토리 탭 내용</p>
 					<ul>
 						<li><a href="#">[최민] 사랑하는 우리딸 (1)</a></li>
 						<li><a href="#">[박정배]아내가 좋아하는  봉골레파스타~(0)</a></li>
@@ -893,6 +914,22 @@
 			$('#' + mostrar).show();
 		});
 	})
+</script>
+<!-- 팝업 하루동안 열지 않기 -->
+<!-- popup script -->
+<script type="text/javascript">
+	$(function() {
+		if ($.cookie('d') == undefined) {
+			$("#popup").show();
+		} 
+		$("#pop_close_btn, #pop_day").bind("click",function(){
+			if ($("#pop_day").is(":checked")){
+				 $.cookie('d', '1', { expires: 1, path : '/' });
+			}
+			$("#popup").slideUp(200);
+			return false;
+		});
+	});
 </script>
 </body>
 

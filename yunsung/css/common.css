@@ -84,7 +84,7 @@ header{width:100%;margin:0}
 }
 
 /* footer */
-footer{margin:140px 10px 0;padding-bottom:15px}
+footer{margin:140px 10px 40px 10px;padding-bottom:15px}
 .footer_wrap{position:relative;width:1200px;max-width:100%;margin:0 auto}
 .footer_logo{position:absolute;top:0;left:0}
 .footer_m_logo{display:none}
