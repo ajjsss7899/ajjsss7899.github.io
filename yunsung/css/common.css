@@ -1,12 +1,12 @@
 @charset "euc-kr";
 @import url("reset.css");
 @font-face{font-family: 'Roboto-Regular';font-weight: normal;
-src:url('../font/Roboto-Regular.ttf');
-src: url('../font/Roboto-Regular.eot');
-src: url('../font/Roboto-Regular.eot') format('embedded-opentype'),
-url('../font/Roboto-Regular.woff2') format('woff2'),
-url('../font/Roboto-Regular.woff') format('woff'),
-url('Roboto-Regular.ttf') format('truetype');
+src:url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.ttf');
+src: url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.eot');
+src: url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.eot') format('embedded-opentype'),
+url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.woff2') format('woff2'),
+url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.woff') format('woff'),
+url('https://ajjsss7899.github.io/yunsung/font/Roboto-Regular.ttf') format('truetype');
 }
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body{overflow-x:hidden}
