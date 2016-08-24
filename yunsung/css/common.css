@@ -1,15 +1,9 @@
 @charset "euc-kr";
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    src: local("Roboto"), local("Roboto"), url("https://fonts.googleapis.com/css?family=Roboto") format("woff2"), url("https://fonts.googleapis.com/css?family=Roboto") format("woff");
-}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 body{overflow-x:hidden}
-html{font-family:'Roboto',sans-serif!important;letter-spacing:-1px}
+html{font-family:'Roboto',sans-serif;letter-spacing:-1px}
 
 .blind{overflow:hidden;position:absolute;font-size:1px;line-height:1px;text-indent:-1000000px}
 
