@@ -2,17 +2,15 @@
 @import url("reset.css");
 @import url("https://fonts.googleapis.com/earlyaccess/nanumgothic.css");
 body,a{font-family:'Nanum Gothic';text-decoration:none}
-
-/* 팝업 */
-#popup{display:none;width:100%}
-.popup_text{padding:20px;background:#f1f1f1;font-size:14px;line-height:18px;font-weight:bold;color:#333}
-.popup_text a{line-height:20px;color:#333;text-decoration:none}
-.popup_text a:hover{color:#692c90}
-#pop_close{background:#000}
-#pop_day{height:30px;vertical-align:middle}
-#pop_close{padding-right:15px;font-size:14px;color:#fff;text-align:right}
-#pop_close a{margin-left:10px;font-size:14px;color:#fff;text-decoration:none}
-
+/*팝업*/
+#popup{display: none;width: 100%;}
+.popup_text{padding: 20px;background: #f1f1f1;font-size: 14px;color: #333;line-height: 18px;font-weight: bold;}
+.popup_text a{color: #333;text-decoration: none;line-height: 20px;}
+.popup_text a:hover{color: #692c90;}
+#pop_close{background: #000;}
+#pop_day{vertical-align: middle;height: 30px}
+#pop_close{padding-right: 15px;color: #fff;font-size: 14px;text-align: right;}
+#pop_close a{font-size: 14px;text-decoration: none;color: #fff;margin-left: 10px;}
 /* 메인 슬라이드 */
 body{overflow-x:hidden}
 #main_visual{overflow:hidden}
@@ -85,20 +83,20 @@ body{overflow-x:hidden}
 .franchise img{position:absolute;top:30px;right:27px}
 
 /* SNS */
-.sns_wrap{overflow:hidden;width:100%;height:527px;margin-top:80px;background:#f1f1f1;font-size:0}
-.sns_tab{overflow:hidden;position:relative;width:1000px;height:415px;margin:0 auto;margin-top:60px;background:url(../images/main_sns_tab.gif) 0 0 no-repeat;text-align:center}
+.sns_wrap{overflow:hidden;width:100%;height:527px;margin-top:80px;background:#f1f1f1;font-size:0;}
+.sns_tab{position: relative;overflow:hidden;width:1000px;height: 415px;margin:0 auto;margin-top:60px;background:url(../images/main_sns_tab.gif) 0 0 no-repeat;text-align:center}
 .sns_tab li{float:left;width:240px;height:52px;background:url(../images/) 0 0 no-repeat;cursor:pointer}
 .sns_tab li.on{background:url(../images/main_sns_tab_on.gif) 0 0 no-repeat}
-.sns_tab a{display:block;font-size:17px;font-weight:bold;line-height:50px;color:#706e6f}
-.sns_tab .tab{display:none;position:absolute;left:0;margin-top:30px}
-.sns_tab li.on .tab{display:block}
+.sns_tab a{display: block;font-size:17px;font-weight:bold;line-height:50px;color:#706e6f}
+.sns_tab .tab{margin-top:30px;position: absolute;display: none;left:0;}
+.sns_tab li.on .tab{display: block;}
 .sns_tab .tab ul{clear:both;width:1002px;margin:0 auto}
 .sns_tab .tab li{float:left;width:237px;height:335px;margin-left:18px;background:url(../images/main_sns_con_bg.gif) 0 0 no-repeat}
 .sns_tab .tab li:first-child{margin-left:0}
 .sns_tab .tab article{margin-left:2px}
-.sns_tab .tab .s_logo{position:absolute;top:24px;left:16px;width:38px;height:37px;background:url(../images/main_sns_ico.jpg) 0 0 no-repeat}
-.sns_tab .tab .title{overflow:hidden;position:relative;height:79px;text-align:left}
-.sns_tab .tab .title h3{margin:24px 0 0 66px;font-size:16px;font-weight:bold;line-height:20px;color:#404040}
-.sns_tab .tab .title .date{float:left;margin-left:66px;font-size:12px;font-weight:bold;line-height:16px;color:#848484;letter-spacing:-1px}
-.sns_tab .tab .title .like{float:left;margin-left:11px;padding:0 0 2px 16px;background:url(../images/ico_like.gif) 0 2px no-repeat;font-size:12px;line-height:1;color:#848484}
+.sns_tab .tab .s_logo{width: 38px;height: 37px;background:url(../images/main_sns_ico.jpg) 0 0 no-repeat;position: absolute;top:24px;left: 16px;}
+.sns_tab .tab .title{height:79px;text-align: left;overflow: hidden;position: relative;}
+.sns_tab .tab .title h3{font-size:16px;font-weight:bold;line-height:20px;color:#404040;margin: 24px 0 0 66px;}
+.sns_tab .tab .title .date{font-size:12px;font-weight:bold;line-height:16px;color:#848484;letter-spacing:-1px;margin-left: 66px;float: left;}
+.sns_tab .tab .title .like{background:url(../images/ico_like.gif) 0 2px no-repeat;font-size: 12px;color: #848484;float: left;line-height: 1;margin-left: 11px;padding: 0 0 2px 16px;}
 .sns_tab .tab .text{padding:18px 20px;font-size:13px;line-height:20px;color:#706e6f}

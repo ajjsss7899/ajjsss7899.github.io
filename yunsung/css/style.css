@@ -494,7 +494,7 @@
 .map02_list > li .map02_cont{display:none;overflow:hidden;position:fixed;top:50%;left:50%;z-index:1005;margin:-365px 0 0 -500px}
 .map02_list > li.on .map02_cont{display:block!important}
 .map02_cont .tit01{width:74px;height:74px;margin:0 auto 10px;background:url(../images/map02_list_icon3.png) 0 0 no-repeat;line-height:74px;font-size:38px;color:#fff;text-align:center}
-.map02_cont .tit02{margin-bottom:10px;font-size:18px;color:#fff;text-align:center}
+.map02_cont .tit02{margin-bottom:10px;font-size:18px;line-height: 1;color:#fff;text-align:center}
 .map02_cont .close01{width:36px;margin:20px auto 0}
 .map02_info{margin-top:20px;font-size:0;text-align:center}
 .map02_info li{display:inline-block;margin-right:7px}

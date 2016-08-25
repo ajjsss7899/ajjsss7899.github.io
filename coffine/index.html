@@ -19,6 +19,7 @@
 	<div id="popup">
 		<div class="popup_text">
 			<p>본 홈페이지는 개인 포트폴리오 작업물로 상업적 용도로 사용되지 않으며, 사용된 이미지와 콘텐츠의 저작권이 따로 있음을 알려드립니다.</p>
+			<p>크로스 브라우징 : ie8+, 크롬, 파이어폭스</p>
 			<p>제작 기간 : 11일</p>
 			<br>
 			<p><a href="https://ajjsss7899.github.io/coffine/sub/community">1. 서브페이지 [고객의 소리] 바로가기</a></p>
@@ -225,16 +226,14 @@
 <!-- SNS -->
 <section class="sns_wrap">
 	<ul class="sns_tab">
-	<li data-mostrar="facebook" class="on"><a href="javascript:return false;">FACE BOOK</a></li>
-	<li data-mostrar="instagram"><a href="javascript:return false;">INSTAGRAM</a></li>
-	</ul>
-	<div class="sns">
+	<li data-mostrar="facebook" class="on"><a href="javascript:return false;">FACE BOOK</a>
 		<article id="facebook" class="tab">
 			<ul>
 			<li>
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.14 24:03</p>
 						<p class="like">10</p>
 					</div>
@@ -246,6 +245,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.14 01:43</p>
 						<p class="like">97</p>
 					</div>
@@ -257,6 +257,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.10 01:37</p>
 						<p class="like">19</p>
 					</div>
@@ -268,6 +269,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.08 23:26</p>
 						<p class="like">31</p>
 					</div>
@@ -277,12 +279,15 @@
 			</li>
 			</ul>
 		</article>
+	</li>
+	<li data-mostrar="instagram"><a href="javascript:return false;">INSTAGRAM</a>
 		<article id="instagram" class="tab">
 			<ul>
 			<li>
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.14 24:09</p>
 						<p class="like">2</p>
 					</div>
@@ -294,6 +299,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.09 24:14</p>
 						<p class="like">22</p>
 					</div>
@@ -305,6 +311,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.08 23:34</p>
 						<p class="like">28</p>
 					</div>
@@ -316,6 +323,7 @@
 				<a href="#">
 					<div class="title">
 						<h3>커핀그루나루</h3>
+						<p class="s_logo"></p>
 						<p class="date">06.07 03:08</p>
 						<p class="like">18</p>
 					</div>
@@ -325,7 +333,8 @@
 			</li>
 			</ul>
 		</article>
-	</div>
+	</li>
+	</ul>
 </section>
 <!-- footer -->
 <footer>
@@ -387,22 +396,9 @@
 </script>
 <!-- SNS tab script -->
 <script type="text/javascript">
-	$(document).ready(function(e){
-		$('.tab').hide().filter(':first').show();
-		$('.sns_tab li[data-mostrar]').on('click', function(){
-				$('.sns_tab li[data-mostrar]').removeClass('active');
-				$('.tab').hide();
-				var mostrar = $(this).data('mostrar');
-				$(this).addClass('active');
-				$('#' + mostrar).show();
-		});
-	})
-</script>
-<script type="text/javascript">
-	$(".sns_tab li").on('click', function(){
-		var tab = $(this);
-		if(tab.hasClass("on")){return false;}
-		tab.addClass("on").siblings(".on").removeClass("on");
+	$(".sns_tab > li > a").on('click', function(){
+		if($(this).parent().hasClass("on"));
+		$(this).parent().addClass("on").siblings(".on").removeClass("on");
 	});
 </script>
 <!-- popup script -->

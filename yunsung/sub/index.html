@@ -789,15 +789,15 @@
 <!-- 전시장 소개 레이어 팝업 -->
 <script>
 	$(document).ready(function () {
-    $('.map02_list > li > a').on('click', function() {
-    	$(this).parent().addClass('on');
-    	$('.dark').addClass('on02');
+		$('.map02_list > li > a').on('click', function() {
+			$(this).parent().addClass('on');
+			$('.dark').addClass('on02');
+		});
+		 $('.map02_cont .close01').on('click', function() {
+			$('.map02_list > li').removeClass('on');
+			$('.dark').removeClass('on02');
+		});
 	});
-	 $('.map02_cont .close01').on('click', function() {
-    	$('.map02_list > li').removeClass('on');
-    	$('.dark').removeClass('on02');
-	});
-});
 </script>
 <!-- 전시장 찾아오시는 길 지도 -->
 <script type="text/javascript">
