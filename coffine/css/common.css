@@ -23,10 +23,10 @@ header{position: relative;}
 .util_menu .academy a{padding:7px 9px;background:url(../images/util_aca_bg.png) center center no-repeat;color:#2b2b2b}
 .util_menu .app a{padding:7px 10px;background:url(../images/util_app_bg.png) center center no-repeat;color:#fff}
 .util_menu a{font-size:12px;font-weight:bold;color:#a2a1a2}
-h1{clear:both;position:absolute;top:24px;left:50%;width: 101px;height: 101px;margin-left:-50px;}
+h1{clear:both;position:absolute;top:24px;left:50%;width: 101px;height: 101px;margin-left:-50px;-webkit-transform: translateZ(0);}
 
 /* 글로벌 네비게이션 */
-nav{overflow:hidden;width:100%}
+nav{overflow:hidden;width:100%;-webkit-transform: translateZ(0);}
 .gnb{overflow:hidden;width:1000px;margin:0 auto;text-align:center}
 .gnb a{font-size:16px;font-weight:bold;line-height:50px}
 .gnb > li{float:left;}
