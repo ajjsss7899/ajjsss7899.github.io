@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 @import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
 @import url(https://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-body{font-family: 'Nanum Gothic', serif;}
+body{font-family: 'Nanum Gothic', sans-serif;}
 *{box-sizing:border-box}
 
 /* Noto Sans KR (Korean) */
