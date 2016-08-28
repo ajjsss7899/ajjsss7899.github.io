@@ -11,7 +11,7 @@
 <body>
 <!-- header -->
 <header id="header">
-	<nav>
+	<nav class="nav">
 		<ul>
 			<li><a href="#header">HOME</a></li>
 			<li><a href="#skill_wrap">SKILL</a></li>
@@ -64,7 +64,7 @@
 <!-- 스크롤 부드럽게 -->
 <script>
 	$(document).ready(function($) {
-	        $("nav > ul > li a").click(function(event){            
+	        $(".nav > ul > li a").click(function(event){            
 	                event.preventDefault();
 	                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
 	        });
