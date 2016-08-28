@@ -5,22 +5,22 @@
 *{box-sizing:border-box}
 
 /* Noto Sans KR (Korean) */
-header{overflow:hidden;height:850px;padding-top:60px;background:#23232e url(../images/arrow.png) center 755px no-repeat;font-family:'Open Sans';text-align:center}
+header{overflow:hidden;height:850px;background:#23232e url(../images/arrow.png) center 755px no-repeat;font-family:'Open Sans';text-align:center;padding-top: 60px;}
 header .logo{width:74px;margin:109px auto 0}
 header .tit{margin-top:153px;font-size:80px;font-weight:700;color:#fff}
 header .name{margin-top:51px;font-size:36px;font-weight:400;color:#fff}
-header .tel{margin-top:10px;font-size:14px;color:#fff}
-nav{position:fixed;top:0;width:100%;height:60px;border-bottom:1px solid #e9e9e9;background:#fff}
-nav ul{width:300px;margin:0 auto}
-nav li{float:left;width:100px}
-nav li a{font-size:18px;line-height:60px;color:#23232e}
-nav li a:hover{color:#7b77c9}
+header .tel{margin-top: 10px;color: #fff;font-size: 14px;}
+nav{position: fixed;top:0;height: 60px;background: #fff;border-bottom: 1px solid #e9e9e9;width: 100%;}
+nav ul{width: 300px;margin: 0 auto}
+nav li{float: left;width: 100px;}
+nav li a{color: #23232e;font-size: 18px;line-height: 60px;}
+nav li a:hover{color: #7b77c9;}
 
 @media all and (max-width: 1279px){
 header{height:425px;background-position:center 377px;background-size:25px 25px}
 header .logo{width:37px;margin:54px auto 0}
 header .logo img{width:100%}
-header .tit{margin-top:76px;padding:0 10px;font-size:40px}
+header .tit{margin-top:76px;font-size:40px;padding:0 10px;}
 header .name{margin-top:25px;font-size:18px}
 }
 
@@ -35,7 +35,7 @@ header .name{margin-top:25px;font-size:18px}
 .skill_wrap{padding-bottom:71px}
 .skill_wrap h2{margin-top:56px;font-size:40px}
 .skill{width:auto}
-.skill li .tit{margin-top:50px;font-size:20px}
+.skill li .tit{margin-top: 50px;font-size:20px}
 .skill li .txt{margin-top:7px}
 }
 
@@ -57,18 +57,18 @@ header .name{margin-top:25px;font-size:18px}
 .work_list li .work_area a{display:block;font-family:'Noto Sans KR';font-size:18px;line-height:300px;color:#fff}
 
 @media all and (max-width: 1279px){
-.work_wrap{padding-bottom:53px}
-.work_wrap h2{margin-top:56px;font-size:40px}
+.work_wrap{padding-bottom: 53px;}
+.work_wrap h2{margin-top: 56px;font-size: 40px;}
 .work_wrap .txt{margin-top:29px}
 }
 @media all and (max-width: 1000px){
-.work{width:620px}
-.work_list li:nth-child(odd){margin-left:0}
+.work{width: 620px;}
+.work_list li:nth-child(odd){margin-left: 0;}
 }
 @media all and (max-width: 680px){
-.work{width:300px}
-.work_list li{margin-left:0}
+.work{width: 300px;}
+.work_list li{margin-left: 0;}
 }
 
-footer{height:50px}
-footer .copyright{font-family:'Open Sans';font-size:14px;line-height:50px;color:#7c7c7c;text-align:center}
+footer{height: 50px}
+footer .copyright{font-family:'Open Sans';font-size:14px;text-align: center;line-height: 50px;color: #7c7c7c;}

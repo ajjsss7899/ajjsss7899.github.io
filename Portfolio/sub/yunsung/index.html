@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>김나영 웹 퍼블리셔 포트폴리오</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+	<link rel="stylesheet" type="text/css" href="../../css/sub_style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/html5shiv.min.js"></script>
+</head>
+<body>
+<!-- header -->
+<header id="header">
+	<nav>
+		<ul>
+			<li><a href="#header">HOME</a></li>
+			<li><a href="#skill_wrap">SKILL</a></li>
+			<li><a href="#work_wrap">WORK</a></li>
+		</ul>
+	</nav>
+</header>
+<section class="yunsung_wrap">
+	<div class="yunsung">
+		<h1>[ ABOUT THIS ] <a href="#" class="link">사이트 바로가기</a></h1>
+		<p class="txt">기존 윤성 하우징 사이트의 레이아웃을 코딩하였습니다.<br>웹 표준검사 완료. IE8은 PC 버전, IE9 이상부터 반응형으로 작업하였습니다.<br></p>
+		<p class="txt">
+		상단 fixed된 네비게이션이 스크롤 시 크롬에서 흔들리는 버그가 있어 <strong>-webkit-transform:translateZ(0)</strong> 코드를 추가해주었습니다.<br>
+		탭 메뉴의 콘텐츠가 해상도에 따라 유동적인 높이를 가져 position:absolute로 배치가 어려움이 있어 탭 메뉴의 제목과 내용을 분리시켜 마크업 하였습니다.<br><strong>웹 접근성을 위해 각 콘텐츠 앞에 탭 메뉴의 제목을 달아주었습니다.</strong><br>
+		기존 윤성 하우징의 사이트는 <strong>가시적인 키보드 조적 포커스 흐름이 맞지 않아</strong> 레이아웃 배치를 바꿔서 코딩하였습니다.<br>
+		높이가 다른 li를 유동적으로 동일하게 맞추기 위해 matchHeight 제이쿼리 플러그인을 사용하였습니다.</p>
+	</div>
+	<div class="yunsung_img">
+		<img src="../../images/yunsung_jmg.png" alt="윤성하우징 홈페이지 메인 사진">
+	</div>
+</section>
+<!-- footer -->
+<footer><p class="copyright">ⓒ NA YOUNG 2016.All Rights Reserved.</p></footer>
+<!-- 스크롤 부드럽게 -->
+<script>
+$(function($) {
+    $("nav > ul > li a").click(function(event){            
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    });
+});
+</script>
+</body>
+</html>
