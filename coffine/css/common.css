@@ -5,7 +5,6 @@ body,a{font-family:'Nanum Gothic';text-decoration:none}
 
 /* 메뉴를 건너 뛰고 페이지 본문으로 이동하기 */
 .skip{display:block;overflow:hidden;position:absolute;z-index:999999;width:1px;height:1px;margin:0 -1px -1px 0;padding:0;background:#692c90;font-size:0;line-height:0;text-align:center}
-
 .skip:hover,.skip:active,.skip:focus{width:100%;height:auto;margin:0;padding:10px 0;font-weight:bold;font-size:12px;font-family:Tahoma;line-height:1;color:#fff;text-decoration:none !important;text-indent:10px}
 
 /* header */
@@ -23,7 +22,7 @@ header{position: relative;}
 .util_menu .academy a{padding:7px 9px;background:url(../images/util_aca_bg.png) center center no-repeat;color:#2b2b2b}
 .util_menu .app a{padding:7px 10px;background:url(../images/util_app_bg.png) center center no-repeat;color:#fff}
 .util_menu a{font-size:12px;font-weight:bold;color:#a2a1a2}
-h1{clear:both;position:absolute;top:24px;left:50%;width: 101px;height: 101px;margin-left:-50px;-webkit-transform: translateZ(0);}
+h1{clear:both;position:absolute;top:24px;left:50%;width: 101px;height: 101px;margin-left:-50px;-webkit-transform: translateZ(0);z-index: 1000;}
 
 /* 글로벌 네비게이션 */
 nav{overflow:hidden;width:100%;-webkit-transform: translateZ(0);}
