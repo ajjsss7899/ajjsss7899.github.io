@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/sub.css">
 <link rel="stylesheet" type="text/css" href="../../css/common.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="../../js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -274,29 +275,5 @@
 		<p class="copyright">COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
-<!-- 글로벌 네비게이션 script -->
-<script type="text/javascript">
-$(function(){
-    var $gnbWrap = $('.gnb'),
-		$gnbChild = $('.gnb > li > ul');
-    $gnbWrap.on('mouseenter focusin', function(){
-		$gnbChild.stop().slideDown(400);
-    });
-    $gnbWrap.on('mouseleave', function(){
-        $gnbChild.stop().slideUp(400);
-    });
-    $('.last').focusout(function(){
-   		$gnbChild.stop().slideUp(400);
-    });
-});
-</script>
-<!-- 로컬 네비게이션 -->
-<script type="text/javascript">
-	$(".lnb li").on('click focusin', function(){
-		var tab = $(this);
-		if(tab.hasClass("on")){return false;}
-		tab.addClass("on").siblings(".on").removeClass("on");
-	});
-</script>
 </body>
 </html>

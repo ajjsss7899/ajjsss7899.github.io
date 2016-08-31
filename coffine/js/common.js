@@ -12,3 +12,9 @@ $(function(){
    		$gnbChild.stop().slideUp(400);
 	});
 });
+
+<!-- 로컬 네비게이션 -->
+$(".lnb li").on('click focusin', function(){
+    if($(this).hasClass("on"));
+    $(this).addClass("on").siblings(".on").removeClass("on");
+});
