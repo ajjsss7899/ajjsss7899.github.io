@@ -29,7 +29,7 @@
 }
 
 /* main_vis */
-.main_vis_wrap{}
+.main_vis_wrap{overflow: hidden;}
 .main_vis{left:50%;width:1903px;height:770px;margin-left:-951.5px;margin-top:-41px}
 .main_vis .slick-dots{display:inline;position:relative;left:892px;bottom:638px;z-index:1000}
 .main_vis .slick-dots li{width:14px;height:14px}
