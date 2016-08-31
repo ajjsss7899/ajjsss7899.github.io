@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/common.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 	<![endif]-->
@@ -16,22 +17,22 @@
 <body>
 <a href="#main_visual" class="skip">본문 바로가기</a>
 	<!-- 상단 팝업 -->
-	<div id="popup">
-		<div class="popup_text">
-			<p>본 홈페이지는 개인 포트폴리오 작업물로 상업적 용도로 사용되지 않으며, 사용된 이미지와 콘텐츠의 저작권이 따로 있음을 알려드립니다.</p>
-			<p>크로스 브라우징 : ie8+, 크롬, 파이어폭스, 사파리</p>
-			<p>제작 기간 : 11일</p>
-			<br>
-			<p><a href="https://ajjsss7899.github.io/coffine/sub/community">1. 서브페이지 [고객의 소리] 바로가기</a></p>
-			<p><a href="https://ajjsss7899.github.io/coffine/sub/introduction">2. 서브페이지 [커핀그루나루] 바로가기</a></p>
-			<p><a href="https://ajjsss7899.github.io/coffine/sub/location">3. 서브페이지 [찾아오시는 길] 바로가기</a></p>
-		</div>
-		<div id="pop_close">
-			<input type="checkbox" id="pop_day" />
-			<label for="pop_day">하루동안 보지 않기</label>
-			<a href="#" id="pop_close_btn">[닫기]</a>
-		</div>
+<div id="popup">
+	<div class="popup_text">
+		<p>본 홈페이지는 개인 포트폴리오 작업물로 상업적 용도로 사용되지 않으며, 사용된 이미지와 콘텐츠의 저작권이 따로 있음을 알려드립니다.</p>
+		<p>크로스 브라우징 : ie8+, 크롬, 파이어폭스, 사파리</p>
+		<p>제작 기간 : 11일</p>
+		<br>
+		<p><a target="_blank" href="https://ajjsss7899.github.io/coffine/sub/community">1. 서브페이지 [고객의 소리] 바로가기</a></p>
+		<p><a target="_blank" href="https://ajjsss7899.github.io/coffine/sub/introduction">2. 서브페이지 [커핀그루나루] 바로가기</a></p>
+		<p><a target="_blank" href="https://ajjsss7899.github.io/coffine/sub/location">3. 서브페이지 [찾아오시는 길] 바로가기</a></p>
 	</div>
+	<div id="pop_close">
+		<input type="checkbox" id="pop_day" />
+		<label for="pop_day">하루동안 보지 않기</label>
+		<a href="#" id="pop_close_btn">[닫기]</a>
+	</div>
+</div>
 <!-- header -->
 <header>
 	<div class="header_wrap">
@@ -48,70 +49,70 @@
 		<!-- 글로벌 네비게이션 -->
 		<nav>
 			<ul class="gnb">
-			<li class="nav1"><a href="#">MENU</a>
-				<ul>
-				<li><a href="#">New & Best</a></li>
-				<li><a href="#">Theme Menu</a></li>
-				<li><a href="#">Coffee</a></li>
-				<li><a href="#">Tea & Beverage</a></li>
-				<li><a href="#">Wine</a></li>
-				<li><a href="#">Dessert</a></li>
-				<li><a href="#">MD</a></li>
-				</ul>
-			</li>
-			<li class="nav2"><a href="#">STORE</a>
-				<ul>
-				<li><a href="#">매장찾기</a></li>
-				<li><a href="#">신규매장</a></li>
-				</ul>
-			</li>
-			<li class="nav3"><a href="#">EVENT</a>
-				<ul>
-				<li><a href="#">진행중인 이벤트</a></li>
-				<li><a href="#">종료된 이벤트</a></li>
-				<li><a href="#">당첨자 발표</a></li>
-				</ul>
-			</li>
-			<li class="nav4"><a href="#">MEMBERSHIP</a>
-				<ul>
-				<li><a href="#">퍼플멤버스 소개</a></li>
-				<li><a href="#">퍼플멤버스 혜택</a></li>
-				<li><a href="#">퍼플멤버스 소개</a></li>
-				<li><a href="#">퍼플멤버스 충전형<br>/기프트 카드</a></li>
-				<li><a href="#">자주 묻는 질문</a></li>
-				</ul>
-			</li>
-			<li class="nav5"><a href="#">COMMUNITY</a>
-				<ul>
-				<li><a href="#">새소식</a></li>
-				<li><a href="#">자주 묻는 질문</a></li>
-				<li><a href="#">고객의 소리</a></li>
-				</ul>
-			</li>
-			<li class="nav6"><a href="#">FRANCHISE</a>
-				<ul>
-				<li><a href="#">가맹안내</a></li>
-				<li><a href="#">투자비용</a></li>
-				<li><a href="#">인테리어</a></li>
-				<li><a href="#">자주 묻는 질문</a></li>
-				<li><a href="#">개설문의</a></li>
-				<li><a href="#">지원 제도</a></li>
-				<li><a href="#">해외 사업</a></li>
-				<li><a href="#">점주광장</a></li>
-				</ul>
-			</li>
-			<li class="nav7"><a href="#">COFFINE STORY</a>
-				<ul>
-				<li><a href="#">커핀그루나루</a></li>
-				<li><a href="#">Coffee + Wine</a></li>
-				<li><a href="#">메뉴 스토리</a></li>
-				<li><a href="#">광고자료</a></li>
-				<li><a href="#">글로벌 브랜드</a></li>
-				<li><a href="#">사회 공헌</a></li>
-				<li><a href="#">채용정보</a></li>
-				<li class="last"><a href="#">찾아오시는 길</a></li>
-				</ul>
-			</li>
+				<li class="nav1"><a href="#">MENU</a>
+					<ul>
+					<li><a href="#">New & Best</a></li>
+					<li><a href="#">Theme Menu</a></li>
+					<li><a href="#">Coffee</a></li>
+					<li><a href="#">Tea & Beverage</a></li>
+					<li><a href="#">Wine</a></li>
+					<li><a href="#">Dessert</a></li>
+					<li><a href="#">MD</a></li>
+					</ul>
+				</li>
+				<li class="nav2"><a href="#">STORE</a>
+					<ul>
+					<li><a href="#">매장찾기</a></li>
+					<li><a href="#">신규매장</a></li>
+					</ul>
+				</li>
+				<li class="nav3"><a href="#">EVENT</a>
+					<ul>
+					<li><a href="#">진행중인 이벤트</a></li>
+					<li><a href="#">종료된 이벤트</a></li>
+					<li><a href="#">당첨자 발표</a></li>
+					</ul>
+				</li>
+				<li class="nav4"><a href="#">MEMBERSHIP</a>
+					<ul>
+					<li><a href="#">퍼플멤버스 소개</a></li>
+					<li><a href="#">퍼플멤버스 혜택</a></li>
+					<li><a href="#">퍼플멤버스 소개</a></li>
+					<li><a href="#">퍼플멤버스 충전형<br>/기프트 카드</a></li>
+					<li><a href="#">자주 묻는 질문</a></li>
+					</ul>
+				</li>
+				<li class="nav5"><a href="#">COMMUNITY</a>
+					<ul>
+					<li><a href="#">새소식</a></li>
+					<li><a href="#">자주 묻는 질문</a></li>
+					<li><a href="#">고객의 소리</a></li>
+					</ul>
+				</li>
+				<li class="nav6"><a href="#">FRANCHISE</a>
+					<ul>
+					<li><a href="#">가맹안내</a></li>
+					<li><a href="#">투자비용</a></li>
+					<li><a href="#">인테리어</a></li>
+					<li><a href="#">자주 묻는 질문</a></li>
+					<li><a href="#">개설문의</a></li>
+					<li><a href="#">지원 제도</a></li>
+					<li><a href="#">해외 사업</a></li>
+					<li><a href="#">점주광장</a></li>
+					</ul>
+				</li>
+				<li class="nav7"><a href="#">COFFINE STORY</a>
+					<ul>
+					<li><a href="#">커핀그루나루</a></li>
+					<li><a href="#">Coffee + Wine</a></li>
+					<li><a href="#">메뉴 스토리</a></li>
+					<li><a href="#">광고자료</a></li>
+					<li><a href="#">글로벌 브랜드</a></li>
+					<li><a href="#">사회 공헌</a></li>
+					<li><a href="#">채용정보</a></li>
+					<li class="last"><a href="#">찾아오시는 길</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</div>
@@ -355,22 +356,6 @@
 		<p class="copyright">COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
-<!-- 글로벌 네비게이션 script -->
-<script type="text/javascript">
-	$(function(){
-	    var $gnbWrap = $('.gnb'),
-			$gnbChild = $('.gnb > li > ul');
-	    $gnbWrap.on('mouseenter focusin', function(){
-			$gnbChild.stop().slideDown(400);
-	    });
-	    $gnbWrap.on('mouseleave', function(){
-	        $gnbChild.stop().slideUp(400);
-	    });
-	    $('.last').focusout(function(){
-	   		$gnbChild.stop().slideUp(400);
-	    });
-	});
-</script>
 <!-- 메인 슬라이드 -->
 <script type="text/javascript">
 	$(document).ready(function(){

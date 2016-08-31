@@ -29,9 +29,9 @@
 }
 
 /* main_vis */
-.main_vis_wrap{overflow:hidden;margin-top:-40px}
+.main_vis_wrap{}
 .main_vis{left:50%;width:1903px;height:770px;margin-left:-951.5px;margin-top:-41px}
-.main_vis .slick-dots{display:inline;position:relative;left:892px;bottom:598px;z-index:1000}
+.main_vis .slick-dots{display:inline;position:relative;left:892px;bottom:638px;z-index:1000}
 .main_vis .slick-dots li{width:14px;height:14px}
 .main_vis .slick-dots li button{width:14px;height:14px;background:url(../images/main_vis_dots1.png) no-repeat;background-position:center top}
 .main_vis .slick-dots li.slick-active button{background-position:center bottom}
