@@ -1,2 +1,26 @@
 @charset "euc-kr";
 @import url("reset.css");
+/* font-family:'Nanum Myeongjo',serif; */
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+/*font-family:'Roboto',sans-serif;*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,700,100italic,300,300italic,400italic,500,500italic,700italic,900,900italic);
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight:normal;
+    src: 
+    url(../font/NotoSansKR-Regular-Hestia.eot),
+    url(../font/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Noto Sans Korean';
+    font-style: normal;
+    font-weight:bold;
+    src:
+    url(../font/NotoSansKR-Bold-Hestia.eot),
+    url(../font/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../font/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(../font/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}

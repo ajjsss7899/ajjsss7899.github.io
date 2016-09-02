@@ -1,16 +1,239 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title></title>
+	<title>종근당</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	<!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 	<![endif]-->
 </head>
 <body>
-
+<header>
+	<ul class="top_menu">
+		<li><a href="#">종근당</a></li>
+		<li><a href="#">종근당홀딩스</a></li>
+		<li><a href="#">지속가능경영</a></li>
+	</ul>
+	<h1><img src="images/logo.png" alt="종근당 로고"></h1>
+	<nav>
+		<a href="#" class="gnb_open">메뉴 열기 버튼</a>
+		<a href="#" class="gnb_close">메뉴 닫기 버튼</a>
+		<ul class="gnb">
+			<li><a href="#">종근당</a>
+				<div class="gnb_area">
+					<dl>
+						<dt>회사소개</dt>
+						<dd><a href="#">개요</a></dd>
+						<dd><a href="#">CEO 인삿말</a></dd>
+						<dd><a href="#">비전</a></dd>
+						<dd><a href="#">회사위치</a></dd>
+					</dl>
+					<dl>
+						<dt>제품정보</dt>
+						<dd><a href="#">제품소식</a></dd>
+						<dd><a href="#">제품검색</a></dd>
+						<dd><a href="#">가정상비약</a></dd>
+					</dl>
+					<dl>
+						<dt>고객센터</dt>
+						<dd><a href="#">고객상담안내</a></dd>
+						<dd><a href="#">고객의 소리(PC)</a></dd>
+						<dd><a href="#">FAQ</a></dd>
+					</dl>
+				</div>
+				<div class="gnb_area">
+					<dl>
+						<dt>투자정보</dt>
+						<dd><a href="#">재무정보</a></dd>
+						<dd><a href="#">IR</a></dd>
+					</dl>
+					<dl>
+						<dt>연구개발</dt>
+						<dd><a href="#">연구소 소개</a></dd>
+						<dd><a href="#">연구성과</a></dd>
+						<dd><a href="#">진행 프로젝트</a></dd>
+						<dd><a href="#">발매신약</a></dd>
+						<dd><a href="#">플랫폼 기술</a></dd>
+					</dl>
+					<dl>
+						<dt>홍보</dt>
+						<dd><a href="#">종근당 소식</a></dd>
+						<dd><a href="#">브랜드 스토리</a></dd>
+					</dl>
+				</div>
+			</li>
+			<li><a href="#">종근당홀딩스</a>
+				<div class="gnb_area">
+					<dl>
+						<dt>회사소개</dt>
+						<dd><a href="#">종근당 개요</a></dd>
+						<dd><a href="#">CEO 인사말</a></dd>
+						<dd><a href="#">비전</a></dd>
+					</dl>
+				</div>
+				<div class="gnb_area">
+					<dl>
+						<dt>투자정보</dt>
+						<dd><a href="#">재무정보</a></dd>
+						<dd><a href="#">IR</a></dd>
+					</dl>
+					<dl>
+						<dt>가족사 현황</dt>
+						<dd><a href="#">가족사 현황</a></dd>
+					</dl>
+				</div>
+			</li>
+			<li><a href="#">지속가능경영</a>
+				<div class="gnb_area">
+					<dl>
+						<dt>윤리경영</dt>
+						<dd><a href="#">윤리경영이란</a></dd>
+					</dl>
+					<dl>
+						<dt>사회공헌</dt>
+						<dd><a href="#">문화예술</a></dd>
+						<dd><a href="#">사회봉사</a></dd>
+						<dd><a href="#">고촌재단</a></dd>
+						<dd><a href="#">고촌학원</a></dd>
+					</dl>
+				</div>
+				<div class="gnb_area">
+					<dl>
+						<dt>자율준수프로그램</dt>
+						<dd><a href="#">CP 소개</a></dd>
+						<dd><a href="#">CP 조직도</a></dd>
+						<dd><a href="#">CKD CP</a></dd>
+						<dd><a href="#">CP 활동</a></dd>
+						<dd><a href="#">사이버감사실(PC)</a></dd>
+					</dl>
+					<dl>
+						<dt>소비자중심경영</dt>
+						<dd><a href="#">소비자중심경영</a></dd>
+					</dl>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</header>
+<section class="main_vis_wrap">
+	<div class="main_vis">
+		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner01.png" alt=""></a></div>
+		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner02.png" alt=""></a></div>
+		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner03.png" alt=""></a></div>
+	</div>
+</section>
+<section class="util_menu_wrap">
+	<ul class="util_menu">
+		<li><a href="#">회사소개</a></li>
+		<li><a href="#">효종연구소</a></li>
+		<li><a href="#">종근당 소식</a></li>
+		<li><a href="#">약국찾기</a></li>
+	</ul>
+</section>
+<section class="search_wrap">
+	<h2>제품검색</h2>
+	<form action="#" method="post">
+		<fieldset>
+			<legend>제품검색</legend>
+			<div class="search_form">
+				<label for="search">제품명 입력</label>
+				<input type="text" name="search" id="search" placeholder="제품명 입력">
+			</div>
+		</fieldset>
+	</form>
+	<ul class="search_list">
+		<li><a href="#">감기</a></li>
+		<li><a href="#">해열/진통</a></li>
+		<li><a href="#">소화불량</a></li>
+		<li><a href="#">근육통</a></li>
+	</ul>
+</section>
+<section class="intro_wrap">
+	<div class="intro">
+		<div class="intro_area">
+			<img src="images/intro1.jpg" alt="듀비에 사진">
+			<dl>
+				<dt>전문의약품<br><span>듀비에</span></dt>
+				<dd>제2형 당뇨병치료제</dd>
+			</dl>
+		</div>
+		<div class="intro_area">
+			<img src="images/intro2.jpg" alt="종근당 글리아티린 사진">
+			<dl>
+				<dt>전문의약품<br><span>종근당 글리아티린</span></dt>
+				<dd>뇌대사개선제</dd>
+			</dl>
+		</div>
+		<div class="intro_area">
+			<img src="images/intro3.jpg" alt="센돔 사진">
+			<dl>
+				<dt>전문의약품<br><span>센돔</span></dt>
+				<dd>발기부전치료제</dd>
+			</dl>
+		</div>
+		<div class="intro_area">
+			<img src="images/intro4.jpg" alt="딜라트렌 사진">
+			<dl>
+				<dt>전문의약품<br><span>딜라트렌</span></dt>
+				<dd>항고혈압제</dd>
+			</dl>
+		</div>
+		<div class="intro_area">
+			<img src="images/intro5.png" alt="펜잘큐 사진">
+			<dl>
+				<dt>전문의약품<br><span>펜잘큐</span></dt>
+				<dd>해열·소염·진통제</dd>
+			</dl>
+		</div>
+		<div class="intro_area">
+			<img src="images/intro6.jpg" alt="프리페민 사진">
+			<dl>
+				<dt>전문의약품<br><span>프리페민</span></dt>
+				<dd>여성질환치료제</dd>
+			</dl>
+		</div>
+	</div>
+</section>
+<div class="promotiorn"><a href="#"><img src="images/img_ckd_promotion.png" alt="종근당 75주년 홍보영상"></a></div>
+<section class="notice_wrap">
+	<h2>전자공고</h2>
+	<ul class="notice">
+		<li><a href="#">(주) 종근당 외부감사인 선임 공고<span>2016-04-14</span></a></li>
+		<li><a href="#">(주)종근당 제 3기 결산공고<span>2016-03-18</span></a></li>
+		<li><a href="#">제3기 정기주주총회 소집 공고<span>2016-03-03</span></a></li>
+	</ul>
+	<a class="notice_btn" href="#">전자공고 더보기</a>
+</section>
+<footer>
+	<section class="f_site_wrap">
+		<ul class="f_site">
+			<li><a href="#">종근당</a></li>
+			<li><a href="#">종근당산업</a></li>
+			<li><a href="#">벨컴</a></li>
+			<li><a href="#">종근당바이오</a></li>
+			<li><a href="#">벨이앤씨</a></li>
+			<li><a href="#">CKD창업투자</a></li>
+			<li><a href="#">경보제약</a></li>
+			<li><a href="#">벨에스엠</a></li>
+			<li><a href="#">벨아이앤에스</a></li>
+			<li><a href="#">종근당건강</a></li>
+		</ul>
+		<a href="#" class="f_site_btn">FAMILY SITE</a>
+	</section>
+	<section class="footer_menu_wrap">
+		<ul class="footer_menu">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">PC버전</a></li>
+			<li><a href="#">CONTACT US</a></li>
+			<li><a href="#">인재채용</a></li>
+		</ul>
+		<a href="#" class="page_top">TOP</a>
+	</section>
+	<address>서울특별시 서대문구 충정로 8<br>전화 : 02-2194-0300 팩스 : 02-2194-0369<br>고객센터 : 080-6776-080</address>
+	<p class="copyright">Copyright 2016 by Chong Kun Dang pharmaceutical Corp.<br>All right reserved</p>
+</footer>
 </body>
 </html>
