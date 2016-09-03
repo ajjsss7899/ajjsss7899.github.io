@@ -11,16 +11,21 @@
 	<![endif]-->
 </head>
 <body>
+<!-- header -->
 <header>
-	<ul class="top_menu">
-		<li><a href="#">종근당</a></li>
-		<li><a href="#">종근당홀딩스</a></li>
-		<li><a href="#">지속가능경영</a></li>
-	</ul>
-	<h1><img src="images/logo.png" alt="종근당 로고"></h1>
+	<div class="top_menu_wrap">
+		<ul class="top_menu">
+			<li><a href="#">종근당</a></li>
+			<li><a href="#">종근당홀딩스</a></li>
+			<li><a href="#">지속가능경영</a></li>
+		</ul>
+	</div>
+	<div class="header">
+		<h1 class="logo"><a href="#"><img src="images/logo.png" alt="종근당 로고"></a></h1>
+		<a href="#" class="gnb_open blind">메뉴 열기 버튼</a>
+		<a href="#" class="gnb_close blind">메뉴 닫기 버튼</a>
+	</div>
 	<nav>
-		<a href="#" class="gnb_open">메뉴 열기 버튼</a>
-		<a href="#" class="gnb_close">메뉴 닫기 버튼</a>
 		<ul class="gnb">
 			<li><a href="#">종근당</a>
 				<div class="gnb_area">
@@ -118,6 +123,7 @@
 		</ul>
 	</nav>
 </header>
+<!-- 메인 슬라이드 -->
 <section class="main_vis_wrap">
 	<div class="main_vis">
 		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner01.png" alt=""></a></div>
@@ -133,6 +139,7 @@
 		<li><a href="#">약국찾기</a></li>
 	</ul>
 </section>
+<!-- 제품검색 -->
 <section class="search_wrap">
 	<h2>제품검색</h2>
 	<form action="#" method="post">
@@ -151,6 +158,7 @@
 		<li><a href="#">근육통</a></li>
 	</ul>
 </section>
+<!-- 제품소개 -->
 <section class="intro_wrap">
 	<div class="intro">
 		<div class="intro_area">
@@ -197,7 +205,9 @@
 		</div>
 	</div>
 </section>
+<!-- 홍보영상 -->
 <div class="promotiorn"><a href="#"><img src="images/img_ckd_promotion.png" alt="종근당 75주년 홍보영상"></a></div>
+<!-- 전자공고 -->
 <section class="notice_wrap">
 	<h2>전자공고</h2>
 	<ul class="notice">
@@ -207,6 +217,7 @@
 	</ul>
 	<a class="notice_btn" href="#">전자공고 더보기</a>
 </section>
+<!-- footer -->
 <footer>
 	<section class="f_site_wrap">
 		<ul class="f_site">
@@ -235,5 +246,13 @@
 	<address>서울특별시 서대문구 충정로 8<br>전화 : 02-2194-0300 팩스 : 02-2194-0369<br>고객센터 : 080-6776-080</address>
 	<p class="copyright">Copyright 2016 by Chong Kun Dang pharmaceutical Corp.<br>All right reserved</p>
 </footer>
+<script>
+	$(function(){
+		$(".gnb > li").on("click", function(){
+			$(this).toggleClass("on").find(".gnb_area").slideToggle("fast");
+			$(".gnb > li > .gnb_area").parent().not(this).removeClass("on").find(".gnb_area").slideUp("fast");
+		});
+	});
+</script>
 </body>
 </html>
