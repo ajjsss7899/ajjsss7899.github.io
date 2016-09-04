@@ -24,7 +24,7 @@ header{overflow:hidden}
 .gnb > li:nth-child(2) > a{color:#47587e}
 .gnb > li:last-child > a{color:#a48738}
 .gnb_area_wrap{display:none;padding: 0 16px 74px 16px;background: #f8f8f8;overflow: hidden;border-bottom: 1px solid #ccc;}
-/*.gnb > li:first-child > .gnb_area_wrap{display:block;}*/
+.gnb > li:first-child > .gnb_area_wrap{display:block;}
 .gnb_area{float: left;width: 50%;font-family:'Noto Sans KR',sans-serif;}
 .gnb_area dl{padding: 23px 16px 0 16px;}
 .gnb_area dt{padding-bottom: 12px;color: #333;font-size: 13px;font-weight: 700;display: block;border-bottom: 1px solid #000;}
