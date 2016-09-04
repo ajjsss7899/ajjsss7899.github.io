@@ -27,7 +27,7 @@
 	</div>
 	<nav>
 		<ul class="gnb">
-			<li><a href="#">종근당</a>
+			<li class="on"><a href="#">종근당</a>
 				<div class="gnb_area_wrap">
 					<div class="gnb_area">
 						<dl>
@@ -263,8 +263,9 @@
 	$(function(){
 		$(".gnb_open").on("click", function(){
 			$(".gnb").slideDown(250);
-			$(".gnb_open").css("display","none")
-			$(".gnb_close").css("display","block")
+			$(".gnb_open").css("display","none");
+			$(".gnb_close").css("display","block");
+			$(".gnb > li").first().find(".gnb_area_wrap").slideDown(400);
 		});
 		$(".gnb_close").on("click", function(){
 			$(".gnb").slideUp(250);
