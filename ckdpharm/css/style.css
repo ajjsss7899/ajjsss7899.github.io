@@ -38,6 +38,6 @@ header{overflow:hidden}
 .util_menu{overflow: hidden;}
 .util_menu li{float: left;width: 25%;background: #004795 url(../images/blt_bn_bar.png) left center no-repeat;}
 .util_menu li:first-child{background-image: none;}
-.util_menu li a{height: 87px;display: block;text-align: center;font-size: 10px;color: #fff;}
+.util_menu li a{height: 87px;display: block;text-align: center;font-size: 12px;color: #fff;}
 
 img{width: 100%;}
