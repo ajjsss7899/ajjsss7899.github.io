@@ -1,6 +1,6 @@
 @charset "euc-kr";
 @import url("reset.css");
-body{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+body{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
 
 /* header */
 header{overflow:hidden}
@@ -8,7 +8,7 @@ header{overflow:hidden}
 .top_menu{margin:8px 25px 0;text-align:center}
 .top_menu li{float:left;width:33.3%;height:32px}
 .top_menu li:first-child{border-radius:4px 4px 0 0;background:#fff}
-.top_menu li a{display:block;font-size:12px;font-family:'Noto Sans KR',sans-serif;font-weight:700;line-height:32px;color:#fff}
+.top_menu li a{display:block;font-size:12px;font-weight:700;line-height:32px;color:#fff}
 .top_menu li:first-child a{color:#004795}
 .header{height:46px;border-bottom:1px solid #d4d4d4}
 .logo{float:left;margin:9px 0 0 25px}
@@ -25,9 +25,19 @@ header{overflow:hidden}
 .gnb > li:last-child > a{color:#a48738}
 .gnb_area_wrap{display:none;padding: 0 16px 74px 16px;background: #f8f8f8;overflow: hidden;border-bottom: 1px solid #ccc;}
 .gnb > li:first-child > .gnb_area_wrap{display:block;}
-.gnb_area{float: left;width: 50%;font-family:'Noto Sans KR',sans-serif;}
+.gnb_area{float: left;width: 50%;}
 .gnb_area dl{padding: 23px 16px 0 16px;}
 .gnb_area dt{padding-bottom: 12px;color: #333;font-size: 13px;font-weight: 700;display: block;border-bottom: 1px solid #000;}
 .gnb_area dd a{font-size: 13px;color: #333;font-size: 13px;display: block;line-height: 41px;border-bottom: 1px solid #dfdfdf;}
+
+/* 메인 슬라이드*/
+.main_vis_wrap{overflow: hidden;}
+.slick-arrow{display: none!important;}
+
+/* 바로가기 메뉴 */
+.util_menu{overflow: hidden;}
+.util_menu li{float: left;width: 25%;background: #004795 url(../images/blt_bn_bar.png) left center no-repeat;}
+.util_menu li:first-child{background-image: none;}
+.util_menu li a{height: 87px;display: block;text-align: center;font-size: 10px;color: #fff;}
 
 img{width: 100%;}

@@ -4,8 +4,10 @@
 	<title>종근당</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
 </head>
 <body>
 <!-- header -->
@@ -129,9 +131,9 @@
 <!-- 메인 슬라이드 -->
 <section class="main_vis_wrap">
 	<div class="main_vis">
-		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner01.png" alt=""></a></div>
-		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner02.png" alt=""></a></div>
-		<div class="main_vis_area"><a href="#"><img src="images/img_ckd_banner03.png" alt=""></a></div>
+		<div class="main_vis_area"><img src="images/img_ckd_banner01.png" alt="A CELEBRATION OF 75 SEVENTY FIVE YEARS INNOVATION"></div>
+		<div class="main_vis_area"><img src="images/img_ckd_banner02.png" alt="INNOVATION 종근당 75주년, 끊임없는 연구개발로 새로운 가치를 창출합니다."></div>
+		<div class="main_vis_area"><img src="images/img_ckd_banner03.png" alt="새벽 효 쇠북 종 새벽을 깨우는 종소리처럼 글로벌 신약개발의 새 시대를 열어갑니다."></div>
 	</div>
 </section>
 <section class="util_menu_wrap">
@@ -271,6 +273,16 @@
 		$(".gnb > li").on("click", function(){
 			$(this).toggleClass("on").find(".gnb_area_wrap").slideToggle(400);
 			$(".gnb > li > .gnb_area_wrap").parent().not(this).removeClass("on").find(".gnb_area_wrap").slideUp(400);
+		});
+	});
+</script>
+<!-- 메인 슬라이드 -->
+<script>
+	$(function(){
+		$(".main_vis").slick({
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 5000
 		});
 	});
 </script>
