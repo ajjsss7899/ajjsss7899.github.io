@@ -3,12 +3,9 @@
 <head>
 	<title>종근당</title>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="js/html5shiv.min.js"></script>
-	<![endif]-->
 </head>
 <body>
 <!-- header -->
@@ -262,18 +259,18 @@
 	});
 	$(function(){
 		$(".gnb_open").on("click", function(){
-			$(".gnb").slideDown(300);
+			$(".gnb").slideDown(250);
 			$(".gnb_open").css("display","none");
 			$(".gnb_close").css("display","block");
 		});
 		$(".gnb_close").on("click", function(){
-			$(".gnb").slideUp(300);
+			$(".gnb").slideUp(250);
 			$(".gnb_close").css("display","none")
 			$(".gnb_open").css("display","block")
 		});
 		$(".gnb > li").on("click", function(){
-			$(this).toggleClass("on").find(".gnb_area_wrap").slideToggle(300);
-			$(".gnb > li > .gnb_area_wrap").parent().not(this).removeClass("on").find(".gnb_area_wrap").slideUp(300);
+			$(this).toggleClass("on").find(".gnb_area_wrap").slideToggle(400);
+			$(".gnb > li > .gnb_area_wrap").parent().not(this).removeClass("on").find(".gnb_area_wrap").slideUp(400);
 		});
 	});
 </script>
