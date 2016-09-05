@@ -300,9 +300,9 @@
 	});
 	//슬라이드 조작 시 일시정지
 	$(function(){
-		$(".intro_area, .intro").on("focusin",function(){
+		$(".intro_area, .intro").on("click",function(){
 			$(".intro").slick({
-				autoplay: false
+				slickPause: true
 			});
 		});
 	});
