@@ -297,9 +297,10 @@
 			autoplay: true,
 			autoplaySpeed: 1000
 		});
-		$('.slick-arrow').on('click', function () {
-        $(".intro").slick('slickPause');
-    });
+		//슬라이드 조작시 일시정지
+		$('.slick-arrow').on('click TouchMove', function () {
+			$(".intro").slick('slickPause');
+		});
 	});
 </script>
 </body>
