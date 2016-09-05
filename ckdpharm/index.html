@@ -286,7 +286,7 @@
 			fade: true,
 			autoplay: true,
 			autoplaySpeed: 5000,
-			pauseOnFocus:true
+			pauseOnFocus:false
 		});
 	});
 </script>
@@ -300,7 +300,7 @@
 	});
 	//슬라이드 조작 시 일시정지
 	$(function(){
-		$(".intro_area").on("click",function(){
+		$(".intro_area, .intro").on("focusin",function(){
 			$(".intro").slick({
 				autoplay: false
 			});
