@@ -285,8 +285,7 @@
 		$(".main_vis").slick({
 			fade: true,
 			autoplay: true,
-			autoplaySpeed: 5000,
-			pauseOnFocus:false
+			autoplaySpeed: 5000
 		});
 		//슬라이드 조작시 일시정지
 		$('.main_vis').on('touchmove', function () {
@@ -299,9 +298,8 @@
 	$(function(){
 		$(".intro").slick({
 			autoplay: true,
-			autoplaySpeed: 1000
+			autoplaySpeed: 5000
 		});
-		//슬라이드 조작시 일시정지
 		$('.intro, .intro .slick-arrow').on('touchmove click', function () {
 			$(".intro").slick('slickPause');
 		});

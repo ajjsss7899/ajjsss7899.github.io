@@ -58,7 +58,6 @@ header{overflow:hidden}
 .intro_wrap h2{margin: 23px 0 0 0;font-size: 14px;color: #000;font-weight: 700;}
 .intro_area{margin-top: 23px;}
 .intro_wrap .intro_img{display: block;max-width: 1334px;height: 140px;margin: 0 auto;border-bottom: 1px solid #000;}
-.intro_wrap .intro_img img{height: 100%;margin: 0 auto;}
+.intro_wrap .intro_img img{width: auto;height: 100%;margin: 0 auto;}
 .slick-arrow{background: #000;}
 
-img{width: 100%;}
