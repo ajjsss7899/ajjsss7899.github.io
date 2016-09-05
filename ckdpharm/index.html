@@ -286,7 +286,7 @@
 			fade: true,
 			autoplay: true,
 			autoplaySpeed: 5000,
-			pauseOnFocus:false
+			pauseOnFocus:true
 		});
 	});
 </script>
@@ -297,12 +297,6 @@
 			autoplay: true,
 			autoplaySpeed: 1000
 		});
-	$(".intro").on("afterChange", function(e, slick, currentSlide){
-		if( currentSlide == 0 ) {
-		intro.slick('slickPause');
-		console.log('paused');
-		}
-	});
 	});
 
 </script>
