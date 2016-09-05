@@ -1,6 +1,6 @@
 @charset "euc-kr";
 @import url("reset.css");
-body{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-family:'Noto Sans KR',sans-serif;}
 
 /* header */
 header{overflow:hidden}
@@ -33,11 +33,29 @@ header{overflow:hidden}
 /* 메인 슬라이드*/
 .main_vis_wrap{overflow: hidden;}
 .slick-arrow{display: none!important;}
+.main_vis_wrap img{width: 100%;}
 
 /* 바로가기 메뉴 */
 .util_menu{overflow: hidden;}
 .util_menu li{float: left;width: 25%;background: #004795 url(../images/blt_bn_bar.png) left center no-repeat;}
 .util_menu li:first-child{background-image: none;}
-.util_menu li a{height: 87px;display: block;text-align: center;font-size: 12px;color: #fff;}
+.util_menu li a{padding-top: 58px;height: 87px;display: block;text-align: center;font-size: 12px;color: #fff;background: url(../images/ico_ckd_company.png) center 16px no-repeat;-webkit-background-size: 28px 32px;background-size: 28px 32px;}
+.util_menu li:nth-child(2) a{background-image: url(../images/ico_ckd_lab.png);-webkit-background-size: 18px 33px;background-size: 18px 33px;}
+.util_menu li:nth-child(3) a{background-image: url(../images/ico_ckd_news.png);-webkit-background-size: 32px 29px;background-size: 32px 29px;}
+.util_menu li:nth-child(4) a{background-image: url(../images/ico_ckd_pharm.png);-webkit-background-size: 22px 31px;background-size: 22px 31px;}
 
-img{width: 100%;}
+/* 제품검색 */
+.search_wrap{background: #f0f4f8;overflow: hidden;padding: 0 25px;}
+.search_wrap h2{margin: 23px 0 0 0;font-size: 14px;color: #000;font-weight: 700;}
+.search_form{position: relative;margin-top: 22px;}
+.search{padding-left: 10px;width: 100%;height: 48px;border: 5px solid #5f88b8;}
+.search_btn{top:9px;right: 11px;position: absolute;width: 29px;height: 30px;background: url(../images/ico_reading_glasses.png) 0 0 no-repeat;border: none;-webkit-background-size: cover;background-size: cover;}
+.search_list li{margin-top: 22px;float: left;width: 25%;text-align: center;}
+.search_list li a{padding-top: 60px;font-size: 12px;color: #2d3f55;display: block;height: 94px;background: url(../images/ico_ckd_cold.png) center 0 no-repeat;-webkit-background-size: 52px 52px;background-size: 52px 52px;}
+
+/* 제품소개 */
+.intro_wrap{overflow: hidden;padding: 0 25px;}
+.intro_wrap h2{margin: 23px 0 0 0;font-size: 14px;color: #000;font-weight: 700;}
+.intro_area{margin-top: 23px;}
+.intro_wrap .intro_img{display: block;max-width: 1334px;height: 140px;margin: 0 auto;border-bottom: 1px solid #000;}
+.intro_wrap .intro_img img{height: 100%;margin: 0 auto;}

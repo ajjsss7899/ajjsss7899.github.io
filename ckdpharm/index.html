@@ -136,6 +136,7 @@
 		<div class="main_vis_area"><img src="images/img_ckd_banner03.png" alt="새벽 효 쇠북 종 새벽을 깨우는 종소리처럼 글로벌 신약개발의 새 시대를 열어갑니다."></div>
 	</div>
 </section>
+<!-- 바로가기 메뉴 -->
 <section class="util_menu_wrap">
 	<ul class="util_menu">
 		<li><a href="#">회사소개</a></li>
@@ -149,10 +150,11 @@
 	<h2>제품검색</h2>
 	<form action="#" method="post">
 		<fieldset>
-			<legend>제품검색</legend>
+			<legend class="blind">제품검색</legend>
 			<div class="search_form">
-				<label for="search">제품명 입력</label>
-				<input type="text" name="search" id="search" placeholder="제품명 입력">
+				<label for="search" class="blind2">제품명 입력</label>
+				<input type="text" name="search" id="search" class="search" placeholder="제품명 입력">
+				<button type="submit" title="제품명 검색" id="search_btn" class="search_btn"></button>
 			</div>
 		</fieldset>
 	</form>
@@ -165,44 +167,45 @@
 </section>
 <!-- 제품소개 -->
 <section class="intro_wrap">
+	<h2>제품소개</h2>
 	<div class="intro">
 		<div class="intro_area">
-			<img src="images/intro1.jpg" alt="듀비에 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro1.jpg" alt="듀비에 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>듀비에</span></dt>
 				<dd>제2형 당뇨병치료제</dd>
 			</dl>
 		</div>
 		<div class="intro_area">
-			<img src="images/intro2.jpg" alt="종근당 글리아티린 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro2.jpg" alt="종근당 글리아티린 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>종근당 글리아티린</span></dt>
 				<dd>뇌대사개선제</dd>
 			</dl>
 		</div>
 		<div class="intro_area">
-			<img src="images/intro3.jpg" alt="센돔 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro3.jpg" alt="센돔 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>센돔</span></dt>
 				<dd>발기부전치료제</dd>
 			</dl>
 		</div>
 		<div class="intro_area">
-			<img src="images/intro4.jpg" alt="딜라트렌 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro4.jpg" alt="딜라트렌 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>딜라트렌</span></dt>
 				<dd>항고혈압제</dd>
 			</dl>
 		</div>
 		<div class="intro_area">
-			<img src="images/intro5.png" alt="펜잘큐 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro5.png" alt="펜잘큐 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>펜잘큐</span></dt>
 				<dd>해열·소염·진통제</dd>
 			</dl>
 		</div>
 		<div class="intro_area">
-			<img src="images/intro6.jpg" alt="프리페민 사진">
+			<div class="intro_img"><a href="#"><img src="images/intro6.jpg" alt="프리페민 사진"></a></div>
 			<dl>
 				<dt>전문의약품<br><span>프리페민</span></dt>
 				<dd>여성질환치료제</dd>
@@ -282,7 +285,25 @@
 		$(".main_vis").slick({
 			fade: true,
 			autoplay: true,
+			autoplaySpeed: 5000,
+			pauseOnFocus:true
+		});
+	});
+</script>
+<!-- 제품소개 슬라이드 -->
+<script>
+	$(function(){
+		$(".intro").slick({
+			autoplay: true,
 			autoplaySpeed: 5000
+		});
+	});
+	//슬라이드 조작 시 일시정지
+	$(function(){
+		$(".intro_area").on("click",function(){
+			$(".intro").slick({
+				autoplay: false
+			});
 		});
 	});
 </script>
