@@ -293,17 +293,18 @@
 <!-- 제품소개 슬라이드 -->
 <script>
 	$(function(){
-		$(".intro").slick({
+		var intro = $(".intro").slick({
 			autoplay: true,
 			autoplaySpeed: 1000
 		});
+	$(".intro").on("afterChange", function(e, slick, currentSlide){
+		if( currentSlide == 0 ) {
+		intro.slick('slickPause');
+		console.log('paused');
+		}
 	});
-	//슬라이드 조작 시 일시정지
-	$(function(){
-		$(".intro").on("click",function(){
-			$(".intro").slickPause();
-		});
 	});
+
 </script>
 </body>
 </html>

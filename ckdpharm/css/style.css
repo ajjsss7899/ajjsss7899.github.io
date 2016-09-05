@@ -32,7 +32,7 @@ header{overflow:hidden}
 
 /* 메인 슬라이드*/
 .main_vis_wrap{overflow: hidden;}
-.slick-arrow{display: none!important;}
+/*.slick-arrow{display: none!important;}*/
 .main_vis_wrap img{width: 100%;}
 
 /* 바로가기 메뉴 */
@@ -59,3 +59,4 @@ header{overflow:hidden}
 .intro_area{margin-top: 23px;}
 .intro_wrap .intro_img{display: block;max-width: 1334px;height: 140px;margin: 0 auto;border-bottom: 1px solid #000;}
 .intro_wrap .intro_img img{height: 100%;margin: 0 auto;}
+.slick-arrow{background: #000;}
