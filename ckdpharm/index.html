@@ -288,17 +288,21 @@
 			autoplaySpeed: 5000,
 			pauseOnFocus:false
 		});
+		//슬라이드 조작시 일시정지
+		$('.main_vis').on('touchmove', function () {
+			$(".main_vis").slick('slickPause');
+		});
 	});
 </script>
 <!-- 제품소개 슬라이드 -->
 <script>
 	$(function(){
-		var intro = $(".intro").slick({
+		$(".intro").slick({
 			autoplay: true,
 			autoplaySpeed: 1000
 		});
 		//슬라이드 조작시 일시정지
-		$('.intro, .intro .slick-arrow').on('click touchmove', function () {
+		$('.intro, .intro .slick-arrow').on('touchmove click', function () {
 			$(".intro").slick('slickPause');
 		});
 	});
