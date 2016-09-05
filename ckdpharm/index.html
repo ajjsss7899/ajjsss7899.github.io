@@ -295,12 +295,12 @@
 	$(function(){
 		$(".intro").slick({
 			autoplay: true,
-			autoplaySpeed: 5000
+			autoplaySpeed: 1000
 		});
 	});
 	//슬라이드 조작 시 일시정지
 	$(function(){
-		$(".slick-arrow").on("click",function(){
+		$(".intro_area").on("fousein",function(){
 			$(".intro").slick({
 				slickPause: true
 			});
