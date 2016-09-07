@@ -228,19 +228,22 @@
 <!-- footer -->
 <footer>
 	<section class="f_site_wrap">
-		<ul class="f_site">
-			<li><a href="#">종근당</a></li>
-			<li><a href="#">종근당산업</a></li>
-			<li><a href="#">벨컴</a></li>
-			<li><a href="#">종근당바이오</a></li>
-			<li><a href="#">벨이앤씨</a></li>
-			<li><a href="#">CKD창업투자</a></li>
-			<li><a href="#">경보제약</a></li>
-			<li><a href="#">벨에스엠</a></li>
-			<li><a href="#">벨아이앤에스</a></li>
-			<li><a href="#">종근당건강</a></li>
-		</ul>
-		<a href="#" class="f_site_btn">FAMILY SITE</a>
+		<div class="f_site_area">
+			<p class="tit">Family Site</p>
+			<ul class="f_site">
+				<li><a href="#">종근당</a></li>
+				<li><a href="#">종근당산업</a></li>
+				<li><a href="#">벨컴</a></li>
+				<li><a href="#">종근당바이오</a></li>
+				<li><a href="#">벨이앤씨</a></li>
+				<li><a href="#">CKD창업투자</a></li>
+				<li><a href="#">경보제약</a></li>
+				<li><a href="#">벨에스엠</a></li>
+				<li><a href="#">벨아이앤에스</a></li>
+				<li><a href="#">종근당건강</a></li>
+			</ul>
+		</div>
+		<a href="#" class="f_site_btn">FAMILY SITE<span></span></a>
 	</section>
 	<section class="footer_menu_wrap">
 		<ul class="footer_menu">
@@ -297,8 +300,36 @@
 			autoplaySpeed: 5000
 		});
 		//슬라이드 조작시 일시정지
-		$('.slick-arrow').on('click', function () {
-			$(".intro").slick('slickPause');
+		$(".slick-arrow").on("click", function () {
+			$(".intro").slick("slickPause");
+		});
+	});
+</script>
+<!-- FAMILY SITE -->
+<script>
+	$(function(){
+		$(".f_site_btn").on("click", function(e){
+			e.preventDefault();
+		});
+	});
+	$(function(){
+		$(".f_site_btn").on("click", function(){
+			$(".f_site_area").slideToggle(400); 
+			$("html, body").animate({scrollTop : $(".f_site_area").offset().top}, 400); 
+			//http://erictus.tistory.com/entry/jQuery-%ED%8A%B9%EC%A0%95-Scroll-%EC%9C%84%EC%B9%98%EB%A1%9C-%EC%9D%B4%EB%8F%99%EC%8B%9C%ED%82%A4%EA%B8%B0 참고
+		});
+	});
+</script>
+<!-- 맨위로 TOP -->
+<script>
+	$(function(){
+		$(".page_top").on("click", function(e){
+			e.preventDefault();
+		});
+	});
+	$(function(){
+		$(".page_top").on("click", function(){
+			$("html, body").animate({scrollTop : 0}, 0); 
 		});
 	});
 </script>
