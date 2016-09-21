@@ -14,10 +14,11 @@ nav li a:hover{color:#7b77c9}
 /* 윤성하우스 홈페이지 세부 설명 */
 .yunsung_wrap{overflow:hidden}
 .yunsung{overflow:hidden;width:940px;margin:120px auto 0}
-.yunsung h1{margin-top:35px;font-family:'Open Sans',sans-serif;font-size:18px;color:#23232e;text-align:left}
+.yunsung h1{font-family:'Open Sans',sans-serif;font-size:18px;color:#23232e;text-align:left}
 .yunsung .txt{margin-top:10px;font-family:'Noto Sans KR',sans-serif;font-size:14px;line-height:20px;color:#888a8b;text-align:left}
 .yunsung_img{margin-top:57px;padding:60px 0;background:#ededed}
 .yunsung_img img{width:940px;margin:0 auto}
+.yunsung_wrap .link_wrap{margin-top: 40px;}
 .yunsung_wrap .link{margin-top: 5px;padding:2px 5px 4px;background:#23232e;font-family:'Noto Sans KR',sans-serif;font-size:16px;color:#fff}
 .yunsung_wrap .link:hover{background:#7b77c9}
 
