@@ -19,7 +19,7 @@ nav li a:hover{color:#7b77c9}
 .yunsung_img{margin-top:57px;padding:60px 0;background:#ededed}
 .yunsung_img img{width:940px;margin:0 auto}
 .yunsung_wrap .link_wrap{margin-top: 10px;overflow: hidden;}
-.yunsung_wrap .link{margin-top: 5px;padding:2px 5px 4px;background:#23232e;font-family:'Noto Sans KR',sans-serif;font-size:18px;color:#fff}
+.yunsung_wrap .link{margin-top: 5px;padding:2px 5px 4px;background:#23232e;font-family:'Noto Sans KR',sans-serif;font-size:16px;color:#fff}
 .yunsung_wrap .link:hover{background:#7b77c9}
 
 @media all and (max-width: 1000px){
