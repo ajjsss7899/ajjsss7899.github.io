@@ -1,0 +1,43 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("reset.css");
+body{overflow-x: hidden;}
+/* subpage main visual */
+.smain_bg{width:100%;height:264px;margin:0 auto;background-image:url(../images/counsel_vis.jpg)}
+.smain_bg h1{padding-top:79px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:33px;font-size:36px;color:#fff;letter-spacing:-2px;text-align:center;}
+.smain_bg .line{width:36px;margin:0 auto;padding-top:15px;border-bottom:2px solid #fff}
+.smain_bg p{width:auto;padding-top:26px;padding-left:15px;padding-right:15px;font-family:'Nanum Gothic',sans-serif;font-size:16px;color:#fff;text-align:center;letter-spacing: -0.5px;}
+/* 고객센터 */
+.container{clear: both;position: relative;margin-top: 29px;}
+form{width: 1194px;margin: 0 auto;}
+legend{visibility: hidden;position: absolute;top:0;left: 0;width: 1px;height: 1px;}
+label{display: block;margin: 25px 0 11px 0;color: #4c4a4d;}
+input{width: 100%;height: 45px;background: #f8f8f8;border: 1px solid #eee;padding: 20px 0 20px 20px;box-sizing: border-box;outline-style:none}
+.container li{width: 50%;float: left;}
+.container .text01{width: 100%;}
+.container .text01 input{padding-bottom: 180px;}
+.container .inquiry{width: 100%;margin-top: 52px;}
+.container .inquiry input{padding: 0;}
+.counsel_wrap{margin: 0 15px}
+@media all and (max-width: 1163px){
+.container h2{width: auto;margin-left: 15px;}
+form{width: 100%;}
+}
+@media all and (max-width: 767px){
+.container li{width: 100%;}
+}
+
+
+
+/* footer */
+.footer_wrap{background:#222328;padding-bottom: 30px;clear: both;margin-top: 70px;}
+.footer{width: 1164px;margin: 0 auto;overflow: hidden;padding-top: 52px;}
+.footer_logo{float: left;}
+.footer p{margin-left: 292px;font-family: 'Nanum Gothic',sans-serif;font-size: 12px;line-height: 18px;color: #a2a5b0;}
+@media all and (max-width: 1163px){
+.footer{width: auto;}
+.footer_logo{display: none;}
+.footer p{margin-left: 0;padding: 0 15px;}
+}
+
+

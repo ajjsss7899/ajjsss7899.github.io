@@ -1,0 +1,25 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+:focus{outline:0}
+ul,li a{list-style:none}
+body{overflow-x:hidden;margin:0;padding:0}
+*{margin:0;padding:0}
+li{list-style:none}
+img{display:block;border:0;}
+/* subpage main visual */
+#header .smain_bg{width:100%;height:264px;margin:0 auto;background-image:url(../images/news_vis.jpg)}
+#header .smain_bg h1{padding-top:79px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:33px;font-size:36px;color:#fff;letter-spacing:-2px;text-align:center;}
+#header .smain_bg .line{width:36px;margin:0 auto;padding-top:15px;border-bottom:2px solid #fff}
+#header .smain_bg p{width:auto;padding-top:26px;padding-left:15px;padding-right:15px;font-family:'Nanum Gothic',sans-serif;font-size:16px;color:#fff;text-align:center;letter-spacing: -0.5px;}
+/* //subpage main visual */
+#container{width: 1164px;margin: 0 auto;}
+@media all and (max-width: 1163px){
+#container{width: 100%;}
+}
+#container .line01{margin: 23px 0 203px 0;border-top: 2px solid #393939;width: auto;}
+#container .line02{margin: 23px 0;border-top: 1px solid #e4e4e4;width: auto;}
+@media all and (max-width: 1163px){
+#container .line01{margin: 23px 15px 203px 15px;}
+#container .line02{margin: 23px 15px;}
+}
+#footer{margin-top: 68px;overflow-x: hidden;}

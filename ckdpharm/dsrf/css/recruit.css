@@ -1,0 +1,122 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("reset.css");
+
+
+/* subpage main visual */
+.smain_bg{width:100%;height:264px;margin:0 auto;background-image:url(../images/recruit_vis.jpg)}
+.smain_bg h1{padding-top:79px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:33px;font-size:36px;color:#fff;letter-spacing:-2px;text-align:center;}
+.smain_bg .line{width:36px;margin:0 auto;padding-top:15px;border-bottom:2px solid #fff}
+.smain_bg p{width:auto;padding-top:26px;padding-left:15px;padding-right:15px;font-family:'Nanum Gothic',sans-serif;font-size:16px;color:#fff;text-align:center;letter-spacing: -0.5px;}
+/* 모집부문 및 업무 관련사항 */
+.container{width:1164px;margin:0 auto}
+@media all and (max-width: 1163px){
+.container{width: auto;}
+.contents01 h2{margin-left: 15px;}
+}
+.contents01 h2{margin-top:55px;font-family:'Nanum Gothic',sans-serif;font-size:24px;font-weight:normal;color:#252020;letter-spacing: -1.5px;}
+.contents01 h2 span{color:#9c0b00}
+@media all and (max-width: 1163px){
+#container{width: auto;}
+.contents01 h2{margin-left: 15px;}
+}
+/*테이블 css */
+#ResponsiveTable{width: 1164px;border-collapse: collapse;margin-left: 15px;margin-right: 15px;margin: 0 auto;margin-top: 20px;font-family:'Nanum Gothic',sans-serif;font-size:16px;font-weight:normal;color:#4c4a4d;line-height: 20px;letter-spacing: -0.5px;}
+@media all and (max-width: 1163px){
+#ResponsiveTable{width:96%;}
+}
+tr:nth-of-type(even){background: #fff;}
+#HeadRow{background: #f7f8fa;color:#4c4a4d;font-weight: bold;}
+#ResponsiveTable td{padding: 5px;border: 1px solid #e4e4e4;text-align: left;height: 85px;vertical-align: middle;}
+#HeadRow td{text-align: center;height: 54px;}
+#ResponsiveTable .td_center{text-align: center;}
+#ResponsiveTable .td_pd{padding-left: 20px;}
+@media screen and (max-width: 800px){
+#ResponsiveTable td{height: auto;}
+#ResponsiveTable .td_center{text-align: left;}
+#ResponsiveTable, #ResponsiveTable tbody, #ResponsiveTable tr, #ResponsiveTable td {display: block;width: auto;background: #f7f8fa;}
+#ResponsiveTable{border: 1px solid #e4e4e4;margin-left: 15px;margin-right: 15px;padding: 5px;}
+#HeadRow{position: absolute;left: -9999px;top:-9999px;}
+#ResponsiveTable td{border: none;position: relative;padding-left: 40%;white-space: normal;text-align: left;}
+#ResponsiveTable .td_pd{padding-left: 40%;}
+#ResponsiveTable td:before{position: absolute;top: 5px;left:5px;width: 40%;padding-right: 10px;white-space: nowrap;text-align: left;font-weight: bold;content:attr(data-animal-type);}
+}
+/* 근무조건 */
+.contents02 h2{margin-top:54px;font-family:'Nanum Gothic',sans-serif;font-size:24px;line-height: 1;font-weight:normal;color:#9c0b00;letter-spacing: -1.5px;}
+.contents02 table{width: 100%;border-collapse: collapse;margin-top: 22px;font-family:'Nanum Gothic',sans-serif;font-size:16px;font-weight:normal;color:#4c4a4d;line-height: 24px;letter-spacing: -0.5px;}
+.contents02 td{padding-left: 20px;border: 1px solid #e4e4e4;vertical-align: middle;}
+.contents02 .td_tit{text-align: center;background: #f7f8fa;height: 166px;padding: 0 16px;font-weight: bold;}
+@media all and (max-width: 1163px){
+.contents02 h2{margin-left: 15px;}
+.contents02 table{width: 96%;margin: 0 auto;margin-top: 22px;}
+}
+@media all and (max-width: 800px){
+.contents02{width: 100%;}
+.contents02 td{display: block;margin-left: 15px;margin-right: 15px;padding: 20px 20px;}
+.contents02 .td_tit{height: auto;padding: 20px 0;border-bottom: 0;}
+.contents02 .td_p{border-bottom: 0;}
+.contents02 table{width: 100%;}
+}
+/* 복리후생 제도 */
+.contents03 .benefits{background: #f7f8fa;overflow:hidden;margin-top: 22px;}
+.contents03 h2 {margin-top:54px;font-family:'Nanum Gothic',sans-serif;font-size:24px;line-height: 1;font-weight:normal;color:#252020;letter-spacing: -1.5px;}
+.contents03 span{color:#9c0b00;}
+.contents03 ul{width: 976px;margin: 0 auto;}
+.contents03 li{float: left;text-align:center;margin-top:22px;margin-bottom: 22px;font-family:'Nanum Gothic',sans-serif;font-size:14px;line-height: 1;font-weight:bold;color:#4c4a4d;letter-spacing: -1px;}
+.contents03 .icon01{background-image:url(../images/recruit_icon01.png);background-repeat: no-repeat;padding-top: 103px;width: 92px;margin-right: 129px;}
+.contents03 .icon02{background-image:url(../images/recruit_icon02.png);background-repeat: no-repeat;padding-top: 103px;width: 92px;margin-right: 129px;}
+.contents03 .icon03{background-image:url(../images/recruit_icon03.png);background-repeat: no-repeat;padding-top: 103px;width: 92px;margin-right: 129px;}
+.contents03 .icon04{background-image:url(../images/recruit_icon04.png);background-repeat: no-repeat;padding-top: 103px;width: 92px;margin-right: 129px;}
+.contents03 .icon05{background-image:url(../images/recruit_icon05.png);background-repeat: no-repeat;padding-top: 103px;width: 92px;}
+@media all and (max-width: 1163px){
+.contents03 h2{margin-left: 15px;margin-bottom: 22px;}
+.contents03 .benefits{margin: 0 15px;}
+.contents03 ul{width: 755px;margin: 0 auto;}
+.contents03 .icon04{margin-right: 0;}
+}
+@media all and (max-width: 815px){
+.contents03 ul{width: 534px;margin: 0 auto;}
+.contents03 .icon03{margin-right: 0;}
+.contents03 .icon04{margin-right: 129px;}
+}
+@media all and (max-width: 584px){
+.contents03 ul{width: 376px;margin: 0 auto;}
+.contents03 .icon01{margin-right: 50px;}
+.contents03 .icon02{margin-right: 50px;}
+.contents03 .icon03{margin-right: 0px;}
+.contents03 .icon04{margin-right: 50px;}
+}
+@media all and (max-width: 436px){
+.contents03 ul{width: 234px;margin: 0 auto;}
+.contents03 .icon02{margin-right: 0;}
+.contents03 .icon03{margin-right: 50px;}
+.contents03 .icon04{margin-right: 0;}
+}
+/* 근무지역 */
+.contents04 {overflow:hidden;}
+.contents04 h2 {margin-top:54px;font-family:'Nanum Gothic',sans-serif;font-size:24px;line-height: 1;font-weight:normal;color:#9c0b00;letter-spacing: -1.5px;}
+.contents04 p{margin-top: 17px;font-family:'Nanum Gothic',sans-serif;font-size:16px;line-height: 1;font-weight:normal;color:#4c4a4d;letter-spacing: -0.5px;}
+.contents04 p span{font-weight: bold;}
+.apply_wrap{margin: 0 auto;width: 290px;}
+.apply{width: 290px;height: 60px;margin-top: 54px;font-family:'Nanum Gothic',sans-serif;font-size:16px;color: #fff;font-weight: bold;background: #9c0b00;border: 0;cursor:pointer;}
+.apply:hover{background: #00439c;}
+
+@media all and (max-width: 1163px){
+.contents04 h2{margin-left: 15px;}
+}
+iframe{width: 100%;margin-top: 23px;height: 400px;border: 0;}
+@media all and (max-width: 1163px){
+.iframe{padding: 0 15px;}
+}
+/* footer */
+.footer_wrap{background:#222328;padding-bottom: 30px;clear: both;margin-top: 70px;}
+.footer{width: 1164px;margin: 0 auto;overflow: hidden;padding-top: 52px;}
+.footer_logo{float: left;}
+.footer p{margin-left: 292px;font-family: 'Nanum Gothic',sans-serif;font-size: 12px;line-height: 18px;color: #a2a5b0;}
+@media all and (max-width: 1163px){
+.footer{width: auto;}
+.footer_logo{display: none;}
+.footer p{margin-left: 0;padding: 0 15px;}
+}
+
+

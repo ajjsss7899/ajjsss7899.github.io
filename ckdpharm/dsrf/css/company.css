@@ -1,0 +1,32 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+:focus{outline:0}
+ul,li a{list-style:none;}
+body{overflow-x:hidden;margin: 0;padding: 0;}
+*{padding:0; margin:0;}
+li{list-style:none}
+img{border:0;display: block;}
+/* subpage main visual */
+#header .smain_bg{width: 100%;background-image: url(../images/company_vis.jpg);height: 264px;margin: 0 auto;}
+#header .smain_bg h1{font-family:'Nanum Gothic',sans-serif;line-height:33px;color: #fff;font-size: 36px;text-align: center;padding-top: 79px;letter-spacing: -2px;}
+#header .smain_bg .line{border-bottom: 2px solid #fff;width: 36px;margin: 0 auto;padding-top: 15px;}
+#header .smain_bg p {text-align: center;font-family:'Nanum Gothic',sans-serif;font-size: 16px;color: #fff;padding-top: 26px;width: auto;padding-left: 15px;padding-right: 15px;}
+/* //subpage main visual */
+/* 조직도  */
+#container{overflow: hidden;padding-bottom: 23px;}
+#container h2{text-align: center;font-family:'Nanum Gothic',sans-serif;font-size: 36px;line-height:31px;color:#9c0b00;letter-spacing: -2px;margin-top: 55px;}
+#container p{text-align: center;font-family:'Nanum Gothic',sans-serif;width: auto;padding: 0 15px;margin-top: 22px;font-size: 16px;line-height: 20px;color: #4c4a4d;}
+#container ul{width: 534px;margin: 0 auto;margin-top: 53px;}
+#container li{float: left;padding-bottom: 45px;}
+#container .pd{padding-right: 94px;}
+@media all and (max-width: 767px){
+#container h2{margin-top: 55px;}
+}
+@media all and (max-width: 600px){
+#container ul{width: 220px;margin: 0 auto;margin-top: 53px;}
+#container li{float: left;padding-bottom: 20px;}
+}
+/* 조직도  */
+@media all and (max-width: 600px){
+#footer{margin-top: 115px;}
+}

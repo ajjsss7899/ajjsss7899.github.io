@@ -1,0 +1,55 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("reset.css");
+
+/* 서브페이지 메인 비쥬얼 */
+.smain_bg{width: 100%;background-image: url(../images/introduction_vis.jpg);height: 264px;margin: 0 auto;}
+.smain_bg h1{font-family:'Nanum Gothic',sans-serif;line-height:33px;color: #fff;font-size: 36px;text-align: center;padding-top: 79px;letter-spacing: -2px;}
+.smain_bg .line{border-bottom: 2px solid #fff;width: 36px;margin: 0 auto;padding-top: 15px;}
+.smain_bg p {text-align: center;font-family:'Nanum Gothic',sans-serif;font-size: 16px;color: #fff;padding-top: 26px;width: auto;padding-left: 15px;padding-right: 15px;}
+/* history */
+.history {color: #4c4a4d;}
+.history h2 {font-family:'Roboto',sans-serif;font-size: 36px;font-weight: 400;text-align: center;color: #393939;line-height: 36px;margin-top: 50px;}
+.history h2 span {color: #9c0b00;}
+.his_2015 {width: 1164px;margin: 0 auto;margin-top: 59px;overflow: hidden;}
+.his_2015 h3 {margin-top: -1px;font-family:'Roboto',sans-serif;font-weight:700;font-size: 48px;letter-spacing: -1.5px;color:#9c0b00;float: left;}
+.his_2015 .history01{float: left;margin-left: 37px;font-family:'Nanum Gothic',sans-serif;font-size: 14px;line-height: 24px;letter-spacing: -0.8px;}
+.his_2015 .history02{float: left;margin-left: 31px;font-family:'Nanum Gothic',sans-serif;font-size: 14px;line-height: 24px;letter-spacing: -0.8px;}
+.his_2015 span{color: #9c0b00;font-weight: bold;}
+@media all and (max-width: 1163px){
+.his_2015{width: 680px;margin:59px 0 0 56px;}
+.his_2015 .history02{margin-left: 141px;}
+}
+@media all and (max-width: 767px){
+.his_2015{width: auto;margin: 59px 15px 0 15px;}
+.his_2015 .history01{clear: both;margin-top: 10px;margin-left: 0px;}
+.his_2015 .history02{margin-left: 0px;}
+}
+.line01 {width: 1164px;border-bottom: 1px solid #e4e4e4;margin: 0 auto;margin: 39px 0;}
+@media all and (max-width: 1163px){
+.line01 {width: auto;margin: 39px 15px;}
+}
+.his_2014 {width: 1164px;margin: 0 auto;overflow: hidden;}
+.his_2014 h3 {margin-top: -1px;font-family:'Roboto',sans-serif;font-weight:700;font-size: 48px;letter-spacing: -1.5px;color:#9c0b00;float: left;}
+.his_2014 .history03{float: left;margin-left: 37px;font-family:'Nanum Gothic',sans-serif;font-size: 14px;line-height: 24px;letter-spacing: -0.8px;}
+.his_2014 .history04{float: left;margin-left: 165px;font-family:'Nanum Gothic',sans-serif;font-size: 14px;line-height: 24px;letter-spacing: -0.8px;}
+.his_2014 span{color: #9c0b00;font-weight: bold;}
+@media all and (max-width: 1163px){
+.his_2014{width: 680px;margin-left: 56px;}
+.his_2014 .history04{margin-left: 141px;}
+}
+@media all and (max-width: 767px){
+.his_2014{width: auto;margin: 0 15px;}
+.his_2014 .history03{clear: both;margin-top: 10px;margin-left: 0px;}
+.his_2014 .history04{clear: both;margin-left: 0px;}
+}
+/* footer */
+.footer_wrap{background:#222328;padding-bottom: 30px;clear: both;margin-top: 65px;}
+.footer{width: 1164px;margin: 0 auto;overflow: hidden;padding-top: 52px;}
+.footer_logo{float: left;}
+.footer p{margin-left: 292px;font-family: 'Nanum Gothic',sans-serif;font-size: 12px;line-height: 18px;color: #a2a5b0;}
+@media all and (max-width: 1163px){
+.footer{width: auto;}
+.footer_logo{display: none;}
+.footer p{margin-left: 0;padding: 0 15px;}
+}

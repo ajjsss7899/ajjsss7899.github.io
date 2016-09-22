@@ -1,0 +1,92 @@
+@charset "euc-kr";
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+:focus{outline:0}
+ul,li a{list-style:none}
+body{overflow-x:hidden;margin:0;padding:0}
+*{margin:0;padding:0}
+li{list-style:none}
+img{display:block;border:0;}
+/* subpage main visual */
+#header .smain_bg{width:100%;height:264px;margin:0 auto;background-image:url(../images/ci_vis.jpg)}
+#header .smain_bg h1{padding-top:79px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:33px;font-size:36px;color:#fff;letter-spacing:-2px;text-align:center;}
+#header .smain_bg .line{width:36px;margin:0 auto;padding-top:15px;border-bottom:2px solid #fff}
+#header .smain_bg p{width:auto;padding-top:26px;padding-left:15px;padding-right:15px;font-family:'Nanum Gothic',sans-serif;font-size:16px;color:#fff;text-align:center;letter-spacing: -0.5px;}
+/* //subpage main visual */
+
+#container {width: 1164px;margin: 0 auto;clear: both;}
+@media all and (max-width: 1163px){
+#container {width: 100%;}
+}
+/* ci 소개 */
+#container .contents01{overflow: auto;}
+#container .contents01 h2{margin-top: 54px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:1;font-size:24px;color:#393939;letter-spacing:-2px;}
+#container .contents01 h2 span{color: #9c0b00;}
+#container .contents01 .dsrf_img01{margin-top: 21px;float: left;}
+#container .contents01 img{width: 582px;height: 222px;}
+#container .contents01 p{margin-top: 18px;margin-left: 604px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:18px;font-size:14px;color:#4c4a4d;letter-spacing:-0.5px;}
+@media all and (max-width: 1163px){
+#container {width: auto;}
+#container .contents01 h2{text-align: center;}
+#container .dsrf_wrap{width:582px;margin: 0 auto;}
+#container .contents01 p{clear: both;margin-left: 0;padding-top: 11px;width:582px;margin: 0 auto;}
+}
+@media all and (max-width: 600px){
+#container {width: auto;}
+#container .dsrf_wrap{width: auto;margin-left: 15px;margin-right: 15px;}
+#container .contents01 img{width: 100%;}
+#container .contents01 .dsrf_img01 img{width: 100%;height: auto;}
+#container .contents01 p{width: auto;margin-left: 15px;margin-right: 15px;}
+}
+/* //ci 소개 */
+/* Signature */
+#container .contents02{clear: both;overflow: auto;}
+#container .contents02 h2{margin-top: 53px;font-family:'Roboto',sans-serif;font-weight: normal;font-size: 24px;color:#9c0b00;line-height: 1;}
+#container .contents02 p{margin-top: 20px;font-family:'Nanum Gothic',sans-serif;font-weight:normal;line-height:18px;font-size:14px;color:#4c4a4d;letter-spacing:-0.5px;}
+#container .contents02 img{float: left;}
+#container .dsrf_img02{margin-top: 8px;}
+@media all and (max-width: 1163px){
+#container .contents02 h2{text-align: center;}
+#container .contents02 p{text-align: center;}
+#container .contents02 .dsrf_wrap02{margin: 0 auto;width: 582px;}
+#container .contents02 img{clear: both;}
+}
+@media all and (max-width:600px){
+#container {width: auto;}
+#container .contents02 h2{text-align: center;}
+#container .contents02 p{margin-left: 15px;margin-right: 15px;}
+#container .contents02 .dsrf_wrap02{width: auto;margin-left: 15px;margin-right: 15px;}
+#container .contents02 img{width: 100%}
+}
+/* //Signature */
+/* CI Color */
+#container .contents03{overflow: auto;}
+#container .contents03 h2{margin-top: 53px;font-family:'Roboto',sans-serif;font-weight: normal;font-size: 24px;color:#9c0b00;line-height: 1;}
+#container .contents03 ul{margin-top: 18px;}
+#container .contents03 li{float: left;margin-right: 39px;margin-bottom: 20px;}
+#container .contents03 .last_ci{margin-right: 0;}
+@media all and (max-width: 1162px){
+#container .contents03{width: 921px;margin: 0 auto;}
+#container .contents03 h2{text-align: center;}
+#container .contents03 li:nth-child(4){margin-right: 0;}
+#container .contents03 li:last-child{margin-right: 39px;}
+}
+@media all and (max-width: 951px){
+#container .contents03{width: 681px;}
+#container .contents03 li:nth-child(3){margin-right: 0;}
+#container .contents03 li:nth-child(4){margin-right: 39px;}
+}
+@media all and (max-width: 711px){
+#container .contents03{width: 441px;}
+#container .contents03 li:nth-child(2){margin-right: 0;}
+#container .contents03 li:nth-child(3){margin-right: 39px;}
+#container .contents03 li:nth-child(4){margin-right: 0;}
+}
+@media all and (max-width: 471px){
+#container .contents03{width: 201px;}
+#container .contents03 li{margin-right: 0;}
+}
+/* //CI Color */
+#footer {margin-top: 48px;}
+@media all and (max-width: 1164px){
+#footer {margin-top: 48px;overflow: auto;}
+}

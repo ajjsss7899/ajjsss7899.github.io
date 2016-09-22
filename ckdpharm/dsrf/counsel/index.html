@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>디에스알에프홀딩스</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+<link rel="stylesheet" type="text/css" href="../css/nav.css">
+<link rel="stylesheet" type="text/css" href="../css/counsel.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:700">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+<body>
+<!-- header -->
+<div class="header">
+	<!-- 모바일 상단 color:#9c0b00 -->
+	<div class="top_menu">
+		<div class="logo">
+			<a href="http://dsrf.co.kr"><img src="../images/logo.png" alt="디에스알에프홀딩스 로고"></a>
+			<p><a href="http://dsrf.co.kr">디에스알에프홀딩스</a></p>
+			<span class="button"></span>
+		</div>
+	</div>
+	<!-- 상단 네비게이션 -->
+	<div id="nav">
+		<div class="nav_wrap">
+			<ul class="nav">
+			<li><a href="#">회사소개</a>
+				<ul>
+				<li><a href="http://dsrf.co.kr/introduction">DSRF 소개</a></li>
+				<li><a href="http://dsrf.co.kr/company">조직구성</a></li>
+				<li><a href="http://dsrf.co.kr/ci">CI</a></li>
+				</ul>
+			</li>
+			<li><a href="http://dsrf.co.kr/recruit">채용정보</a></li>
+			<li><a href="">고객센터</a></li>
+			<li><a href="http://dsrf.co.kr/news">NEWS</a></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 서브페이지 메인 비쥬얼 -->
+	<div class="sub_main">
+		<div class="smain_bg">
+			<h1>고객센터</h1>
+			<div class="line"></div>
+			<p>고객을 위해 최선을 다하며, 보다 더 나은 고객감동을 드리는 기업이 되겠습니다.</p>
+		</div>
+	</div>
+	<!-- 서브페이지 서브네비게이션 -->
+	<div class="nav02_wrap">
+		<ul class="nav02">
+			<li class="home"><a href="http://dsrf.co.kr"><i class="fa fa-home"></i></a></li>
+			<li><a href="#">회사소개<i class="fa fa-angle-down"></i></a>
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="http://dsrf.co.kr/recruit">채용정보</a></li>
+					<li><a href="http://dsrf.co.kr/news">NEWS</a></li>
+				</ul>
+			</li>
+			<li><a href="#">CI<i class="fa fa-angle-down"></i></a>
+				<ul>
+					<li><a href="http://dsrf.co.kr/introduction">DSRF 소개</a></li>
+					<li><a href="http://dsrf.co.kr/company">조직구성</a></li>
+					<li><a href="http://dsrf.co.kr/ci">CI</a></li>
+				</ul>
+			</li>
+		</ul>
+		<div class="line02"></div>
+	</div>
+</div>
+<!-- container -->
+<div class="container">
+	<div class="counsel">
+		<form action="" method="post">
+			<fieldset>
+				<legend>고객센터 문의하기</legend>
+				<ul>
+					<li>
+						<div class="counsel_wrap">
+							<label for="title">제목</label>
+							<input type="text" name="title" id="title" aria-invalid="false">
+						</div>
+					</li>
+					<li>
+						<div class="counsel_wrap">
+							<label for="client">작성자</label>
+							<input type="text" name="client" id="client">
+						</div>
+					</li>
+					<li>
+						<div class="counsel_wrap">
+							<label for="email">이메일</label>
+							<input type="text" name="email" id="email">
+						</div>
+					</li>
+					<li>
+						<div class="counsel_wrap">
+							<label for="contact">연락처</label>
+							<input type="text" name="contact" id="contact">
+						</div>
+
+					</li>
+					<li class="text01">
+						<div class="counsel_wrap">
+							<label for="text">내용</label>
+							<input type="text" name="text" id="text">
+						</div>
+					</li>
+					<li class="inquiry">
+						<div class="counsel_wrap">
+							<input type="submit" id="inquiry" value="문의하기">
+						</div>
+					</li>
+				</ul>
+			</fieldset>
+		</form>
+	</div>
+</div>
+<!-- footer -->
+<div class="footer_wrap">
+	<div class="footer">
+		<div class="footer_logo"><img src="../images/foot_logo.png" alt="하단 dsrf로고"></div>
+		<p class="text">
+			<span>사업자등록번호 : 417-88-00206&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 대표자 : 양준영, 배형덕 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TEL : 070-4231-2845 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FAX : 02-578-1124<br>주소 : 서울특별시 강남구 도곡동 918-1 (강남구 남부순환로363길 11) 동신빌딩 5층<br><br><br>ⓒ 2016 DSRF HOLDINGS ALL RIGHTS RESERVED.</span></p>
+	</div>
+</div>
+<!-- nav script -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$( ".button" ).click(function() {
+			$( "#nav .nav" ).toggle( "fast", function() {
+			});
+		});
+	});
+</script>
+</body>
+</html>
