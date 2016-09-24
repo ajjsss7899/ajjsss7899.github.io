@@ -58,7 +58,7 @@ body{font-family:'Nanum Gothic',sans-serif}
 
 /* business */
 .business_wrap{overflow: hidden;}
-.business_wrap h2{margin-top: 46px;font-size: 48px;font-family: 'Roboto', sans-serif;color: #393939;text-align: center;}
+.business_wrap h2{margin-top: 46px;font-size: 48px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #393939;text-align: center;}
 .business_wrap .tit_icon{margin: 21px auto 0;width: 25px;height: 22px;display: block;background: url(../images/icon01.png) 0 0 no-repeat;}
 .business{width: 960px;margin: 28px auto 0;}
 .business_area a{text-indent: -9999px;display: block;width: 212px;margin: 0 14px;height: 327px;}
