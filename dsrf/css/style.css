@@ -88,7 +88,7 @@ body{font-family:'Nanum Gothic',sans-serif}
 
 /* about */
 .about{background: #ebebeb;overflow: hidden;margin-top: 90px;padding: 0 15px 90px 15px;}
-.about h2{margin-top: 46px;font-size: 48px;font-family: 'Roboto', sans-serif;color: #393939;text-align: center;}
+.about h2{margin-top: 46px;font-size: 48px;font-family: 'Roboto', sans-serif;font-weight: 700;color: #393939;text-align: center;}
 .about .tit_icon{margin: 21px auto 0;width: 25px;height: 22px;display: block;background: url(../images/icon01.png) 0 0 no-repeat;}
 .about_area01{overflow: hidden;max-width: 1164px;margin: 26px auto 0;}
 .about_area02{overflow: hidden;max-width: 1164px;margin: 4px auto 0;}
