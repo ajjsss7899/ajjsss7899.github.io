@@ -43,3 +43,9 @@ table {
 }
 a{text-decoration: none;}
 img{display: block;}
+
+@font-face{
+font-family:'Nanum Gothic';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);src:url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype')}
+@font-face{
+font-family:'Nanum Gothic';font-style:normal;font-weight:700;src:url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);src:url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype')}
+

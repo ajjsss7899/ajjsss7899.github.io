@@ -1,0 +1,65 @@
+@charset "euc-kr";
+@import url("reset.css");
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body{font-family: 'Nanum Gothic',sans-serif;}
+
+/* gnb */
+.dsrf_logo{width: 129px;margin: 42px auto 0 auto;}
+.dsrf_m_logo{display: none;}
+.menu_open{display: none;}
+.menu_close{display: none;}
+.gnb{overflow: hidden;width: 640px;margin: 0 auto;}
+.gnb li{float: left;width: 160px;height: 60px;}
+.gnb li a{text-align: center;display: block;color: #393939;font-size: 16px;font-weight: 700;line-height: 60px;}
+.gnb li a.on{color: #9c0b00;}
+
+@media all and (max-width: 767px){
+.dsrf_logo{display: none;}
+.dsrf_m_logo{display: block;height: 70px;background: #9c0b00;text-align: center;}
+.dsrf_m_logo a{font-size: 18px;font-weight: 700;color: #fff;line-height: 70px;}
+.menu_open{display: block;padding: 9px 0 0 7px;width: 45px;height: 45px;position: absolute;top:13px;right: 7px;}
+.menu_open.on{display: none;}
+.menu_close{padding: 9px 0 0 7px;width: 45px;height: 45px;position: absolute;top:13px;right: 7px;}
+.menu_close.on{display: block;}
+.gnb{width: 100%;background: #000;display: none;}
+.gnb li{clear: both;width: 100%;}
+.gnb li:first-child{margin-top: 20px;}
+.gnb li:last-child{margin-bottom: 20px;}
+.gnb li a{color: #fff;}
+}
+
+@media all and (min-width: 768px){
+.gnb{display: block!important;}
+}
+
+/* dsrf 메인 */
+.dsrf{border-top: 2px solid #9c0b00;width: 100%;height: 695px;background: url(../images/main_vis01.jpg) center center no-repeat;-webkit-background-size: cover;background-size: cover;}
+.dsrf_tit{text-indent: -9999px;width: 467px;height: 221px;background: url(../images/dsrf_img.png) 0 0 no-repeat;margin: 141px auto 0;}
+
+@media all and (max-width: 1023px){
+.dsrf_tit{width: 365px;height: 172px;background: url(../images/dsrf_img02.png) 0 0 no-repeat;}
+}
+
+@media all and (max-width: 800px){
+.dsrf{height: 542px;}
+}
