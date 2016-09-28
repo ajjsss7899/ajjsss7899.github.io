@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
 <script type="text/javascript" src="js/slick.js"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="js/html5shiv.min.js"></script>
@@ -77,20 +78,7 @@
 		<p class="copyright">ⓒ 2016 DSRF HOLDINGS ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
-<!-- gnb script -->
-<script>
-	$(".menu_open, .menu_close").on("click", function(e){
-	e.preventDefault();
-	});
-	$(".menu_open").on("click",function(){
-		$(".gnb").slideDown("fast");
-		$(".menu_open, .menu_close").addClass("on");
-	});
-	$(".menu_close").on("click",function(){
-		$(".gnb").slideUp("fast");
-		$(".menu_open, .menu_close").removeClass("on");
-	});
-</script>
+
 <!-- business slick slide -->
 <script>
 	$('.business').slick({

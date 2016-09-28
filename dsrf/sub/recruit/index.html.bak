@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+<title>윤성 하우징</title>
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../../js/common.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if lt IE 9]>
+<script type="text/javascript" src="../../js/selectivizr-min.js"></script>
+<![endif]-->
+</head>
+<body>
+<header>
+	<h1 class="dsrf_logo"><a href="#"><img src="../../images/logo.png" alt="디에스알에프홀딩스"></a></h1>
+	<h1 class="dsrf_m_logo"><a href="#">디에스알에프홀딩스</a></h1>
+	<nav>
+		<a class="menu_open" href="#"><img src="../../images/menu.png" alt="디에스알에프홀딩스 메뉴 열기 버튼"></a>
+		<a class="menu_close" href="#"><img src="../../images/menu_close.png" alt="디에스알에프홀딩스 메뉴 닫기 버튼"></a>
+		<ul class="gnb">
+			<li><a href="#">회사소개</a></li>
+			<li><a href="#">채용정보</a></li>
+			<li><a href="#">고객센터</a></li>
+			<li><a href="#">NEWS</a></li>
+		</ul>
+		<a class="menu_close" href="#"><img src="../../images/menu_close.png" alt="디에스알에프홀딩스 메뉴 닫기 버튼"></a>
+	</nav>
+</header>
+<section class="recruit_tit">
+	<h2>채용정보</h2>
+	<p class="recruit_txt">(주)DSRF Holdings에서<br>함께 일 할 성실한 아르바이트생 / 프리랜서 / 정직원분을 찾고 있습니다.</p>
+</section>
+<section class="snb_wrap">
+	<ul class="snb">
+		<li><a href="#">home</a></li>
+		<li><a href="#">채용정보</a>
+			<ul>
+				<li><a href="#">회사소개</a></li>
+				<li><a href="#">고객센터</a></li>
+				<li><a href="#">NEWS</a></li>
+			</ul>
+		</li>
+	</ul>
+</section>
+<section class="recruit_con01_wrap">
+	<h3><span>모집부문</span> 및 업무 관련사항</h3>
+	<table class="recruit_con01">
+		<caption class="blind">모집부문 및 업무 관련사항</caption>
+		<colgroup>
+			<col class="col1">
+			<col>
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">모집부문</th>
+				<th scope="col">담당업무</th>
+				<th scope="col">자격요건</th>
+				<th scope="col">모집인원</th>
+				<th scope="col">모집종료일</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>마케팅부서</td>
+				<td>- 사무보조 아르바이트<br>- 글작성 프리랜서<br>- 정직원</td>
+				<td>- 성별: 무관 (남자는 군필자)<br>- 연령: 20세 이상 ~ 30세 이하<br>- 학력: 무관</td>
+				<td>00명</td>
+				<td>상시모집</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section class="recruit_con02_wrap">
+	<h3>근무조건</h3>
+	<table class="recruit_con02">
+		<caption class="blind">근무조건</caption>
+		<colgroup>
+			<col>
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="col">아르바이트<br>&amp;<br>&lt;프리랜서></th>
+				<td>- 근무요일: 평일 (협의가능)<br>
+					- 근무시간: 13:00 ~ 18:00 (협의가능)<br>
+					- 급여: 시급 6030원 (3개월 후 시급 7,000원/ 장기근속자 정규직전환 우대)
+				</td>
+				<th scope="col">정규직</th>
+				<td>- 근무요일: 주 5일 근무
+					- 근무시간: 10:00 ~ 19:00
+					- 급여: 협상
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+<section class="recruit_con03_wrap">
+	<div class="recruit_con03">
+		<ul class="recruit_con03_area">
+			<li>4대보험</li>
+			<li>장기근속수당</li>
+			<li>장기근속자 포상</li>
+			<li>중식제공</li>
+			<li>퇴직금 지급</li>
+		</ul>
+	</div>
+</section>
+<section class="recruit_con04_wrap">
+	<div id="map"></div>
+	<p class="address02"><span>회사주소</span>서울특별시 강남구 도곡동 918-1 동신빌딩 5층</p>
+	<a class="recruit_btn" href="#">온라인 지원</a>
+</section>
+<footer>
+	<div class="footer">
+		<p class="foot_logo"><img src="../../images/foot_logo.png" alt="하단 dsrf 로고"></p>
+		<address>
+			<ul class="address">
+				<li>사업자등록번호 : 417-88-00206</li>
+				<li>대표자 : 양준영, 배형덕</li>
+				<li>TEL : 070-4231-2845</li>
+				<li>FAX : 02-578-1124</li>
+				<li>주소 : 서울특별시 강남구 도곡동 918-1 (강남구 남부순환로363길 11) 동신빌딩 5층</li>
+			</ul>
+		</address>
+		<p class="copyright">ⓒ 2016 DSRF HOLDINGS ALL RIGHTS RESERVED.</p>
+	</div>
+</footer>
+<script>
+	$(function(){
+		$(".snb > li > a").on("click", function(){
+			$(".snb > li").toggleClass("on");
+		});
+		$(".recruit_btn").on("focusin", function(){
+			$(".snb > li").removeClass("on");
+		});
+	});
+</script>
+</body>
+</html>

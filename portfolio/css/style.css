@@ -24,7 +24,7 @@ header .name{margin-top:25px;font-size:18px}
 }
 
 /* skill */
-.skill_wrap{overflow:hidden;padding-bottom:143px;background:url(../images/skill_bg.png) center center no-repeat}
+.skill_wrap{overflow:hidden;padding-bottom:143px;}
 .skill_wrap h2{margin-top:113px;font-family:'Open Sans',sans-serif;font-size:80px;font-weight:700;color:#464b4f;text-align:center}
 .skill{width:940px;margin:0 auto}
 .skill li{float:left;width:33.3%;padding:0 10px;font-family:'Noto Sans KR',sans-serif;text-align:center}
