@@ -10,7 +10,6 @@ html{font-family:'Roboto','Nanum Gothic',sans-serif;letter-spacing:-1px}
 
 /* 본문 바로가기 */
 .skip{display:block;overflow:hidden;position:absolute;z-index:999999;width:1px;height:1px;margin:0 -1px -1px 0;padding:0;background:#ffa800;font-size:0;line-height:0;text-align:center}
-
 .skip:hover,.skip:active,.skip:focus{width:100%;height:auto;margin:0;padding:10px 0;font-weight:bold;font-size:12px;font-family:Tahoma;line-height:1;color:#fff;text-decoration:none !important;text-indent:10px}
 
 /* util_menu */
