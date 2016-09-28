@@ -5,23 +5,6 @@
 body{font-family:'Nanum Gothic',sans-serif}
 .blind{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;text-indent:-9999px}
 
-/* 스킵 네비게이션*/
-.skip{display:block;overflow:hidden;position:absolute;z-index:999999;width:1px;height:1px;margin:0 -1px -1px 0;padding:0;background:#9c0b00;font-size:0;line-height:0;text-align:center}
-.skip:hover,.skip:active,.skip:focus{top:0;width:100%;height:auto;margin:0;padding:10px 0;font-weight:bold;font-size:12px;font-family:Tahoma;line-height:1;color:#fff;text-decoration:none !important;text-indent:10px}
-
-/* 팝업 */
-#popup{display:none;width:100%}
-.popup_text{padding:20px;background:#f1f1f1;font-size:14px;line-height:18px;font-weight:bold;color:#333}
-.popup_text a{line-height:20px;color:#333;text-decoration:none}
-.popup_text a:hover{color:#e49223}
-#pop_close{background:#000}
-#pop_day{height:30px;vertical-align:middle}
-#pop_close{padding-right:15px;font-size:14px;color:#fff;text-align:right}
-#pop_close a{margin-left:10px;font-size:14px;color:#fff;text-decoration:none}
-@media all and (max-width: 1023px){
-#popup{display:none!important}
-}
-
 /* gnb */
 .dsrf_logo{width:129px;margin:42px auto 0}
 .dsrf_m_logo{display:none}
@@ -188,51 +171,51 @@ address{margin:0 15px}
 }
 
 /* 근무조건 */
-.recruit_con02_wrap{overflow:hidden;max-width:1194px;margin:0 auto;padding:0 15px}
+.recruit_con02_wrap{overflow:hidden;max-width:1194px;margin:0 auto;padding:0 15px;}
 .recruit_con02_wrap h3{margin-top:54px;font-size:24px;color:#9c0600;letter-spacing:-1px}
-.recruit_con02{max-width:1164px;width:100%;margin-top:20px}
+.recruit_con02{max-width:1164px;width:100%;margin-top:20px;}
 .recruit_con02 .col1{width:11.94158075601%}
 .recruit_con02 .col2{width:57.21649484536%}
 .recruit_con02 .col3{width:8.5910652921%}
 .recruit_con02 .col4{width:22.25085910653%}
-.recruit_con02 tbody{border:1px solid #e4e4e4;border-left:none}
-.recruit_con02 th{height:168px;border-left:1px solid #e4e4e4;border-right:1px solid #e4e4e4;background:#f7f8fa;font-size:16px;font-weight:bold;line-height:24px;color:#4c4a4d;vertical-align:middle}
-.recruit_con02 td{padding:0 20px;font-size:16px;line-height:24px;color:#4c4a4d;vertical-align:middle}
+.recruit_con02 tbody{border:1px solid #e4e4e4;border-left: none;}
+.recruit_con02 th{border-left: 1px solid #e4e4e4;border-right: 1px solid #e4e4e4;height:168px;background:#f7f8fa;font-size:16px;font-weight:bold;line-height:24px;color:#4c4a4d;vertical-align:middle}
+.recruit_con02 td{vertical-align: middle;font-size: 16px;line-height: 24px;color: #4c4a4d;padding: 0 20px;}
 
 @media all and (max-width: 800px){
-.recruit_con02 tbody{border:1px solid #e4e4e4;border-top:none}
-.recruit_con02 th{display:block;height:auto;padding:20px 0;border:1px solid #e4e4e4;border-left:none;border-right:none}
-.recruit_con02 td{display:block;height:auto;padding:20px}
+.recruit_con02 tbody{border: 1px solid #e4e4e4;border-top: none;}
+.recruit_con02 th{display: block;height: auto;border: 1px solid #e4e4e4;border-left: none;border-right:none;padding: 20px 0;}
+.recruit_con02 td{display: block;height: auto;padding: 20px 20px;}
 }
 
 /* 복리후생 제도 */
-.recruit_con03_wrap{overflow:hidden;max-width:1194px;margin:0 auto;padding:0 15px}
-.recruit_con03_wrap h3{margin-top:54px;font-size:24px;color:#252020;letter-spacing:-1px}
-.recruit_con03_wrap h3 span{color:#9c0600}
-.recruit_con03{overflow:hidden;margin-top:20px;padding:20px 15px;background:#f7f8fa}
-.recruit_con03_area li{float:left;width:20%;padding-top:103px;font-size:14px;font-weight:bold;color:#4c4a4d;text-align:center}
-.recruit_con03_area li:first-child{background:url(../images/recruit_icon01.png) center 0 no-repeat}
-.recruit_con03_area li:nth-child(2){background:url(../images/recruit_icon02.png) center 0 no-repeat}
-.recruit_con03_area li:nth-child(3){background:url(../images/recruit_icon04.png) center 0 no-repeat}
-.recruit_con03_area li:nth-child(4){background:url(../images/recruit_icon04.png) center 0 no-repeat}
-.recruit_con03_area li:nth-child(5){background:url(../images/recruit_icon05.png) center 0 no-repeat}
+.recruit_con03_wrap{overflow: hidden;max-width: 1194px;margin: 0 auto;padding: 0 15px;}
+.recruit_con03_wrap h3{margin-top:54px;font-size:24px;color: #252020;letter-spacing:-1px}
+.recruit_con03_wrap h3 span{color:#9c0600;}
+.recruit_con03{margin-top: 20px;padding: 20px 15px;background: #f7f8fa;overflow: hidden;}
+.recruit_con03_area li{float: left;width: 20%;text-align: center;font-size: 14px;font-weight: bold;color: #4c4a4d;padding-top: 103px;}
+.recruit_con03_area li:first-child{background: url(../images/recruit_icon01.png) center 0 no-repeat;}
+.recruit_con03_area li:nth-child(2){background: url(../images/recruit_icon02.png) center 0 no-repeat;}
+.recruit_con03_area li:nth-child(3){background: url(../images/recruit_icon04.png) center 0 no-repeat;}
+.recruit_con03_area li:nth-child(4){background: url(../images/recruit_icon04.png) center 0 no-repeat;}
+.recruit_con03_area li:nth-child(5){background: url(../images/recruit_icon05.png) center 0 no-repeat;}
 
 @media all and (max-width: 800px){
-.recruit_con03_area li{width:33.3%}
-.recruit_con03_area li:nth-child(4){margin-top:40px}
-.recruit_con03_area li:nth-child(5){margin-top:40px}
+.recruit_con03_area li{width: 33.3%;}
+.recruit_con03_area li:nth-child(4){margin-top: 40px;}
+.recruit_con03_area li:nth-child(5){margin-top: 40px;}
 }
 
 @media all and (max-width: 459px){
-.recruit_con03_area li{width:50%}
-.recruit_con03_area li:nth-child(3){margin-top:40px}
+.recruit_con03_area li{width: 50%;}
+.recruit_con03_area li:nth-child(3){margin-top: 40px;}
 }
 
 /* 근무지역 */
-.recruit_con04_wrap{overflow:hidden;max-width:1194px;margin:0 auto;padding:0 15px}
-.recruit_con04_wrap h3{margin-top:54px;font-size:24px;color:#9c0600;letter-spacing:-1px}
-#map{width:100%;height:400px;margin-top:23px}
-.address02{margin-top:19px;font-size:16px;color:#4c4a4d}
-.address02 span{margin-right:20px;font-weight:bold}
-.recruit_btn{display:block;width:290px;height:60px;margin:55px auto 70px;background:#9c0b00;line-height:60px;font-weight:bold;font-size:16px;color:#fff;text-align:center}
-.recruit_btn:hover,.recruit_btn:focus{background:#00439c}
+.recruit_con04_wrap{overflow: hidden;max-width: 1194px;margin: 0 auto;padding:0 15px;}
+.recruit_con04_wrap h3{margin-top:54px;font-size:24px;color: #9c0600;letter-spacing:-1px}
+#map{width: 100%;height: 400px;margin-top: 23px;}
+.address02{font-size: 16px;color:#4c4a4d;margin-top: 19px;}
+.address02 span{margin-right: 20px;font-weight: bold;}
+.recruit_btn{width: 290px;height: 60px;margin: 55px auto 70px;background: #9c0b00;line-height: 60px;color: #fff;font-weight: bold;font-size: 16px;display: block;text-align: center;}
+.recruit_btn:hover, .recruit_btn:focus{background: #00439c;}

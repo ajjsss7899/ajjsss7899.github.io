@@ -3,10 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
-<title>윤성 하우징</title>
+<title>디에스알에프홀딩스</title>
 <link rel="stylesheet" type="text/css" href="../../css/style.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="../../js/common.js"></script>
+<script type="text/javascript" src="https://apis.daum.net/maps/maps3.js?apikey=95fa0c870ae487bf9440db38efb3660f"></script>
 <!--[if lt IE 9]>
 <script type="text/javascript" src="../../js/html5shiv.min.js"></script>
 <![endif]-->
@@ -15,12 +16,15 @@
 <![endif]-->
 </head>
 <body>
+<a href="#recruit_tit" class="skip">본문 바로가기</a>
+<!-- header -->
 <header>
 	<h1 class="dsrf_logo"><a href="#"><img src="../../images/logo.png" alt="디에스알에프홀딩스"></a></h1>
 	<h1 class="dsrf_m_logo"><a href="#">디에스알에프홀딩스</a></h1>
 	<nav>
 		<a class="menu_open" href="#"><img src="../../images/menu.png" alt="디에스알에프홀딩스 메뉴 열기 버튼"></a>
 		<a class="menu_close" href="#"><img src="../../images/menu_close.png" alt="디에스알에프홀딩스 메뉴 닫기 버튼"></a>
+		<!-- gnb -->
 		<ul class="gnb">
 			<li><a href="#">회사소개</a></li>
 			<li><a href="#">채용정보</a></li>
@@ -30,10 +34,12 @@
 		<a class="menu_close" href="#"><img src="../../images/menu_close.png" alt="디에스알에프홀딩스 메뉴 닫기 버튼"></a>
 	</nav>
 </header>
-<section class="recruit_tit">
+<!-- 채용정보 타이틀 -->
+<section id="recruit_tit" class="recruit_tit">
 	<h2>채용정보</h2>
 	<p class="recruit_txt">(주)DSRF Holdings에서<br>함께 일 할 성실한 아르바이트생 / 프리랜서 / 정직원분을 찾고 있습니다.</p>
 </section>
+<!-- snb -->
 <section class="snb_wrap">
 	<ul class="snb">
 		<li><a href="#">home</a></li>
@@ -46,6 +52,7 @@
 		</li>
 	</ul>
 </section>
+<!-- 모집부문 및 업무 관련사항 -->
 <section class="recruit_con01_wrap">
 	<h3><span>모집부문</span> 및 업무 관련사항</h3>
 	<table class="recruit_con01">
@@ -112,6 +119,7 @@
 		</tbody>
 	</table>
 </section>
+<!-- 근무조건 -->
 <section class="recruit_con02_wrap">
 	<h3>근무조건</h3>
 	<table class="recruit_con02">
@@ -138,6 +146,7 @@
 		</tbody>
 	</table>
 </section>
+<!-- 복리후생 제도 -->
 <section class="recruit_con03_wrap">
 	<h3><span>복리후생</span> 제도</h3>
 	<div class="recruit_con03">
@@ -150,11 +159,14 @@
 		</ul>
 	</div>
 </section>
+<!-- 근무지역 -->
 <section class="recruit_con04_wrap">
+	<h3>근무지역</h3>
 	<div id="map"></div>
 	<p class="address02"><span>회사주소</span>서울특별시 강남구 도곡동 918-1 동신빌딩 5층</p>
 	<a class="recruit_btn" href="#">온라인 지원</a>
 </section>
+<!-- footer -->
 <footer>
 	<div class="footer">
 		<p class="foot_logo"><img src="../../images/foot_logo.png" alt="하단 dsrf 로고"></p>
@@ -170,6 +182,7 @@
 		<p class="copyright">ⓒ 2016 DSRF HOLDINGS ALL RIGHTS RESERVED.</p>
 	</div>
 </footer>
+<!-- snb script -->
 <script>
 	$(".snb > li > a").on("click", function(e){
 		e.preventDefault();
@@ -180,6 +193,25 @@
 	$(".recruit_btn").on("focusin", function(){
 		$(".snb > li").removeClass("on");
 	});
+</script>
+<!-- 회사 주소 다음 지도 -->
+<script>
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+		mapOption = { 
+			center: new daum.maps.LatLng(37.4858866,127.03786479999997), // 지도의 중심좌표
+			level: 3 // 지도의 확대 레벨
+		};
+	var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new daum.maps.LatLng(37.4858866,127.03786479999997); 
+	// 마커를 생성합니다
+	var marker = new daum.maps.Marker({
+		position: markerPosition
+	});
+	// 마커가 지도 위에 표시되도록 설정합니다
+	marker.setMap(map);
+	// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+	// marker.setMap(null);    
 </script>
 </body>
 </html>
