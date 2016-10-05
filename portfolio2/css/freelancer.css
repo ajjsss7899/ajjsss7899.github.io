@@ -5,15 +5,27 @@
  */
 
 @font-face {
-   font-family: 'Noto Sans KR';
-   font-style: normal;
-   font-weight: 400;
-   src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
-        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
-        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
- }
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+       url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, 'Noto Sans KR', sans-serif;
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, 'Nanum Gothic', sans-serif;
   overflow-x: hidden;
 }
 p {
@@ -469,6 +481,7 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
+  letter-spacing: -1px;
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
@@ -515,3 +528,5 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+.portfolio_txt{list-style: none;text-align: left;padding-left: 0;}
+.portfolio-modal .btn-default{margin-top: 30px;}
