@@ -211,10 +211,10 @@ section.success .tit span{display: inline-block;margin-bottom: 5px;font-size: 24
 }
 #portfolio .portfolio-item .portfolio-link .caption {
   display: block;
-  background: rgba(24, 188, 156, 0);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#0018bc9c,endColorstr=#0018bc9c);
   position: absolute;
   width: 100%;
   height: 100%;
+  background: rgba(24, 188, 156, 0);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#0018bc9c,endColorstr=#0018bc9c);
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
