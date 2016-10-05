@@ -210,11 +210,11 @@ section.success .tit span{display: inline-block;margin-bottom: 5px;font-size: 24
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  background: #1cbc9c;
+  filter:alpha(opacity=00);-moz-opacity:0.0;-khtml-opacity: 0.0;opacity: 0.0;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9018bc9c,endColorstr=#9018bc9c);background: rgba(24, 188, 156, 0.9);
   position: absolute;
   width: 100%;
   height: 100%;
-  filter:alpha(opacity=00);-moz-opacity:0.0;-khtml-opacity: 0.0;opacity: 0.0;
   transition: all ease 0.5s;
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
