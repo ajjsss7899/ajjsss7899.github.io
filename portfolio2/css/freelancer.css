@@ -210,7 +210,7 @@ section.success .tit span{display: inline-block;margin-bottom: 5px;font-size: 24
   margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .caption {
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9018bc9c,endColorstr=#9018bc9c);background: rgba(24, 188, 156, 0.9);
+/*  background: rgba(24, 188, 156, 0.9);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9018bc9c,endColorstr=#9018bc9c);*/
   position: absolute;
   width: 100%;
   height: 100%;
@@ -220,7 +220,6 @@ section.success .tit span{display: inline-block;margin-bottom: 5px;font-size: 24
   -moz-transition: all ease 0.5s;
 }
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#9018bc9c,endColorstr=#9018bc9c);background: rgba(24, 188, 156, 0.9);
   filter:alpha(opacity=100);-moz-opacity:1.0;-khtml-opacity: 1.0;opacity: 1.0;
 }
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
