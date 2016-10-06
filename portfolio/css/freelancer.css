@@ -491,15 +491,15 @@ fieldset[disabled] .btn-success.active {
 }
 .portfolio-modal .close-modal {
   position: absolute;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
-  top: 25px;
-  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: url(../img/portfolio/close.png) 0 0 no-repeat;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
 }
 .portfolio-modal .close-modal:hover {
-  opacity: 0.3;
+background-position: 0 -55px;
 }
 .portfolio-modal .close-modal .lr {
   height: 75px;
