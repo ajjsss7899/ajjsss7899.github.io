@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+</head>
+<style>
+
+
+
+</style>
+<body>
+<script type="text/javascript">
+$(function() {
+	if ($.cookie('d') == undefined) {
+		$("#popup").show();
+	} 
+	$("#pop_close_btn").bind("click",function(){
+		if ($("#pop_day").is(":checked")){
+			 $.cookie('d', '1', { expires: 1, path : '/' });
+		}
+		$("#popup").slideUp(200);
+
+	});
+});
+</script>
+
+<div id="popup">
+	<div class="popup_text">
+			<p>본 홈페이지는 개인 포트폴리오 작업물로 상업적 용도로 사용되지 않으며, 사용된 이미지와 콘텐츠의 저작권이 따로 있음을 알려드립니다.</p>
+			<br>
+			<p><a href="http://ajjsss7899.dothome.co.kr/dsrf/recruit/index.html">1. 서브페이지 [채용정보] 바로가기</a></p>
+			<p><a href="http://ajjsss7899.dothome.co.kr/dsrf/news/index.html">2. 서브페이지 [고객센터] 바로가기</a></p>
+			<p><a href="http://ajjsss7899.dothome.co.kr/dsrf/introduction/index.html">3. 서브페이지 [history] 바로가기</a></p>
+			<p><a href="http://ajjsss7899.dothome.co.kr/dsrf/news/index.html">4. 서브페이지 [news] 바로가기</a></p>
+		</div>
+		<div id="pop_close">
+			<input type="checkbox" id="pop_day" />
+			<label for="pop_day">하루동안 보지 않기</label>
+			<a href="#" id="pop_close_btn">[닫기]</a>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

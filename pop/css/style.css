@@ -1,0 +1,12 @@
+@charset "euc-kr";
+@import url("reset.css");
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+
+#popup{display: none;width: 100%;}
+.popup_text{padding: 15px;background: #f1f1f1;font-family:'Nanum Gothic',sans-serif;font-size: 14px;color: #333;line-height: 18px;font-weight: bold;}
+.popup_text a{color: #333;text-decoration: none;line-height: 20px;}
+.popup_text a:hover{color: #9c0b00;}
+#pop_close{background: #000;}
+#pop_day{vertical-align: middle;height: 30px}
+#pop_close{padding-right: 15px;color: #fff;font-family: 'Nanum Gothic',sans-serif;font-size: 14px;text-align: right;}
+#pop_close a{font-family: 'Nanum Gothic',sans-serif;font-size: 14px;text-decoration: none;color: #fff;margin-left: 10px;}
