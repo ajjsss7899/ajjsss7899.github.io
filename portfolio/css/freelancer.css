@@ -61,8 +61,8 @@ p.star-primary {
   max-width: 250px;
   margin: 25px auto 30px;
 }
-p.star-light::after,
-p.star-primary::after {
+p.star-light:after,
+p.star-primary:after {
   content: "\f005";
   font-family: FontAwesome;
   display: inline-block;
@@ -74,14 +74,14 @@ p.star-primary::after {
 p.star-light {
   border-color: white;
 }
-p.star-light::after {
+p.star-light:after {
   background-color: #18BC9C;
   color: white;
 }
 p.star-primary {
   border-color: #2C3E50;
 }
-p.star-primary::after {
+p.star-primary:after {
   background-color: white;
   color: #2C3E50;
 }
