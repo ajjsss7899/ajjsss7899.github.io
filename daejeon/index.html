@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>커핀그루나루</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<!-- header -->
+<header>
+	<!-- top_menu -->
+	<div class="top_menu">
+		<ul>
+			<li><a href="#">로그인</a></li>
+			<li><a href="#">모바일</a></li>
+			<li><a href="#">사이트맵</a></li>
+			<li><a href="#">LANGUAGE</a></li>
+		</ul>
+	</div>
+	<h1>대전광역시</h1>
+	<a class="taegeukgi" href="#"><img src="images/frtn_taegeukgi.gif" alt="태극기 사진 - 국가상징 알아보기 링크"></a>
+	<!-- 통합검색 -->
+	<div class="search_wrap">
+		<form action="#" method="get">
+			<fieldset>
+				<legend>대전광역시 통합검색</legend>
+				<div class="search">
+					<select name="search" id="search">
+						<option value="통합검색">통합검색</option>
+						<option value="메뉴">메뉴</option>
+						<option value="시정뉴스">시정뉴스</option>
+						<option value="문화관광">문화관광</option>
+						<option value="웹페이지">웹페이지</option>
+						<option value="직원/업무">직원/업무</option>
+						<option value="게시판">게시판</option>
+						<option value="멀티미디어">멀티미디어</option>
+						<option value="첨부문서">첨부문서</option>
+						<option value="SNS검색">SNS검색</option>
+					</select>
+					<label for="search_txt">검색어 입력</label>
+					<input type="text" name="search_txt" id="search_txt">
+					<input type="button" value="검색" onclick="msg()">
+					<dl class="search_list">
+						<dt>인기검색어</dt>
+						<dd>ok예약서비스</dd>
+						<dd>동물보호센터</dd>
+						<dd>대전관광</dd>
+						<dd>한밭수목원</dd>
+					</dl>
+				</div>
+			</fieldset>
+		</form>
+	</div> <!-- 통합검색 끝 -->
+	<!-- banner -->
+	<div class="banner_wrap">
+		<div class="banner banner01"><span class="text">구름 많음</span><span class="num">13.0</span><span class="unit">℃</span></div>
+		<div class="banner banner02"><span class="text">미세먼지농도</span><span class="num">41</span><span class="unit">㎍/m3</span></div>
+		<div class="banner banner03"><span class="text">식중독지수</span><span class="num">16</span><span class="unit">관심</span></div>
+	</div> <!-- banner 끝 -->
+	<!-- gnb -->
+	<nav>
+		<div class="gnb_wrap">
+			<ul class="gnb">
+				<li><a href="#">정보공개</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">정보공개제도안내</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">정보공개 및 처리제도</a></li>
+								<li><a href="#">비공개되는 정보</a></li>
+								<li><a href="#">수수료</a></li>
+								<li><a href="#">불복절차</a></li>
+								<li><a href="#">관련법정</a></li>
+								<li><a href="#">서식</a></li>
+								<li><a href="#">정보공개편람</a></li>
+								<li><a href="#">정보공개 모니터단이란?</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">정보공개청구</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">사전정보공표</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">사전정보공표</a></li>
+								<li><a href="#">사전정보공표(2014년 1월 이전자료)</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">정보공개목록</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">문서목록</a></li>
+								<li><a href="#">월별문서</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">공공데이터개방</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">재정정보공개</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">계약정보공개</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">정책실명제</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">조직정보공개</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전시</a></li>
+								<li><a href="#">자치구</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li><a href="#">참여마당</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">시민의소리</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">칭찬합시다</a></li>
+								<li><a href="#">자유게시판</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">SMS서비스</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">시민단체</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">알려드립니다</a></li>
+								<li><a href="#">단체등록안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">기부문화</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">지정기부금 단체 지정</a></li>
+								<li><a href="#">기부금품 모집절차 및 서식</a></li>
+								<li><a href="#">관련법정</a></li>
+								<li><a href="#">기부참여안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">시민시정제안</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">제안안내</a></li>
+								<li><a href="#">제안심사 결과보고</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">시민참여방</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">설문조사</a></li>
+								<li><a href="#">아르바이트모집</a></li>
+								<li><a href="#">e-시정도우미</a></li>
+								<li><a href="#">시민제안공모사업</a></li>
+								<li><a href="#">시민행복위원회</a></li>
+								<li><a href="#">시민정책공유의방</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">정책참여</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">정책토론</a></li>
+								<li><a href="#">전자공청회</a></li>
+								<li><a href="#">정책설문</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li><a href="#">전자민원</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">민원안내</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">민원업무소개</a></li>
+								<li><a href="#">민원편의시책</a></li>
+								<li><a href="#">자격증 재발급</a></li>
+								<li><a href="#">무인민원발급기</a></li>
+								<li><a href="#">분야별민원안내</a></li>
+								<li><a href="#">민원실안내도</a></li>
+								<li><a href="#">민원관련법령</a></li>
+								<li><a href="#">FAQ(자주찾는질문)</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">여권안내</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">여권개요</a></li>
+								<li><a href="#">신규발급</a></li>
+								<li><a href="#">재발급안내</a></li>
+								<li><a href="#">기재사항변경</a></li>
+								<li><a href="#">여권교부/보관및반납</a></li>
+								<li><a href="#">전자여권안내</a></li>
+								<li><a href="#">전자여권사진안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">민원신청/조회</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">민원24(신청)</a></li>
+								<li><a href="#">민원처리공개</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">원스톱민원안내</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">원스톱민원개요</a></li>
+								<li><a href="#">사업등록/휴폐업신고</a></li>
+								<li><a href="#">면허/자격증발급</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">민원신고센터</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">교통민원</a></li>
+								<li><a href="#">화물운송불법/불공정</a></li>
+								<li><a href="#">환경신문고</a></li>
+								<li><a href="#">부동산실거래가위반</a></li>
+								<li><a href="#">중개업소위법부당행위</a></li>
+								<li><a href="#">예산낭비신고센터</a></li>
+								<li><a href="#">공직자비리신고</a></li>
+								<li><a href="#">민원부조리 신고</a></li>
+								<li><a href="#">복지·보조금 부정 신고</a></li>
+								<li><a href="#">자동차관리법 위반행위 신고</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">민원사무편람/서식</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">대전시에바란다</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">행정서비스헌장</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">행정 서비스헌장</a></li>
+								<li><a href="#">헌장내용</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">버스전용차로 민원</a></dt>
+						<dd>&nbsp;</dd>
+					</dl>
+				</li>
+				<li><a href="#">행정정보</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">Story대전</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">소통하는 시정소식</a></li>
+								<li><a href="#">원도심과 균형발전</a></li>
+								<li><a href="#">살맛나는 행복도시</a></li>
+								<li><a href="#">경제와 희망일자리</a></li>
+								<li><a href="#">환경교통 관광여가</a></li>
+								<li><a href="#">문화와 과학의 도시</a></li>
+								<li><a href="#">생생현장 포토뉴스</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">시정뉴스</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">시정소식</a></li>
+								<li><a href="#">보도자료</a></li>
+								<li><a href="#">행사안내</a></li>
+								<li><a href="#">보도해명자료</a></li>
+								<li><a href="#">입찰정보</a></li>
+								<li><a href="#">타기관소식</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">시정자료실</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">공보</a></li>
+								<li><a href="#">행정자료실</a></li>
+								<li><a href="#">감사결과</a></li>
+								<li><a href="#">감사(청렴)자료실</a></li>
+								<li><a href="#">사전 컨설팅감사</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">시험정보</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">법무행정정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">행정심판</a></li>
+								<li><a href="#">소청심사</a></li>
+								<li><a href="#">소송</a></li>
+								<li><a href="#">대법원판례</a></li>
+								<li><a href="#">행정절차제도</a></li>
+								<li><a href="#">자치법규</a></li>
+								<li><a href="#">법령해석사례</a></li>
+								<li><a href="#">법률홈닥터</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">예산/제정</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">도시재생·도시계획<br>(주택)</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">2030년 도시기본계획</a></li>
+								<li><a href="#">지구단위계획</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">규제개혁</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">규제개혁이란?</a></li>
+								<li><a href="#">규제바로찾기</a></li>
+								<li><a href="#">규제개혁시민제안</a></li>
+								<li><a href="#">제안서식</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전소식모아보기</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">공지사항</a></li>
+								<li><a href="#">보도자료</a></li>
+								<li><a href="#">문화행사</a></li>
+								<li><a href="#">입법예고</a></li>
+								<li><a href="#">채용정보</a></li>
+								<li><a href="#">고시공고</a></li>
+								<li><a href="#">입찰정보</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">세정동우미</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">시정홍보물안내</a></dt>
+						<dd>&nbsp;</dd>
+					</dl>
+				</li>
+				<li><a href="#">열린경제</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">대전비전</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대덕연구개발특구</a></li>
+								<li><a href="#">산·학연협력사업</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">기업지원</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">중소기업지원</a></li>
+								<li><a href="#">투자유치</a></li>
+								<li><a href="#">지원시책</a></li>
+								<li><a href="#">창업·기술사업화 통합안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">글로벌대전</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">고용동향</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전청년인력관리센터</a></li>
+								<li><a href="#">인재검색</a></li>
+								<li><a href="#">공개채용정보</a></li>
+								<li><a href="#">우수중소기업DB서비스</a></li>
+								<li><a href="#">대학교취업정보</a></li>
+								<li><a href="#">관련기관안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">부동산정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">부동산개발업등록</a></li>
+								<li><a href="#">부동산중개업정보</a></li>
+								<li><a href="#">공시지가조회</a></li>
+								<li><a href="#">토지이용계획</a></li>
+								<li><a href="#">주택가격정보</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">소비자정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">소비생활센터</a></li>
+								<li><a href="#">생활지리정보</a></li>
+								<li><a href="#">농수산물정보</a></li>
+								<li><a href="#">대전상품정보</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">물가정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">소비자물가지수</a></li>
+								<li><a href="#">소비자물가동향</a></li>
+								<li><a href="#">개인서비스 가격동향</a></li>
+								<li><a href="#">주요생필품 물가동향</a></li>
+								<li><a href="#">주요공공요금</a></li>
+								<li><a href="#">착한가격업소</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">경제지표</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">경제지표</a></li>
+								<li><a href="#">월간경제</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">협동조합</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">협동조합이란?</a></li>
+								<li><a href="#">협동조합설립절차</a></li>
+								<li><a href="#">자료실</a></li>
+								<li><a href="#">협동조합 사례</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전비즈</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">금융상품정보</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">대전상권분석</a></dt>
+						<dd>&nbsp;</dd>
+					</dl>
+				</li>
+				<li><a href="#">생활정보</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">교육</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">시민정보화교육</a></li>
+								<li><a href="#">대전의 대학교</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">상담</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">인터넷중독예방 상담</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">복지</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">국민기초생활보장</a></li>
+								<li><a href="#">의료금여제도</a></li>
+								<li><a href="#">긴급복지지원</a></li>
+								<li><a href="#">장애인복지</a></li>
+								<li><a href="#">어르신</a></li>
+								<li><a href="#">출산·보육</a></li>
+								<li><a href="#">여성가족청소년</a></li>
+								<li><a href="#">노숙인복지</a></li>
+								<li><a href="#">사회복지관</a></li>
+								<li><a href="#">재가복지센터</a></li>
+								<li><a href="#">사회복지법인/시설</a></li>
+								<li><a href="#">장묘관리</a></li>
+								<li><a href="#">보훈공원</a></li>
+								<li><a href="#">지역자율형사회서비스</a></li>
+								<li><a href="#">의사상자 지원제도</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">건강과의료</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">당직의료기관</a></li>
+								<li><a href="#">보건소</a></li>
+								<li><a href="#">예방접종</a></li>
+								<li><a href="#">감염병</a></li>
+								<li><a href="#">생활건강</a></li>
+								<li><a href="#">관련사이트</a></li>
+								<li><a href="#">당번약국</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">환경정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">환경정책</a></li>
+								<li><a href="#">환경협력</a></li>
+								<li><a href="#">대기정보</a></li>
+								<li><a href="#">자연환경조사</a></li>
+								<li><a href="#">물환경정보</a></li>
+								<li><a href="#">재활용정보</a></li>
+								<li><a href="#">음식물쓰레기자원화</a></li>
+								<li><a href="#">기후변화대응</a></li>
+								<li><a href="#">관련사이트</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">Safe대전</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">자연재난길잡이</a></li>
+								<li><a href="#">사회재난 길잡이</a></li>
+								<li><a href="#">하상도로통제</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">3대하천정보</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전의 3대하천</a></li>
+								<li><a href="#">3대하천 사업현장</a></li>
+								<li><a href="#">3대하천 편의시설 및 이용신청</a></li>
+								<li><a href="#">자료실</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">에너지절약</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">100대실천과제</a></li>
+								<li><a href="#">고유가극복</a></li>
+								<li><a href="#">ESCO제도</a></li>
+								<li><a href="#">기후변화협약</a></li>
+								<li><a href="#">자발적협약</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">체육이용시설</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">시청시설이용안내</a></li>
+								<li><a href="#">공공체육시설</a></li>
+								<li><a href="#">동네체육시설</a></li>
+								<li><a href="#">하천체육시설</a></li>
+								<li><a href="#">민간체육시설</a></li>
+								<li><a href="#">시설이용신청</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">공공시설 유휴공간</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">이용안내</a></li>
+								<li><a href="#">공간정보현황</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">교통정보</a></dt>
+						<dd>&nbsp;</dd>
+					</dl>
+				</li>
+				<li><a href="#">대전소개</a>
+					<dl class="gnb_area01">
+						<dt><a href="#">시청안내</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">청사둘러보기</a></li>
+								<li><a href="#">청사안내</a></li>
+								<li><a href="#">시민이용시설</a></li>
+								<li><a href="#">회의시설</a></li>
+								<li><a href="#">시티홈 그린투어</a></li>
+								<li><a href="#">행정조직도</a></li>
+								<li><a href="#">직원안내</a></li>
+								<li><a href="#">전화번호안내</a></li>
+								<li><a href="#">오시는길</a></li>
+								<li><a href="#">주차요금안내</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전의상징</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전의꽃</a></li>
+								<li><a href="#">대전의나무</a></li>
+								<li><a href="#">대전의새</a></li>
+								<li><a href="#">대전의깃대종</a></li>
+								<li><a href="#">상징마크</a></li>
+								<li><a href="#">로고타입</a></li>
+								<li><a href="#">캐릭터</a></li>
+								<li><a href="#">시정구호</a></li>
+								<li><a href="#">브랜드슬로건</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전의현황</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">자연환경</a></li>
+								<li><a href="#">행정구역</a></li>
+								<li><a href="#">대전의지명</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">사이버역사관</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전의역사</a></li>
+								<li><a href="#">대전의연혁</a></li>
+								<li><a href="#">대전의인물</a></li>
+								<li><a href="#">시정백서</a></li>
+								<li><a href="#">환경백서</a></li>
+								<li><a href="#">대전갤러리</a></li>
+								<li><a href="#">경제백서</a></li>
+								<li><a href="#">기록관</a></li>
+								<li><a href="#">이츠대전</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전의통계</a></dt>
+						<dd>&nbsp;</dd>
+						<dt><a href="#">자매도시</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">과달라하라</a></li>
+								<li><a href="#">난징</a></li>
+								<li><a href="#">노보시비르스크</a></li>
+								<li><a href="#">부다페스트</a></li>
+								<li><a href="#">브라스번</a></li>
+								<li><a href="#">빈증성</a></li>
+								<li><a href="#">삿포로</a></li>
+								<li><a href="#">시애틀</a></li>
+								<li><a href="#">오다</a></li>
+								<li><a href="#">윱살라</a></li>
+								<li><a href="#">캘거리</a></li>
+								<li><a href="#">더반</a></li>
+								<li><a href="#">선양</a></li>
+								<li><a href="#">자매우호도시 홍보관</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전사랑</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">대전사랑운동</a></li>
+								<li><a href="#">대전의 찬가</a></li>
+								<li><a href="#">대전응원가</a></li>
+								<li><a href="#">대전의노래</a></li>
+								<li><a href="#">시민헌장</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">대전 기네스</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">카드뉴스</a></li>
+							</ul>
+						</dd>
+						<dt><a href="#">원도심이야기</a></dt>
+						<dd>
+							<ul class="gnb_area01_list">
+								<li><a href="#">원도심 소식</a></li>
+								<li><a href="#">원도심 자랑</a></li>
+								<li><a href="#">맛집 찾기</a></li>
+								<li><a href="#">원도심으로 오세요</a></li>
+							</ul>
+						</dd>
+					</dl>
+				</li>
+				<li><a href="#">자주찾는 정보</a>
+					<ul class="often">
+						<li><a href="#">행정예산세정</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">자치법규</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">자치법규</a></li>
+										<li><a href="#">대전의 통계</a></li>
+										<li><a href="#">규제개혁</a></li>
+										<li><a href="#">행정정보목록</a></li>
+										<li><a href="#">시청안내</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">세정</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">지방세도우미</a></li>
+										<li><a href="#">마을세무사</a></li>
+										<li><a href="#">개별주택가격</a></li>
+										<li><a href="#">구제신청방</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">예산</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">대전시 살림살이</a></li>
+										<li><a href="#">재정공시</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">문화관광체육</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">관광</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">대전관광</a></li>
+										<li><a href="#">대전의축제</a></li>
+										<li><a href="#">장태산휴양림</a></li>
+										<li><a href="#">한밭수목원</a></li>
+										<li><a href="#">시민천문대</a></li>
+										<li><a href="#">오월드(대전동물원)</a></li>
+										<li><a href="#">대전의맛</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">문화</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">행사안내</a></li>
+										<li><a href="#">대전예술의전당</a></li>
+										<li><a href="#">대전시립연정국악원</a></li>
+										<li><a href="#">여성가족원</a></li>
+										<li><a href="#">시립미술관</a></li>
+										<li><a href="#">이응노미술관</a></li>
+										<li><a href="#">선사박물관</a></li>
+										<li><a href="#">역사박물관</a></li>
+										<li><a href="#">시립예술단</a></li>
+										<li><a href="#">대전의 지명</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">체육</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">체육시설</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">핫뉴스/민원</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">민원안내</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">전자민원신청</a></li>
+										<li><a href="#">민원신고센터</a></li>
+										<li><a href="#">여권</a></li>
+										<li><a href="#">무인민원발급기</a></li>
+										<li><a href="#">민원사무편람</a></li>
+										<li><a href="#">민원처리공개</a></li>
+										<li><a href="#">정보공개</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">핫뉴스</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">인터넷방송</a></li>
+										<li><a href="#">이달의 HOT NEWS</a></li>
+										<li><a href="#">e-뉴스레터</a></li>
+										<li><a href="#">대전소식모아보기</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">환경복지보건</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">환경</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">푸른대전만들기</a></li>
+										<li><a href="#">환경정보</a></li>
+										<li><a href="#">대기정보</a></li>
+										<li><a href="#">행복한3대하천 만들기</a></li>
+										<li><a href="#">상수도</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">복지</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">국민기초생활</a></li>
+										<li><a href="#">복지만두레</a></li>
+										<li><a href="#">대전보육정보센터</a></li>
+										<li><a href="#">e하늘장사정보</a></li>
+										<li><a href="#">사회복지</a></li>
+										<li><a href="#">한국장애인고용공단</a></li>
+										<li><a href="#">실종아동/어르신찾기</a></li>
+										<li><a href="#">점자시정소식</a></li>
+										<li><a href="#">장애인일자리</a></li>
+										<li><a href="#">다자녀가정우대</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">보건</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">당직의료기관</a></li>
+										<li><a href="#">의료관광홈페이지</a></li>
+										<li><a href="#">당번약국</a></li>
+										<li><a href="#">자동제세동기 설치현황</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">도시재생·도시계획(주택)</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">도시재생정책</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">도시재생전략계획</a></li>
+										<li><a href="#">공유문화조성</a></li>
+										<li><a href="#">문화재생</a></li>
+										<li><a href="#">옛 충남도청 활용</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">도시정비</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">도시정비기본계획</a></li>
+										<li><a href="#">도시재정비촉직계획</a></li>
+										<li><a href="#">소규모주거정비</a></li>
+										<li><a href="#">도시환경정비</a></li>
+										<li><a href="#">주거환경개선</a></li>
+										<li><a href="#">대전역세권 개발</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">도시계획</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">도시계획위원회</a></li>
+										<li><a href="#">2030년도시기본계획</a></li>
+										<li><a href="#">지구단위계획</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">도시경관</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">경관정책정보</a></li>
+										<li><a href="#">도시디자인 DB</a></li>
+										<li><a href="#">도시경관아카이브</a></li>
+										<li><a href="#">도시경관소식지</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">시민참여</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">자율참여</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">대전시에 바란다</a></li>
+										<li><a href="#">자유게시판</a></li>
+										<li><a href="#">칭찬합시다</a></li>
+										<li><a href="#">설문참여</a></li>
+										<li><a href="#">주민참여예산제</a></li>
+										<li><a href="#">SMS 서비스신청</a></li>
+										<li><a href="#">OK예약서비스</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">회원참여</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">e-시정도우미</a></li>
+										<li><a href="#">정책자문단</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">교육/강좌</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">OK예약(강좌,시설)</a></li>
+										<li><a href="#">시민정보화교육</a></li>
+										<li><a href="#">여성가족원</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">교통건설소방</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">교통</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">교통정보(ITS)</a></li>
+										<li><a href="#">시내버스노선</a></li>
+										<li><a href="#">지하철정보</a></li>
+										<li><a href="#">자동차검사일조회</a></li>
+										<li><a href="#">실시간교통정보</a></li>
+										<li><a href="#">하상도로정보</a></li>
+										<li><a href="#">자전거타기</a></li>
+										<li><a href="#">시민고용자전거(타슈)</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">건설</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">Safe대전</a></li>
+										<li><a href="#">건설관리본부</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">소방</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">소방본부</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">경제과학</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">경제</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">기업지원</a></li>
+										<li><a href="#">산학연협력사업</a></li>
+										<li><a href="#">일자리지원센터</a></li>
+										<li><a href="#">G4B(기업하기 좋은 나라)</a></li>
+										<li><a href="#">소비생활센터</a></li>
+										<li><a href="#">오정농수산물도매시장</a></li>
+										<li><a href="#">노은농수산물도매시장</a></li>
+										<li><a href="#">기업지원포털(대전비즈)</a></li>
+										<li><a href="#">대전광역시 공유재산관리</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">과학</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">대덕R&D특구</a></li>
+										<li><a href="#">대덕테크노파크</a></li>
+										<li><a href="#">세계과학도시연합</a></li>
+										<li><a href="#">국립중앙과학관</a></li>
+										<li><a href="#">국제과학비즈니스벨트</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li><a href="#">동물보호센터</a>
+							<dl class="gnb_area02">
+								<dt><a href="#">유기동물공고</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">전체</a></li>
+										<li><a href="#">입양가능</a></li>
+										<li><a href="#">개</a></li>
+										<li><a href="#">고양이</a></li>
+										<li><a href="#">기타동물</a></li>
+									</ul>
+								</dd>
+							</dl>
+							<dl class="gnb_area02">
+								<dt><a href="#">입양참여</a></dt>
+								<dd>
+									<ul class="gnb_area02_list">
+										<li><a href="#">입양신청</a></li>
+										<li><a href="#">입양후기</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav> <!-- gnb 끝 -->
+</header> <!-- header 끝 -->
+
+<!-- contents01 (뉴스 슬라이드) -->
+<section class="contents01">
+	<!-- 뉴스 슬라이드 -->
+	<div class="news_vis">
+		<div class="news_vis_area">
+			<img src="images/news_vis01.jpg" alt="충남도청 건물 사진">
+			<div class="news_txt_wrap">
+				<h2><a href="#">옛 충남도청을 아름다운 빛의 건물로!</a></h2>
+				<p class="news_txt"><a href="#">중구 선화동 옛 충남도청이 아름다운 빛의 건물로 새 모습을 드러냈습니다. 대전시는 10일 옛 충남도청 경관조명 점등식을 갖고 본격 가동을 시작했는데요. [10일 가동을 시작한 옛 충남도청 경관조명]...</a></p>
+			</div>
+		</div>
+		<div class="news_vis_area">
+			<img src="images/news_vis02.jpg" alt="지진대응 종합대책으로 도시안전 강화한다 사진">
+			<div class="news_txt_wrap">
+				<h2><a href="#">지진대응 종합대책으로 도시안전 강화한다</a></h2>
+				<p class="news_txt"><a href="#">대전시가 지난달 경북 경주지역을 강타한 지진을 계기로 '대전시 지진대응 종합대책'을 마련하고 도시안전을 강화키로 했습니다. 이에 따라 대전시는 지진 통합관리시스템을 구축하는 것과 함께 건축물 내진보강, 시...</a></p>
+			</div>
+		</div>
+		<div class="news_vis_area">
+			<img src="images/news_vis03.jpg" alt="지진대응 종합대책으로 도시안전 강화한다 사진">
+			<div class="news_txt_wrap">
+				<h2><a href="#">시의회와 시정현안 공유하는 소통 강조! 권선택 대전시장 10일 주간업무회의</a></h2>
+				<p class="news_txt"><a href="#">권선택 대전광역시장은 10일 시청 중회의실에서 열린 주간업무회의에서 공무원들이 보다 적극적으로 시의회와 소통을 강화할 것을 주문했습니다. 이날 권선택 대전시장은 "시정현안에 대해 시의회를 찾아가 직접 ...</a></p>
+			</div>
+		</div>
+		<div class="news_vis_area">
+			<img src="images/news_vis04.jpg" alt="제 22회 대전광역시 경제과학대상 수상후보자 공모 2016년 10월 1일 ~ 11월 10일. 공모부문 : 수출, 과학기술, 벤처기업, 산·학협동, 유통·소비자보호, 농업. 추천 : 기관장, 기업체 대표, 업종별 협의회장, 연구기관장, 대학총장 등. 접수처 : 대전광역시 일자리경제과(270-3512). 각 구청 경제부서. 대전광역시">
+			<div class="news_txt_wrap">
+				<h2><a href="#">대전을 빛낸 경제과학대상 수상 후보자를 추천해주세요!</a></h2>
+				<p class="news_txt"><a href="#">대전의 경제과학 발전을 이끈 인재를 추천해주세요. 대전시가 제22회 대전경제과학대상 후보자를 내달 10일까지 공모합니다. 대전경제과학대상은 대전시민으로써 지역경제 및 과학발전에 기여한 공로가 현저한 사람...</a></p>
+			</div>
+		</div>
+		<div class="news_vis_area">
+			<img src="images/news_vis05.jpg" alt="대전의 자전거길 사진">
+			<div class="news_txt_wrap">
+				<h2><a href="#">대전의 자전거길 3곳, 전국 아름다운 자전거길 100선으로</a></h2>
+				<p class="news_txt"><a href="#">"대청호반 자전거 여행은 가을정취 가득한 억새밭 등 비경을 마음껏 감상할 수 있고요. 자연생태관, 추동습지보호구역, 찬샘마을 등 다양한 관광자원을 품고 있어 더욱 좋습니다." "도심에 있는 대전의 보물 보...</a></p>
+			</div>
+		</div>
+	</div> <!-- 뉴스 슬라이드 끝 -->
+</section> <!-- contents01 끝-->
+<!-- contents02 (최근 인기 게시물, 대전시장) -->
+<section class="contents02">
+	<!-- 최근 인기 게시물 -->
+	<article class="hit_notice_wrap">
+		<h2>최근 인기 게시물</h2>
+		<ul class="hit_notice">
+			<li><a href="#">대전 광역교통 허브 유성광역 ...</a></li>
+			<li><a href="#">65세 이상 어르신 인플루엔 ...</a></li>
+			<li><a href="#">현안사업 성공 위해 역동성 ...</a></li>
+			<li><a href="#">시민공감예술콘서트</a></li>
+		</ul>
+	</article> <!-- 최근 인기 게시물 끝 -->
+	<!-- 대전시장 -->
+	<article class="commit">
+		<a href="#"><img src="images/commit01.jpg" alt="안녕하세요 대전시장 권선택 입니다. - 공약사업. 시장에게 바란다. 생생현장소식"></a>
+	</article> <!-- 대전시장 끝 -->
+</section> <!-- contents02 끝 -->
+<!-- contents03 -->
+<section class="contents03">
+	<!-- 뉴스 탭 -->
+	<div class="news_tab_wrap">
+		<ul class="news_tab">
+			<li><a href="#">소통하는 시정소식</a>
+				<div class="news_tab_area01">
+					<a href="#"><img src="images/news_tab01.jpg" alt="현안사업 성공 위해 역동성 필요! 권선택 ..."></a>
+					<h2><a href="#">현안사업 성공 위해 역동성 필요! 권선택 ...</a></h2>
+					<p class="news_tab_txt"><a href="#">권선택 대전광역시장은 4일 시청 대회의실에서 열린 10월 확대간부회의에서 올해 사업의 확실...</a></p>
+				</div>
+				<div class="news_tab_area02">
+					<ul class="news_tab_list01">
+						<li><a href="#"><span><img src="images/news_tab02.jpg" alt="'대전의 저력 발휘하길!' 제4348주년 개천절 ..."></span>'대전의 저력 발휘하길!' 제4348주년 개천절 ...</a></li>
+						<li><a href="#"><span><img src="images/news_tab03.jpg" alt="권선택·홍선기·염홍철·박성효 대전시 역대 시장 ..."></span>권선택·홍선기·염홍철·박성효 대전시 역대 시장 ...</a></li>
+					</ul>
+					<ul class="news_tab_list02">
+						<li><a href="#">-'고도정수처리시설, 수도민영화 아니다' 권선택 대전시장 거듭 확인</a></li>
+						<li><a href="#">- 시민과 시정, 이제 밴드(BAND)로도 통합니다!</a></li>
+						<li><a href="#">- 임시주거시설 및 지진 대피장소 현황</a></li>
+					</ul>
+				</div>
+				<a href="#" class="news_tab_more"></a>
+			</li>
+			<li><a href="#">원도심과 균형발전</a>
+				<div class="news_tab_area01">
+					<a href="#"><img src="images/news_tab04.jpg" alt="대화동2구역 뉴스테이 정비사업 대상지 선정"></a>
+					<h2><a href="#">대화동2구역 뉴스테이 정비사업 대상지 선정</a></h2>
+					<p class="news_tab_txt"><a href="#">대덕구 '대화동2 주택재개발사업구역'이 올해 하반기 국토교통부가 공모한 '뉴스테이 연계형 ...</a></p>
+				</div>
+			</li>
+			<li><a href="#">살맛나는 행복도시</a></li>
+			<li><a href="#">경제와 희망일자리</a></li>
+			<li><a href="#">환경교통 관광여가</a></li>
+			<li><a href="#">문화와 과학의 도시</a></li>
+		</ul>
+	</div> <!-- 뉴스 탭 끝 -->
+</section>  <!-- contents03 끝 -->
+</body>
+</html>

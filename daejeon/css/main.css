@@ -1,0 +1,4 @@
+@charset "euc-kr";
+@import url("reset.css");
+a{text-decoration: none;}
+a:hover, a:active{text-decoration: underline;}
