@@ -1,0 +1,42 @@
+@charset "euc-kr";
+@import url("reset.css");
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.blind{position:absolute;top:0;left:0;text-indent:-9999px}
+a{text-decoration:none}
+a:hover,a:active{text-decoration:underline}
+
+header{width:970px;margin:0 auto}
+.top_menu{overflow:hidden}
+.top_menu_list{float:right;margin-top:4px}
+.top_menu_list li{float:left;margin-right:15px}
+.top_menu_list li:last-child{margin:0}
+.top_menu_list li a{font-family:'NanumBarunGothicBold',Sans-serif;font-size:11px;color:#5f5f5f}
+
+header h1{float:left;margin-top:18px}
+header h1 a{display:block;width:163px;height:37px;background:url(../images/sp_mark.jpg) 0 0 no-repeat;text-indent:-9999px}
+.taegeukgi{float:left;margin:18px 0 0 17px}
+.search_wrap{margin:18px 0 0 48px;float:left;}
+.search_wrap form{position:relative;width:411px;height:30px;border:2px solid #5f5f5f}
+.search_wrap select{margin:3px 0 0 1px;border:none}
+.search_wrap #search_txt{width:230px;border:none}
+.search_wrap .search_btn{position:absolute;right:0;width:58px;height:26px;border:none;background:url(../images/btn_search_01.gif) 0 0 no-repeat;text-indent:-9999px;cursor:pointer}
+.search_list{margin-top: 13px;overflow: hidden;}
+.search_list dt{float: left;font-family:'NanumBarunGothicBold',Sans-serif;font-size: 12px;}
+.search_list dd{float: left;margin-top: -3px;background: url(../images/search_list_line01.gif) right 4px no-repeat;}
+.search_list dd a{padding: 0 12px;font-size: 12px;color: #888;}
+.banner_wrap{position: relative;margin:18px 0 0 20px;float: left;width: 170px;height: 65px;background: url(../images/banner_btn01.png) right bottom no-repeat;}
+.banner_area{margin-left: 50px;}
+.banner_area .banner{height: 45px;}
+.banner .text{margin-top: 9px;display: block;font-size: 12px;font-family:'NanumBarunGothic',Sans-serif;}
+.banner .num{display: inline-block;margin-top: 5px;font-size: 22px;font-family:'NanumBarunGothicBold',Sans-serif;}
+.banner .unit{display: inline-block;vertical-align: middle;font-size: 11px;font-family:'NanumBarunGothic',Sans-serif;color: #9b9b9b;}
+.banner01{background: url(../images/banner01_icon01.png) right 0 no-repeat;}
+.banner02{background: url(../images/banner01_icon02.png) right 0 no-repeat;}
+.banner03{background: url(../images/banner01_icon03.png) right 0 no-repeat;}
+.banner01 .unit{vertical-align: top;margin-top: 7px;}
+.banner_area .slick-prev{width: 14px;height: 14px;left: 80px;top: 58px;}
+.banner_area .slick-next{width: 14px;height: 14px;right: 0;top: 58px;}
+.banner_pause{height: 14px;cursor: pointer;width: 14px;background: none;border: none;position: absolute;bottom: 0;left: 143px;text-indent: -9999px;}
+
+nav{clear: both;font-family:'NanumBarunGothic',Sans-serif;font-size: 11px;}
+

@@ -4,9 +4,11 @@
 <title>커핀그루나루</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="js/jquery.cookie.js"></script>
 <script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
 <!--[if lt IE 9]>
 	<script type="text/javascript" src="js/html5shiv.min.js"></script>
 <![endif]-->
@@ -14,55 +16,62 @@
 <body>
 <!-- header -->
 <header>
-	<!-- top_menu -->
-	<div class="top_menu">
-		<ul>
-			<li><a href="#">로그인</a></li>
-			<li><a href="#">모바일</a></li>
-			<li><a href="#">사이트맵</a></li>
-			<li><a href="#">LANGUAGE</a></li>
-		</ul>
-	</div>
-	<h1>대전광역시</h1>
-	<a class="taegeukgi" href="#"><img src="images/frtn_taegeukgi.gif" alt="태극기 사진 - 국가상징 알아보기 링크"></a>
-	<!-- 통합검색 -->
-	<div class="search_wrap">
-		<form action="#" method="get">
-			<fieldset>
-				<legend>대전광역시 통합검색</legend>
-				<div class="search">
-					<select name="search" id="search">
-						<option value="통합검색">통합검색</option>
-						<option value="메뉴">메뉴</option>
-						<option value="시정뉴스">시정뉴스</option>
-						<option value="문화관광">문화관광</option>
-						<option value="웹페이지">웹페이지</option>
-						<option value="직원/업무">직원/업무</option>
-						<option value="게시판">게시판</option>
-						<option value="멀티미디어">멀티미디어</option>
-						<option value="첨부문서">첨부문서</option>
-						<option value="SNS검색">SNS검색</option>
-					</select>
-					<label for="search_txt">검색어 입력</label>
-					<input type="text" name="search_txt" id="search_txt">
-					<input type="button" value="검색" onclick="msg()">
-					<dl class="search_list">
-						<dt>인기검색어</dt>
-						<dd>ok예약서비스</dd>
-						<dd>동물보호센터</dd>
-						<dd>대전관광</dd>
-						<dd>한밭수목원</dd>
-					</dl>
-				</div>
-			</fieldset>
-		</form>
-	</div> <!-- 통합검색 끝 -->
-	<!-- banner -->
-	<div class="banner_wrap">
-		<div class="banner banner01"><span class="text">구름 많음</span><span class="num">13.0</span><span class="unit">℃</span></div>
-		<div class="banner banner02"><span class="text">미세먼지농도</span><span class="num">41</span><span class="unit">㎍/m3</span></div>
-		<div class="banner banner03"><span class="text">식중독지수</span><span class="num">16</span><span class="unit">관심</span></div>
-	</div> <!-- banner 끝 -->
+	<!-- header_area -->
+	<div class="header_area">
+		<!-- top_menu -->
+		<div class="top_menu">
+			<ul class="top_menu_list">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">모바일</a></li>
+				<li><a href="#">사이트맵</a></li>
+				<li><a href="#">LANGUAGE</a></li>
+			</ul>
+		</div> <!-- top_menu 끝 -->
+		<h1><a href="#">대전광역시</a></h1>
+		<a class="taegeukgi" href="#"><img src="images/frtn_taegeukgi.gif" alt="태극기 사진 - 국가상징 알아보기 링크"></a>
+		<!-- 통합검색 -->
+		<div class="search_wrap">
+			<form action="#" method="get">
+				<fieldset>
+					<legend class="blind">대전광역시 통합검색</legend>
+					<div class="search">
+						<label class="blind" for="search" >검색 항목</label>
+						<select name="search" id="search">
+							<option value="통합검색">통합검색</option>
+							<option value="메뉴">메뉴</option>
+							<option value="시정뉴스">시정뉴스</option>
+							<option value="문화관광">문화관광</option>
+							<option value="웹페이지">웹페이지</option>
+							<option value="직원/업무">직원/업무</option>
+							<option value="게시판">게시판</option>
+							<option value="멀티미디어">멀티미디어</option>
+							<option value="첨부문서">첨부문서</option>
+							<option value="SNS검색">SNS검색</option>
+						</select>
+						<label class="blind" for="search_txt" >검색어 입력</label>
+						<input type="text" name="search_txt" placeholder="검색어를 입력하세요" id="search_txt">
+						<input type="button" title="검색" value="검색" onclick="msg()" class="search_btn">
+					</div>
+				</fieldset>
+			</form>
+			<dl class="search_list">
+				<dt>인기검색어</dt>
+				<dd><a href="#">ok예약서비스</a></dd>
+				<dd><a href="#">동물보호센터</a></dd>
+				<dd><a href="#">대전관광</a></dd>
+				<dd><a href="#">한밭수목원</a></dd>
+			</dl>
+		</div> <!-- 통합검색 끝 -->
+		<!-- banner -->
+		<div class="banner_wrap">
+			<div class="banner_area">
+				<div class="banner banner01"><span class="text">구름 많음</span><span class="num">13.0</span><span class="unit">℃</span></div>
+				<div class="banner banner02"><span class="text">미세먼지농도</span><span class="num">41</span><span class="unit">㎍/m3</span></div>
+				<div class="banner banner03"><span class="text">식중독지수</span><span class="num">16</span><span class="unit">&nbsp;관심</span></div>
+			</div>
+			<button class="banner_pause">슬라이드 일시정지</button>
+		</div> <!-- banner 끝 -->
+	</div> <!-- header_area 끝 -->
 	<!-- gnb -->
 	<nav>
 		<div class="gnb_wrap">
@@ -625,321 +634,323 @@
 					</dl>
 				</li>
 				<li><a href="#">자주찾는 정보</a>
-					<ul class="often">
-						<li><a href="#">행정예산세정</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">자치법규</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">자치법규</a></li>
-										<li><a href="#">대전의 통계</a></li>
-										<li><a href="#">규제개혁</a></li>
-										<li><a href="#">행정정보목록</a></li>
-										<li><a href="#">시청안내</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">세정</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">지방세도우미</a></li>
-										<li><a href="#">마을세무사</a></li>
-										<li><a href="#">개별주택가격</a></li>
-										<li><a href="#">구제신청방</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">예산</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">대전시 살림살이</a></li>
-										<li><a href="#">재정공시</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">문화관광체육</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">관광</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">대전관광</a></li>
-										<li><a href="#">대전의축제</a></li>
-										<li><a href="#">장태산휴양림</a></li>
-										<li><a href="#">한밭수목원</a></li>
-										<li><a href="#">시민천문대</a></li>
-										<li><a href="#">오월드(대전동물원)</a></li>
-										<li><a href="#">대전의맛</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">문화</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">행사안내</a></li>
-										<li><a href="#">대전예술의전당</a></li>
-										<li><a href="#">대전시립연정국악원</a></li>
-										<li><a href="#">여성가족원</a></li>
-										<li><a href="#">시립미술관</a></li>
-										<li><a href="#">이응노미술관</a></li>
-										<li><a href="#">선사박물관</a></li>
-										<li><a href="#">역사박물관</a></li>
-										<li><a href="#">시립예술단</a></li>
-										<li><a href="#">대전의 지명</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">체육</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">체육시설</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">핫뉴스/민원</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">민원안내</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">전자민원신청</a></li>
-										<li><a href="#">민원신고센터</a></li>
-										<li><a href="#">여권</a></li>
-										<li><a href="#">무인민원발급기</a></li>
-										<li><a href="#">민원사무편람</a></li>
-										<li><a href="#">민원처리공개</a></li>
-										<li><a href="#">정보공개</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">핫뉴스</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">인터넷방송</a></li>
-										<li><a href="#">이달의 HOT NEWS</a></li>
-										<li><a href="#">e-뉴스레터</a></li>
-										<li><a href="#">대전소식모아보기</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">환경복지보건</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">환경</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">푸른대전만들기</a></li>
-										<li><a href="#">환경정보</a></li>
-										<li><a href="#">대기정보</a></li>
-										<li><a href="#">행복한3대하천 만들기</a></li>
-										<li><a href="#">상수도</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">복지</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">국민기초생활</a></li>
-										<li><a href="#">복지만두레</a></li>
-										<li><a href="#">대전보육정보센터</a></li>
-										<li><a href="#">e하늘장사정보</a></li>
-										<li><a href="#">사회복지</a></li>
-										<li><a href="#">한국장애인고용공단</a></li>
-										<li><a href="#">실종아동/어르신찾기</a></li>
-										<li><a href="#">점자시정소식</a></li>
-										<li><a href="#">장애인일자리</a></li>
-										<li><a href="#">다자녀가정우대</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">보건</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">당직의료기관</a></li>
-										<li><a href="#">의료관광홈페이지</a></li>
-										<li><a href="#">당번약국</a></li>
-										<li><a href="#">자동제세동기 설치현황</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">도시재생·도시계획(주택)</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">도시재생정책</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">도시재생전략계획</a></li>
-										<li><a href="#">공유문화조성</a></li>
-										<li><a href="#">문화재생</a></li>
-										<li><a href="#">옛 충남도청 활용</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">도시정비</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">도시정비기본계획</a></li>
-										<li><a href="#">도시재정비촉직계획</a></li>
-										<li><a href="#">소규모주거정비</a></li>
-										<li><a href="#">도시환경정비</a></li>
-										<li><a href="#">주거환경개선</a></li>
-										<li><a href="#">대전역세권 개발</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">도시계획</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">도시계획위원회</a></li>
-										<li><a href="#">2030년도시기본계획</a></li>
-										<li><a href="#">지구단위계획</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">도시경관</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">경관정책정보</a></li>
-										<li><a href="#">도시디자인 DB</a></li>
-										<li><a href="#">도시경관아카이브</a></li>
-										<li><a href="#">도시경관소식지</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">시민참여</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">자율참여</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">대전시에 바란다</a></li>
-										<li><a href="#">자유게시판</a></li>
-										<li><a href="#">칭찬합시다</a></li>
-										<li><a href="#">설문참여</a></li>
-										<li><a href="#">주민참여예산제</a></li>
-										<li><a href="#">SMS 서비스신청</a></li>
-										<li><a href="#">OK예약서비스</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">회원참여</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">e-시정도우미</a></li>
-										<li><a href="#">정책자문단</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">교육/강좌</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">OK예약(강좌,시설)</a></li>
-										<li><a href="#">시민정보화교육</a></li>
-										<li><a href="#">여성가족원</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">교통건설소방</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">교통</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">교통정보(ITS)</a></li>
-										<li><a href="#">시내버스노선</a></li>
-										<li><a href="#">지하철정보</a></li>
-										<li><a href="#">자동차검사일조회</a></li>
-										<li><a href="#">실시간교통정보</a></li>
-										<li><a href="#">하상도로정보</a></li>
-										<li><a href="#">자전거타기</a></li>
-										<li><a href="#">시민고용자전거(타슈)</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">건설</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">Safe대전</a></li>
-										<li><a href="#">건설관리본부</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">소방</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">소방본부</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">경제과학</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">경제</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">기업지원</a></li>
-										<li><a href="#">산학연협력사업</a></li>
-										<li><a href="#">일자리지원센터</a></li>
-										<li><a href="#">G4B(기업하기 좋은 나라)</a></li>
-										<li><a href="#">소비생활센터</a></li>
-										<li><a href="#">오정농수산물도매시장</a></li>
-										<li><a href="#">노은농수산물도매시장</a></li>
-										<li><a href="#">기업지원포털(대전비즈)</a></li>
-										<li><a href="#">대전광역시 공유재산관리</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">과학</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">대덕R&D특구</a></li>
-										<li><a href="#">대덕테크노파크</a></li>
-										<li><a href="#">세계과학도시연합</a></li>
-										<li><a href="#">국립중앙과학관</a></li>
-										<li><a href="#">국제과학비즈니스벨트</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-						<li><a href="#">동물보호센터</a>
-							<dl class="gnb_area02">
-								<dt><a href="#">유기동물공고</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">전체</a></li>
-										<li><a href="#">입양가능</a></li>
-										<li><a href="#">개</a></li>
-										<li><a href="#">고양이</a></li>
-										<li><a href="#">기타동물</a></li>
-									</ul>
-								</dd>
-							</dl>
-							<dl class="gnb_area02">
-								<dt><a href="#">입양참여</a></dt>
-								<dd>
-									<ul class="gnb_area02_list">
-										<li><a href="#">입양신청</a></li>
-										<li><a href="#">입양후기</a></li>
-									</ul>
-								</dd>
-							</dl>
-						</li>
-					</ul>
+					<div class="gnb_area01">
+						<ul class="often">
+							<li><a href="#">행정예산세정</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">자치법규</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">자치법규</a></li>
+											<li><a href="#">대전의 통계</a></li>
+											<li><a href="#">규제개혁</a></li>
+											<li><a href="#">행정정보목록</a></li>
+											<li><a href="#">시청안내</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">세정</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">지방세도우미</a></li>
+											<li><a href="#">마을세무사</a></li>
+											<li><a href="#">개별주택가격</a></li>
+											<li><a href="#">구제신청방</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">예산</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">대전시 살림살이</a></li>
+											<li><a href="#">재정공시</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">문화관광체육</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">관광</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">대전관광</a></li>
+											<li><a href="#">대전의축제</a></li>
+											<li><a href="#">장태산휴양림</a></li>
+											<li><a href="#">한밭수목원</a></li>
+											<li><a href="#">시민천문대</a></li>
+											<li><a href="#">오월드(대전동물원)</a></li>
+											<li><a href="#">대전의맛</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">문화</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">행사안내</a></li>
+											<li><a href="#">대전예술의전당</a></li>
+											<li><a href="#">대전시립연정국악원</a></li>
+											<li><a href="#">여성가족원</a></li>
+											<li><a href="#">시립미술관</a></li>
+											<li><a href="#">이응노미술관</a></li>
+											<li><a href="#">선사박물관</a></li>
+											<li><a href="#">역사박물관</a></li>
+											<li><a href="#">시립예술단</a></li>
+											<li><a href="#">대전의 지명</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">체육</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">체육시설</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">핫뉴스/민원</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">민원안내</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">전자민원신청</a></li>
+											<li><a href="#">민원신고센터</a></li>
+											<li><a href="#">여권</a></li>
+											<li><a href="#">무인민원발급기</a></li>
+											<li><a href="#">민원사무편람</a></li>
+											<li><a href="#">민원처리공개</a></li>
+											<li><a href="#">정보공개</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">핫뉴스</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">인터넷방송</a></li>
+											<li><a href="#">이달의 HOT NEWS</a></li>
+											<li><a href="#">e-뉴스레터</a></li>
+											<li><a href="#">대전소식모아보기</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">환경복지보건</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">환경</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">푸른대전만들기</a></li>
+											<li><a href="#">환경정보</a></li>
+											<li><a href="#">대기정보</a></li>
+											<li><a href="#">행복한3대하천 만들기</a></li>
+											<li><a href="#">상수도</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">복지</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">국민기초생활</a></li>
+											<li><a href="#">복지만두레</a></li>
+											<li><a href="#">대전보육정보센터</a></li>
+											<li><a href="#">e하늘장사정보</a></li>
+											<li><a href="#">사회복지</a></li>
+											<li><a href="#">한국장애인고용공단</a></li>
+											<li><a href="#">실종아동/어르신찾기</a></li>
+											<li><a href="#">점자시정소식</a></li>
+											<li><a href="#">장애인일자리</a></li>
+											<li><a href="#">다자녀가정우대</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">보건</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">당직의료기관</a></li>
+											<li><a href="#">의료관광홈페이지</a></li>
+											<li><a href="#">당번약국</a></li>
+											<li><a href="#">자동제세동기 설치현황</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">도시재생·도시계획(주택)</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">도시재생정책</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">도시재생전략계획</a></li>
+											<li><a href="#">공유문화조성</a></li>
+											<li><a href="#">문화재생</a></li>
+											<li><a href="#">옛 충남도청 활용</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">도시정비</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">도시정비기본계획</a></li>
+											<li><a href="#">도시재정비촉직계획</a></li>
+											<li><a href="#">소규모주거정비</a></li>
+											<li><a href="#">도시환경정비</a></li>
+											<li><a href="#">주거환경개선</a></li>
+											<li><a href="#">대전역세권 개발</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">도시계획</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">도시계획위원회</a></li>
+											<li><a href="#">2030년도시기본계획</a></li>
+											<li><a href="#">지구단위계획</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">도시경관</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">경관정책정보</a></li>
+											<li><a href="#">도시디자인 DB</a></li>
+											<li><a href="#">도시경관아카이브</a></li>
+											<li><a href="#">도시경관소식지</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">시민참여</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">자율참여</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">대전시에 바란다</a></li>
+											<li><a href="#">자유게시판</a></li>
+											<li><a href="#">칭찬합시다</a></li>
+											<li><a href="#">설문참여</a></li>
+											<li><a href="#">주민참여예산제</a></li>
+											<li><a href="#">SMS 서비스신청</a></li>
+											<li><a href="#">OK예약서비스</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">회원참여</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">e-시정도우미</a></li>
+											<li><a href="#">정책자문단</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">교육/강좌</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">OK예약(강좌,시설)</a></li>
+											<li><a href="#">시민정보화교육</a></li>
+											<li><a href="#">여성가족원</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">교통건설소방</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">교통</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">교통정보(ITS)</a></li>
+											<li><a href="#">시내버스노선</a></li>
+											<li><a href="#">지하철정보</a></li>
+											<li><a href="#">자동차검사일조회</a></li>
+											<li><a href="#">실시간교통정보</a></li>
+											<li><a href="#">하상도로정보</a></li>
+											<li><a href="#">자전거타기</a></li>
+											<li><a href="#">시민고용자전거(타슈)</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">건설</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">Safe대전</a></li>
+											<li><a href="#">건설관리본부</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">소방</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">소방본부</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">경제과학</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">경제</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">기업지원</a></li>
+											<li><a href="#">산학연협력사업</a></li>
+											<li><a href="#">일자리지원센터</a></li>
+											<li><a href="#">G4B(기업하기 좋은 나라)</a></li>
+											<li><a href="#">소비생활센터</a></li>
+											<li><a href="#">오정농수산물도매시장</a></li>
+											<li><a href="#">노은농수산물도매시장</a></li>
+											<li><a href="#">기업지원포털(대전비즈)</a></li>
+											<li><a href="#">대전광역시 공유재산관리</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">과학</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">대덕R&D특구</a></li>
+											<li><a href="#">대덕테크노파크</a></li>
+											<li><a href="#">세계과학도시연합</a></li>
+											<li><a href="#">국립중앙과학관</a></li>
+											<li><a href="#">국제과학비즈니스벨트</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+							<li><a href="#">동물보호센터</a>
+								<dl class="gnb_area02">
+									<dt><a href="#">유기동물공고</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">전체</a></li>
+											<li><a href="#">입양가능</a></li>
+											<li><a href="#">개</a></li>
+											<li><a href="#">고양이</a></li>
+											<li><a href="#">기타동물</a></li>
+										</ul>
+									</dd>
+								</dl>
+								<dl class="gnb_area02">
+									<dt><a href="#">입양참여</a></dt>
+									<dd>
+										<ul class="gnb_area02_list">
+											<li><a href="#">입양신청</a></li>
+											<li><a href="#">입양후기</a></li>
+										</ul>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</div>
@@ -1404,5 +1415,17 @@
 		</ul>
 	</div> <!-- footer_wrap 끝 -->
 </footer> <!-- footer 끝 -->
+
+<script>
+$('.banner_area').slick({
+	autoplay:true,
+	infinite: true,
+	slidesToShow: 1,
+	adaptiveHeight: true
+});
+$('.banner_pause').click(function() {
+	$('.banner_area').slick('slickPause');
+});
+</script>
 </body>
 </html>
